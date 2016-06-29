@@ -1,5 +1,5 @@
 function x=incident(a,L)
-I=expand(a*L);
+I=factor(a*L);
 if I==0
     x=1;
 else

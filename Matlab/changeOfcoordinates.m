@@ -2,8 +2,8 @@
 a1=[1 1 1];a2=[-1 -1 1];a3=[1 -1 1];a4=[-1 1 1];
 
 %quadrances
-q12=quadrance(a1,a2,A);q13=quadrance(a1,a3,A);q14=quadrance(a1,a4,A);
-q23=quadrance(a3,a2,A);q24=quadrance(a2,a4,A);q34=quadrance(a4,a3,A);
+% q12=quadrance(a1,a2,A);q13=quadrance(a1,a3,A);q14=quadrance(a1,a4,A);
+% q23=quadrance(a3,a2,A);q24=quadrance(a2,a4,A);q34=quadrance(a4,a3,A);
 
 %lines of quadrangle
 L12=sjoin(a1,a2);L23=sjoin(a2,a3);L13=sjoin(a1,a3);
@@ -13,9 +13,15 @@ L14=sjoin(a1,a4);L24=sjoin(a2,a4);L34=sjoin(a3,a4);
 d1=smeet(L12,L34);d2=smeet(L13,L24);d3=smeet(L14,L23);
 
 % % midpoints
-[m12,m21,M12,M21]=midpoint(a1,a2,A);[m13,m31,M13,M31]=midpoint(a1,a3,A);
-[m23,m32,M23,M32]=midpoint(a2,a3,A);[m14,m41,M14,M41]=midpoint(a1,a4,A);
-[m24,m42,M24,M42]=midpoint(a2,a4,A);[m34,m43,M34,M43]=midpoint(a3,a4,A);
+[m12,m21,M12,M21]=midpoint(a1,a2,A);[m34,m43,M34,M43]=midpoint(a3,a4,A);
+[m13,m31,M13,M31]=midpoint(a1,a3,A);[m24,m42,M24,M42]=midpoint(a2,a4,A);
+[m14,m41,M14,M41]=midpoint(a1,a4,A);[m23,m32,M23,M32]=midpoint(a2,a3,A);
+
+% circumcenters
+c41=tmeet(M21,M32,M31);c42=tmeet(M21,M23,M13);c43=tmeet(M12,M32,M13);c44=tmeet(M12,M23,M31);
+c31=tmeet(M21,M24,M14);c32=tmeet(M21,M42,M41);c33=tmeet(M12,M42,M14);c34=tmeet(M12,M24,M41);
+c21=tmeet(M31,M34,M14);c22=tmeet(M13,M34,M41);c23=tmeet(M13,M43,M14);c24=tmeet(M31,M43,M41);
+c11=tmeet(M32,M34,M24);c12=tmeet(M23,M34,M42);c13=tmeet(M32,M43,M42);c14=tmeet(M23,M43,M24);
 
 %bimedains
 %inside {{m12,m34},{m13,m24},{m14,m23}}, 
