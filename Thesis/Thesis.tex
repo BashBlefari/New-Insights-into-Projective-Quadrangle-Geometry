@@ -1,0 +1,927 @@
+
+\documentclass[11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{latexsym,amsmath}
+\usepackage{graphicx}
+\usepackage{afterpage}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{LastRevised=Wednesday, June 29, 2016 17:31:44}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{ComputeDefs=
+%$m_{{}}$
+%}
+
+
+\newtheorem{theorem}{Theorem}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\input{tcilatex}
+\begin{document}
+
+\author{Sebastian Blefari}
+\date{}
+
+\section{Bilinear Form}
+
+Fundamental Theorem of Projective Geometry:\newline
+We are able to use a transformation to send any four arbitrary non-collinear
+points of a quadrangle to the four points; 
+\begin{equation*}
+a_{1}\equiv \lbrack 1:1:1],\;\;a_{2}\equiv \lbrack -1:-1:1],\;\;a_{3}\equiv
+\lbrack 1:-1:1],\;\;a_{4}\equiv \lbrack -1:1:1].
+\end{equation*}%
+This transformation results in a change of Bilinear form to 
+\begin{equation*}
+\mathbf{A}\equiv 
+\begin{bmatrix}
+a & d & f \\ 
+d & b & g \\ 
+f & g & c%
+\end{bmatrix}%
+,\;\;\text{for some}\;\;a,b,c,d,e,f\in \text{Nat},
+\end{equation*}%
+with inverse 
+\begin{equation*}
+\mathbf{B}\equiv 
+\begin{bmatrix}
+g^{2}-bc & dc-fg & fb-dg \\ 
+dc-fg & f^{2}-ac & ga-df \\ 
+fb-dg & ga-df & d^{2}-ab%
+\end{bmatrix}%
+.
+\end{equation*}%
+We will refer to the quadrangle $\overline{a_{1}a_{2}a_{3}a_{4}}$ as the
+standard quadrangle. The standard quadrangle has six sides $\overline{%
+a_{i}a_{j}}$ for $i\neq j\in \lbrack 6]$, which determine the six lines 
+\begin{align*}
+L_{\{1,2\}}& \equiv a_{1}a_{2}\equiv \langle 1:-1:0\rangle , & L_{\{1,3\}}&
+\equiv a_{1}a_{3}\equiv \langle 1:0:-1\rangle , & L_{\{1,4\}}& \equiv
+a_{1}a_{4}\equiv \langle 0:1:-1\rangle \\
+L_{\{3,4\}}& \equiv a_{3}a_{4}\equiv \langle 1:1:0\rangle , & L_{\{2,4\}}&
+\equiv a_{2}a_{4}\equiv \langle 1:0:1\rangle , & L_{\{2,3\}}& \equiv
+a_{2}a_{3}\equiv \langle 0:1:1\rangle .
+\end{align*}%
+These six lines of the respective sides let us find the diagonal triangle $%
+\overline{d_{1}d_{2}d_{3}}$ of the standard quadrangle, 
+\begin{eqnarray*}
+d_{\{\{1,2\},\{3,4\}\}} &\equiv &L_{\{1,2\}}L_{\{3,4\}}\equiv \lbrack
+0:0:1],\;\; \\
+d_{\{\{1,3\},\{2,4\}\}} &\equiv &L_{\{1,3\}}L_{\{2,4\}}\equiv \lbrack
+0:1:0],\;\; \\
+d_{\{\{1,4\},\{2,3\}\}} &\equiv &L_{\{1,4\}}L_{\{2,3\}}\equiv \lbrack 1:0:0].
+\end{eqnarray*}%
+Define 
+\begin{equation*}
+D\equiv abc+2fdg-ag^{2}-bf^{2}-cd^{2}.
+\end{equation*}%
+Then indeed we have that 
+\begin{align*}
+det(A)& =det%
+\begin{pmatrix}
+a & d & f \\ 
+d & b & g \\ 
+f & g & c%
+\end{pmatrix}%
+=D,\;\;\text{and} \\
+det(B)& =det%
+\begin{pmatrix}
+g^{2}-bc & dc-fg & fb-dg \\ 
+dc-fg & f^{2}-ac & ga-df \\ 
+fb-dg & ga-df & d^{2}-ab%
+\end{pmatrix}%
+=-D^{2}.
+\end{align*}
+
+Also define the variable
+
+\begin{eqnarray*}
+A_{1} &=&a_{1}\cdot a_{1}\equiv a+b+c+2\left( d+f+g\right) ,~\quad
+A_{2}=a_{2}\cdot a_{2}\equiv a+b+c+2\left( d-f-g\right) ,~~ \\
+A_{3} &=&a_{3}\cdot a_{3}\equiv a+b+c+2\left( -d+f-g\right)
+,~~A_{4}=a_{4}\cdot a_{4}\equiv a+b+c+2(-d-f+g),
+\end{eqnarray*}
+
+in an effort to simplify the expressions in the following theorem.
+
+\begin{theorem}[Quadrangle quadrances and spreads]
+Using these coordinates described above, the quadrances of the quadrangle
+are 
+\begin{align*}
+q(a_{1},a_{2})& =4\frac{c(a+b+2d)-(f+g)^{2}}{A_{1}A_{2}}, & q(a_{3},a_{4})&
+=4\frac{c(a+b-2d)-(f-g)^{2}}{A_{3}A_{4}}, \\
+q(a_{1},a_{3})& =4\frac{b(a+c+2f)-(d+g)^{2}}{A_{1}A_{3}}, & q(a_{2},a_{4})&
+=4\frac{b(a+c-2f)-(d-g)^{2}}{A_{2}A_{4}}, \\
+q(a_{1},a_{4})& =4\frac{a(b+c+2g)-(d+f)^{2}}{A_{1}A_{4}}, & q(a_{2},a_{3})&
+=4\frac{a(b+c-2g)-(d-f)^{2}}{A_{2}A_{3}}
+\end{align*}%
+These numbers also satisfy 
+\begin{align*}
+1-q(a_{1},a_{2})=\frac{(c-b-a-2d)^{2}}{A_{1}A_{2}},& & 1-q(a_{3},a_{4})& =%
+\frac{(c-b-a+2d)^{2}}{A_{3}A_{4}}, \\
+1-q(a_{1},a_{3})=\frac{(a-b+c+2f)^{2}}{A_{1}A_{3}},& & 1-q(a_{2},a_{4})& =%
+\frac{(a-b+c-2f)^{2}}{A_{2}A_{4}}, \\
+1-q(a_{1},a_{4})=\frac{(b-a+c+2g)^{2}}{A_{1}A_{4}},& & 1-q(a_{2},a_{3})& =%
+\frac{(b-a+c-2g)^{2}}{A_{2}A_{3}},
+\end{align*}
+\end{theorem}
+
+\textit{Proof. }Computations give you these results. $\square $
+
+\begin{theorem}[Side midpoints]
+Suppose that $p_{1}$ and $p_{2}$ are non-null, non-perpendicular points,
+forming a non-null side $\overline{p_{1}p_{2}}$. Then $\overline{p_{1}p_{2}}$
+has a non-null midpoint $m$ precisely when $1-q(p_{1},p_{2})$ is a square,
+and in this case there are exactly two perpendicular midpoints $m$.
+\end{theorem}
+
+\textit{Proof \ }We suppose that without loss of generality that $%
+p_{1}=a_{1}\equiv \lbrack 1:1:1]$ and $p_{2}=a_{2}\equiv \lbrack -1:-1:1]$
+so that by the spreads and quadrances theorem
+
+\begin{equation*}
+1-q(p_{1},p_{2})=\frac{(c-b-a-2d)^{2}}{A_{1}A_{2}}
+\end{equation*}
+
+By assumption each of the variables $A_{1}$ and $A_{2}$ are nonzero. An
+arbitrary point $m$ on the line $L_{\{1,2\}}\equiv \left\langle
+1:-1:0\right\rangle $ has the form $m=[x-y:x-y:x+y]$, which is null
+precisely when 
+\begin{equation*}
+(a+b+2d)(x-y)^{2}+c(x+y)^{2}+2\left( f+g\right) (x^{2}-y^{2})=0
+\end{equation*}
+by the Null point theorem. Assuming that $m$ is non-null, we compute that
+
+\begin{eqnarray*}
+q(p_{1},m) &=&\frac{4y^{2}\left( c\left( a+b+d\right) -\left( f+g\right)
+^{2}\right) }{A_{1}\left( (a+b+2d)(x-y)^{2}+c(x+y)^{2}+2\left( f+g\right)
+(x^{2}-y^{2})\right) }, \\
+q(p_{2},m) &=&\frac{4x^{2}\left( c\left( a+b+d\right) -\left( f+g\right)
+^{2}\right) }{A_{2}\left( (a+b+2d)(x-y)^{2}+c(x+y)^{2}+2\left( f+g\right)
+(x^{2}-y^{2})\right) }
+\end{eqnarray*}%
+\linebreak
+
+By assumption $\overline{p_{1}p_{2}}$ is non-null, so by the Corollary to
+the Null points/lines theorem, $c\left( a+b+d\right) -\left( f+g\right)
+^{2}\neq 0$, and so the above expressions are equal precisely when 
+\begin{equation*}
+y^{2}A_{2}=x^{2}A_{1}
+\end{equation*}
+has a solution, which occurs precisely when $1-q(p_{1},p_{2})$ is a square.
+In fact if
+
+\begin{equation*}
+\frac{1}{A_{1}A_{2}}=\sigma _{\left\{ 1,2\right\} }^{2}
+\end{equation*}
+
+then the two midpoints are
+
+\begin{equation*}
+m\equiv \left[ 1\pm \sigma _{\left\{ 1,2\right\} }A_{1}:1\pm \sigma
+_{\left\{ 1,2\right\} }A_{1}:1\mp \sigma _{\left\{ 1,2\right\} }A_{1}\right]
+\end{equation*}
+and they are perpendicular, since
+
+\begin{equation*}
+m_{+}\mathbf{A}m_{-}^{T}=0
+\end{equation*}
+
+\bigskip by computations. $\square $
+
+We denote the pair of midpoints as \textbf{opposites}. Where it follows that
+the dual line $M$ of a midpoint $m$ is incident with the opposite midpoint.
+
+\begin{theorem}[Vertex bilines]
+Dual
+\end{theorem}
+
+We want to impose the conditions that all six sides $\overline{a_{i}a_{j}}$
+for $i\neq j\in \lbrack 4]$ have midpoints. From the Side midpoint theorem
+we know this is true precisely when $1-q(a_{i},a_{j})$ is a square. This
+condition is equivalent to having natural numbers $\sigma _{\left\{
+1,2\right\} },\sigma _{\left\{ 3,4\right\} },\sigma _{\left\{ 1,3\right\}
+},\sigma _{\left\{ 2,4\right\} },\sigma _{\left\{ 1,4\right\} },\sigma
+_{\left\{ 2,3\right\} }\in \text{Rat}$, satisfying the \textbf{quadratic
+relations}
+
+\begin{eqnarray*}
+\frac{1}{A_{1}A_{2}} &=&\sigma _{\left\{ 1,2\right\} }^{2},\quad \frac{1}{%
+A_{1}A_{3}}=\sigma _{\left\{ 1,3\right\} }^{2},\quad \frac{1}{A_{1}A_{4}}%
+=\sigma _{\left\{ 1,4\right\} }^{2}, \\
+\frac{1}{A_{3}A_{4}} &=&\sigma _{\left\{ 3,4\right\} }^{2},\quad \frac{1}{%
+A_{2}A_{4}}=\sigma _{\left\{ 2,4\right\} }^{2},\quad \frac{1}{A_{2}A_{3}}%
+=\sigma _{\left\{ 2,3\right\} }^{2}
+\end{eqnarray*}
+Clearly all of $\sigma _{\left\{ 1,2\right\} },\sigma _{\left\{ 3,4\right\}
+},\sigma _{\left\{ 1,3\right\} },\sigma _{\left\{ 2,4\right\} },\sigma
+_{\left\{ 1,4\right\} },\sigma _{\left\{ 2,3\right\} }$ are nonzero. These
+quadratic relations give rise to the \textbf{cubic relations}
+
+\begin{eqnarray*}
+\frac{1}{A_{1}A_{2}A_{3}} &=&\sigma _{\left\{ 1,2\right\} }\sigma _{\left\{
+2,3\right\} }\sigma _{\left\{ 1,3\right\} },\quad \frac{1}{A_{1}A_{2}A_{4}}%
+=\sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 2,4\right\} }\sigma
+_{\left\{ 1,4\right\} },\quad \\
+\frac{1}{A_{1}A_{3}A_{4}} &=&\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
+3,4\right\} }\sigma _{\left\{ 1,4\right\} },\quad \frac{1}{A_{2}A_{3}A_{4}}%
+=\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{ 3,4\right\} }\sigma
+_{\left\{ 2,4\right\} },
+\end{eqnarray*}
+
+From these relations we get
+
+\begin{eqnarray*}
+A_{1} &=&\frac{\sigma _{\left\{ 2,3\right\} }}{\sigma _{\left\{ 1,2\right\}
+}\sigma _{\left\{ 1,3\right\} }}=\frac{\sigma _{\left\{ 2,4\right\} }}{%
+\sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,4\right\} }}=\frac{\sigma
+_{\left\{ 3,4\right\} }}{\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
+1,4\right\} }}, \\
+A_{2} &=&\frac{\sigma _{\left\{ 1,3\right\} }}{\sigma _{\left\{ 1,2\right\}
+}\sigma _{\left\{ 2,3\right\} }}=\frac{\sigma _{\left\{ 1,4\right\} }}{%
+\sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 2,4\right\} }}=\frac{\sigma
+_{\left\{ 3,4\right\} }}{\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{
+2,4\right\} }}, \\
+A_{3} &=&\frac{\sigma _{\left\{ 1,2\right\} }}{\sigma _{\left\{ 1,3\right\}
+}\sigma _{\left\{ 2,3\right\} }}=\frac{\sigma _{\left\{ 1,4\right\} }}{%
+\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{ 3,4\right\} }}=\frac{\sigma
+_{\left\{ 2,4\right\} }}{\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{
+3,4\right\} }}, \\
+A_{4} &=&\frac{\sigma _{\left\{ 1,2\right\} }}{\sigma _{\left\{ 1,4\right\}
+}\sigma _{\left\{ 2,4\right\} }}=\frac{\sigma _{\left\{ 1,3\right\} }}{%
+\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{ 3,4\right\} }}=\frac{\sigma
+_{\left\{ 2,3\right\} }}{\sigma _{\left\{ 2,4\right\} }\sigma _{\left\{
+3,4\right\} }}.
+\end{eqnarray*}
+
+Furthermore these in turn imply the relations
+
+\begin{equation*}
+\frac{\sigma _{\left\{ 2,3\right\} }}{\sigma _{\left\{ 1,3\right\} }}=\frac{%
+\sigma _{\left\{ 2,4\right\} }}{\sigma _{\left\{ 1,4\right\} }},\qquad \frac{%
+\sigma _{\left\{ 2,3\right\} }}{\sigma _{\left\{ 1,2\right\} }}=\frac{\sigma
+_{\left\{ 3,4\right\} }}{\sigma _{\left\{ 1,4\right\} }},\qquad \frac{\sigma
+_{\left\{ 2,4\right\} }}{\sigma _{\left\{ 1,2\right\} }}=\frac{\sigma
+_{\left\{ 3,4\right\} }}{\sigma _{\left\{ 1,3\right\} }}.
+\end{equation*}
+
+All these realtions have a strong correlation with the symmetries of four
+objects, namely that described realtion is the division of four objects into
+three pairs of two, that is the pairing%
+\begin{equation*}
+\left\{ \left\{ 1,2\right\} ,\left\{ 3,4\right\} \right\} ,~\left\{ \left\{
+1,3\right\} ,\left\{ 2,4\right\} \right\} ,~\left\{ \left\{ 1,4\right\}
+,\left\{ 2,3\right\} \right\}
+\end{equation*}
+
+\bigskip with respect to the order given.
+
+\subsection{Midpoints}
+
+By the Side midpoint theorem for a side $\overline{a_{i}a_{j}}$ where $%
+a_{i}=[v_{i}]$ and $a_{j}=[v_{j}]$ we are able to normalise $v_{i}$ and $%
+v_{j}$ such that $v_{i}^{2}=v_{j}^{2}$ giving the midpoints $m_{ij}\equiv
+\lbrack v_{i}+v_{j}]$ and $m_{ji}\equiv \lbrack v_{i}-v_{j}]$ of $\overline{%
+a_{i}a_{j}}$, where the ordering is arbitrary. In the end of the proof of
+the Side midpoints Theorem we say that the midpoints for the side $\overline{%
+a_{1}a_{2}}$ 
+
+Thus the side midpoints of the quadrangle $\overline{a_{1}a_{2}a_{3}a_{4}}$
+are
+
+\begin{eqnarray*}
+m_{12} &\equiv &\left[ 1-\sigma _{\left\{ 1,2\right\} }A_{1}:1-\sigma
+_{\left\{ 1,2\right\} }A_{1}:1+\sigma _{\left\{ 1,2\right\} }A_{1}\right] \\
+m_{21} &\equiv &\left[ 1+\sigma _{\left\{ 1,2\right\} }A_{1}:1+\sigma
+_{\left\{ 1,2\right\} }A_{1}:1-\sigma _{\left\{ 1,2\right\} }A_{1}\right] \\
+m_{34} &\equiv &\left[ 1-\sigma _{\left\{ 3,4\right\} }A_{3}:-1+\sigma
+_{\left\{ 3,4\right\} }A_{3}:1+\sigma _{\left\{ 3,4\right\} }A_{3}\right] \\
+m_{43} &\equiv &\left[ 1+\sigma _{\left\{ 3,4\right\} }A_{3}:-1-\sigma
+_{\left\{ 3,4\right\} }A_{3}:1-\sigma _{\left\{ 3,4\right\} }A_{3}\right] \\
+m_{13} &\equiv &\left[ 1+\sigma _{\left\{ 1,3\right\} }A_{1}:1-\sigma
+_{\left\{ 1,3\right\} }A_{1}:1+\sigma _{\left\{ 1,3\right\} }A_{1}\right] \\
+m_{31} &\equiv &\left[ 1-\sigma _{\left\{ 1,3\right\} }A_{1}:1+\sigma
+_{\left\{ 1,3\right\} }A_{1}:1-\sigma _{\left\{ 1,3\right\} }A_{1}\right] \\
+m_{24} &\equiv &\left[ -1-\sigma _{\left\{ 2,4\right\} }A_{2}:-1+\sigma
+_{\left\{ 2,4\right\} }A_{2}:1+\sigma _{\left\{ 2,4\right\} }A_{2}\right] \\
+m_{42} &\equiv &\left[ -1+\sigma _{\left\{ 2,4\right\} }A_{2}:-1-\sigma
+_{\left\{ 2,4\right\} }A_{2}:1-\sigma _{\left\{ 2,4\right\} }A_{2}\right] \\
+m_{14} &\equiv &\left[ 1-\sigma _{\left\{ 1,4\right\} }A_{1}:1+\sigma
+_{\left\{ 1,4\right\} }A_{1}:1+\sigma _{\left\{ 1,4\right\} }A_{1}\right] \\
+m_{41} &\equiv &\left[ 1+\sigma _{\left\{ 1,4\right\} }A_{1}:1-\sigma
+_{\left\{ 1,4\right\} }A_{1}:1-\sigma _{\left\{ 1,4\right\} }A_{1}\right] \\
+m_{23} &\equiv &\left[ -1+\sigma _{\left\{ 2,3\right\} }A_{2}:-1-\sigma
+_{\left\{ 2,3\right\} }A_{2}:1+\sigma _{\left\{ 2,3\right\} }A_{2}\right] \\
+m_{32} &\equiv &\left[ -1-\sigma _{\left\{ 2,3\right\} }A_{2}:-1+\sigma
+_{\left\{ 2,3\right\} }A_{2}:1-\sigma _{\left\{ 2,3\right\} }A_{2}\right]
+\end{eqnarray*}
+
+with corresponding side midlines
+
+\begin{align*}
+M_{12}& \equiv \left\langle a+d+f+\left( -a-d+f\right) \sigma _{\left\{
+1,2\right\} }A_{1}:d+b+g+\left( -d-b+g\right) \sigma _{\left\{ 1,2\right\}
+}A_{1}:f+g+c+\left( -f-g+c\right) \sigma _{\left\{ 1,2\right\}
+}A_{1}\right\rangle ,\;\;\;\;\; \\
+M_{21}& \equiv \left\langle a+d+f+\left( a+d-f\right) \sigma _{\left\{
+1,2\right\} }A_{1}:d+b+g+\left( d+b-g\right) \sigma _{\left\{ 1,2\right\}
+}A_{1}:f+g+c+\left( f+g-c\right) \sigma _{\left\{ 1,2\right\}
+}A_{1}\right\rangle , \\
+M_{34}& \equiv \left\langle a-d+f+\left( -a+d+f\right) \sigma _{\left\{
+3,4\right\} }A_{3}:d-b+g+\left( -d+b+g\right) \sigma _{\left\{ 3,4\right\}
+}A_{3}:f-g+c+\left( -f+g+c\right) \sigma _{\left\{ 3,4\right\}
+}A_{3}\right\rangle , \\
+M_{43}& \equiv \left\langle a-d+f+\left( a-d-f\right) \sigma _{\left\{
+3,4\right\} }A_{3}:d-b+g+\left( d-b-g\right) \sigma _{\left\{ 3,4\right\}
+}A_{3}:f-g+c+\left( f-g-c\right) \sigma _{\left\{ 3,4\right\}
+}A_{3}\right\rangle , \\
+M_{13}& \equiv \left\langle a+d+f+\left( a-d+f\right) \sigma _{\left\{
+1,3\right\} }A_{1}:d+b+g+\left( d-b+g\right) \sigma _{\left\{ 1,3\right\}
+}A_{1}:f+g+c+\left( f-g+c\right) \sigma _{\left\{ 1,3\right\}
+}A_{1}\right\rangle , \\
+M_{31}& \equiv \left\langle a+d+f+\left( -a+d-f\right) \sigma _{\left\{
+1,3\right\} }A_{1}:d+b+g+\left( -d+b-g\right) \sigma _{\left\{ 1,3\right\}
+}A_{1}:f+g+c+\left( -f+g-c\right) \sigma _{\left\{ 1,3\right\}
+}A_{1}\right\rangle , \\
+M_{24}& \equiv \left\langle -a-d+f+\left( -a+d+f\right) \sigma _{\left\{
+2,4\right\} }A_{2}:-d-b+g+\left( -d+b+g\right) \sigma _{\left\{ 2,4\right\}
+}A_{2}:-f-g+c+\left( -f+g+c\right) \sigma _{\left\{ 2,4\right\}
+}A_{2}\right\rangle , \\
+M_{42}& \equiv \left\langle -a-d+f+\left( a-d-f\right) \sigma _{\left\{
+2,4\right\} }A_{2}:-d-b+g+\left( d-b-g\right) \sigma _{\left\{ 2,4\right\}
+}A_{2}:-f-g+c+\left( f-g-c\right) \sigma _{\left\{ 2,4\right\}
+}A_{2}\right\rangle , \\
+M_{14}& \equiv \left\langle a+d+f+\left( -a+d+f\right) \sigma _{\left\{
+1,4\right\} }A_{1}:d+b+g+\left( -d+b+g\right) \sigma _{\left\{ 1,4\right\}
+}A_{1}:f+g+c+\left( -f+g+c\right) \sigma _{\left\{ 1,4\right\}
+}A_{1}\right\rangle , \\
+M_{41}& \equiv \left\langle a+d+f+\left( a-d-f\right) \sigma _{\left\{
+1,4\right\} }A_{1}:d+b+g+\left( d-b-g\right) \sigma _{\left\{ 1,4\right\}
+}A_{1}:f+g+c+\left( f-g-c\right) \sigma _{\left\{ 1,4\right\}
+}A_{1}\right\rangle , \\
+M_{23}& \equiv \left\langle -a-d+f+\left( a-d+f\right) \sigma _{\left\{
+2,3\right\} }A_{2}:-d-b+g+\left( d-b+g\right) \sigma _{\left\{ 2,3\right\}
+}A_{2}:-f-g+c+\left( f-g+c\right) \sigma _{\left\{ 2,3\right\}
+}A_{2}\right\rangle , \\
+M_{32}& \equiv \left\langle -a-d+f+\left( -a+d-f\right) \sigma _{\left\{
+2,3\right\} }A_{2}:-d-b+g+\left( -d+b-g\right) \sigma _{\left\{ 2,3\right\}
+}A_{2}:-f-g+c+\left( -f+g-c\right) \sigma _{\left\{ 2,3\right\}
+}A_{2}\right\rangle ,
+\end{align*}%
+The four sets of four circumcenters for the four triangles $\overline{%
+a_{1}a_{2}a_{3}},\overline{a_{1}a_{2}a_{4}},\overline{a_{1}a_{3}a_{4}}$ and $%
+\overline{a_{2}a_{3}a_{4}}$ are 
+\begin{align*}
+c41& \equiv \lbrack
+(f+k)(dk/m-ek/n-f+k):(e-n)(dk/m+ek/n+f+k):-(d+m)(dk/m+ek/n-f-k)] \\
+c42& \equiv \lbrack
+(f-k)(dk/m+ek/n+f+k):(e+n)(dk/m-ek/n-f+k):-(d+m)(dk/m-ek/n+f-k)] \\
+c43& \equiv \lbrack
+(f+k)(dk/m-ek/n+f-k):(e+n)(dk/m+ek/n-f-k):-(d-m)(dk/m+ek/n+f+k)] \\
+c44& \equiv \lbrack
+(f-k)(dk/m+ek/n-f-k):(e-n)(dk/m-ek/n+f-k):-(d-m)(dk/m-ek/n-f+k)] \\
+c31& \equiv \lbrack k^{2}-f^{2}+df(k(1+t)/n-1)-dk^{2}/m+ek(f-s+b)/n+eb: \\
+ef-de+fm+kn-fr-e^{2}k/n-dek/n-dc+fa+des/m& : \\
+& (d-m)(b-s-ds/m+m+dk/n+ek/n+d+f)]
+\end{align*}%
+\pagebreak 
+
+\section{\protect\bigskip Introduction}
+
+Throughout this thesis definitions will be given in bold and italics will be
+reserved for emphasis.\newline
+
+\textbf{Universal Geometry} Through relatively recent developements in the
+field of geometry, Norman Wildberger has shown that hyperbolic geometry can
+be considered as an agebraic projective geometry. In the following pages we
+will aim to define the fundamental objects of hyperbolic geometry and how
+they interact with each other.\newline
+
+\textbf{Projective Geometry} Universal Projective geometry is a geometry in
+the space of lines through the origin of a vector space with a metrical
+structure given by a symmetric bilinear form.\newline
+The complete algebraic nature of Universal geometry implies that we have an
+algebraic construction of Projective geometry. The focus of this chapter is
+to introduce the main objects of Universal Projective geometry and define
+their incidence relations in such a way to induce a complete duality between
+points and lines in this projective setting. This concept of complete
+duality is a defining characteristic of Projective geometry.\newline
+Universal geometry is given as an algebraic geometry, where the algebraic
+framework for Universal Projective geometry is given to us through \textit{%
+projective linear algebra}. Projective linear algebra is much like normal
+linear algebra but vectors and matrices are only defined up to non-zero
+scalar multiples. In this thesis the convention of writing the usual affine
+vectors and matrices with round brackets and projective vectors and matrices
+with square brackets. Hence for a given row vector $v=(1\;\;2\;\;3)$ we
+denote the associated projective vector $a=[v]$ as $a=[1\;\;2\;\;3]$ which
+by definition also equal to $[-1\;\;-2\;\;-3]$ or to $[2\;\;4\;\;6]$. We
+will also use bold labels to denote projective matrices: for for ordinary
+matrices 
+\begin{equation*}
+A=%
+\begin{pmatrix}
+1 & 1 & 2 \\ 
+0 & 2 & 0 \\ 
+0 & 0 & 1%
+\end{pmatrix}
+\;\;\text{and}\;\; B=%
+\begin{pmatrix}
+2 & -1 & -4 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 2%
+\end{pmatrix}%
+,
+\end{equation*}
+the associated projective matrices are 
+\begin{align*}
+\mathbf{A}=%
+\begin{bmatrix}
+1 & 1 & 2 \\ 
+0 & 2 & 0 \\ 
+0 & 0 & 1%
+\end{bmatrix}%
+= 
+\begin{bmatrix}
+-1 & -1 & -2 \\ 
+0 & -2 & 0 \\ 
+0 & 0 & -1%
+\end{bmatrix}%
+, \\
+\mathbf{B}=%
+\begin{bmatrix}
+2 & -1 & -4 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 2%
+\end{bmatrix}%
+= 
+\begin{bmatrix}
+4 & -2 & -8 \\ 
+0 & 2 & 0 \\ 
+0 & 0 & 4%
+\end{bmatrix}%
+\end{align*}
+Where infact $\mathbf{A}^{-1}=\mathbf{B}$ in the projective setting, as
+scalar multiplies can be disregarded. It turns out that addition of
+projective matrices is not well defined but multiplication is.\newline
+It is now important to introduce the main objects of projective geometry in
+a way that is consistent. A \textbf{(projective) point} is a \textit{non-zero%
+} projective row vector $a$ and will be written in either of two ways: 
+\begin{equation*}
+a\equiv[x\;y\;z]\equiv[x:y:z].
+\end{equation*}
+A \textbf{(projective) line} is a \textit{non-zero} projective column vector 
+$L$ written as 
+\begin{equation*}
+L\equiv%
+\begin{bmatrix}
+l \\ 
+m \\ 
+n%
+\end{bmatrix}%
+\equiv\langle l:m:n\rangle.
+\end{equation*}
+For the point $a=[x:y:z]$ and line $L=\langle l:m:n\rangle$ we say they are 
+\textbf{incident} precisely when 
+\begin{equation}
+aL\equiv[x\;y\;z]%
+\begin{bmatrix}
+l \\ 
+m \\ 
+n%
+\end{bmatrix}%
+\equiv0.
+\end{equation}
+Three or more lines are \textbf{concurrent} precisely when they are all
+incident with a point $a$, and dually three or more points are \textbf{%
+collinear} precisely when they are all incident with a line $L$.\newline
+The \textbf{join} $a_{1}a_{2}$ of distinct points $a_{1}\equiv[%
+x_{1}:y_{1}:z_{1}]$ and $a_{2}\equiv[x_{2}:y_{2}:z_{2}]$ is the line 
+\begin{equation*}
+a_{1}a_{2}\equiv[x_{1}:y_{1}:z_{1}]\times[x_{2}:y_{2}:z_{2}]\equiv\langle
+y_{1}z_{2}-z_{1}y_{2}:z_{1}x_{2}-x_{1}z_{2}:x_{1}y_{2}-y_{1}x_{2}\rangle.
+\end{equation*}
+The \textbf{meet} $L_{1}L_{2}$ of two distinct points $L_{1}\equiv\langle
+l_{1}:m_{1}:n_{1}\rangle$ and $l_{2}\equiv\langle l_{2}:m_{2}:n_{2}\rangle$
+is the point 
+\begin{equation*}
+L_{1}L_{2}\equiv\langle l_{1}:m_{1}:n_{1}\rangle\times\langle
+l_{2}:m_{2}:n_{2}\rangle\equiv[%
+m_{1}n_{2}-n_{1}m_{2}:n_{1}l_{2}-l_{1}n_{2}:l_{1}m_{2}-m_{1}l_{2}].
+\end{equation*}
+The cross here is the usual Euclidean cross product which is well defined.
+This also induces the result that \textit{the join $a_{1}a_{2}$ is a unique
+line which is incident with the points $a_{1}$ and $a_{2}$}. Dually \textit{%
+the meet $L_{1}L_{2}$ is a unique point which is incident with the lines $%
+L_{1}$ and $L_{2}$}.
+
+\pagebreak A \textbf{3-proportion} $x:y:z$ is an ordered triple of numbers $%
+x,y$ and $z$, \textit{not all zero}, with the convention that for any
+non-zero number $\lambda$ 
+\begin{equation*}
+x:y:z=\lambda x:\lambda y:\lambda z.
+\end{equation*}
+This is equivalent to saying that 
+\begin{equation*}
+x_{1}:y_{1}:z_{1}=x_{2}:y_{2}:z_{2}
+\end{equation*}
+precisely when the following conditions hold 
+\begin{equation}  \label{proportionequal}
+x_{1}y_{2}-x_{2}y_{1}=0\;\;y_{1}z_{2}-y_{2}z_{1}=0\;%
+\;z_{1}x_{2}-z_{2}x_{1}=0.
+\end{equation}
+
+Now that the notion of a proportion is set up we can define the two main
+hyperbolic objects. A \textbf{(hyperbolic) point} is a 3-proportion $a\equiv[%
+x:y:z]$ enclosed in square brackets. Where a \textbf{(hyperbolic) line} is a
+3-proportion $L\equiv(l:m:n)$ enclosed in round brackets.\newline
+
+The definitions of points and lines is equivalent to that of projective
+geometry, where the two types of geometry differ becomes obvious in the
+notion of duality. The point $a\equiv[x,y,z]$ is \textbf{dual} to the line $%
+L\equiv(l:m:n)$ precisely when 
+\begin{equation*}
+x:y:z=l:m:n.
+\end{equation*}
+In this case we say that $a^{\perp}=L$ or $L^{\perp}=a$.\newline
+From the definition of points and lines we get that each point is dual to
+exactly one line, and conversely. This new idea of duality induces the same
+property that \textit{there is a complete duality in the theory between
+points and lines}, within this new projective geometry.\newline
+
+Now that we have set up the basic objects of hyperbolic geometry, an
+important step is to define the incidence of these objects with each other.
+The following theorems and definitions aim to do exactly that.\newline
+
+The point $a\equiv[x:y:z]$ \textbf{lies on} the line $L\equiv(l:m:n)$, or
+equivalently $L$ \textbf{passes through} $a$, precisely when 
+\begin{equation*}
+lx+my-nz=0.
+\end{equation*}%
+\newline
+
+Points $a_{1}\equiv[x_{1}:y_{1}:z_{1}]$ and $a_{2}\equiv[x_{2}:y_{2}:z_{2}]$
+are \textbf{perpendicular} precisely when 
+\begin{equation*}
+x_{1}x_{2}+y_{1}y_{2}-z_{1}z_{2}=0.
+\end{equation*}
+This is equivalent to the condition that $a_{1}$ is incident with $%
+a_{2}^{\perp}$, or that $a_{2}$ is incident with $a_{1}^{\perp}$.\newline
+
+Similarly the line $L_{1}\equiv(l_{1}:m_{1}:n_{1})$ and $L_{2}%
+\equiv(l_{2}:m_{2}:n_{2})$ are \textbf{perpendicular} precisely when 
+\begin{equation*}
+l_{1}l_{2}+m_{1}m_{2}-n_{1}n_{2}=0.
+\end{equation*}
+This is equivalent to the condition that $L_{1}$ is incident with $%
+L_{2}^{\perp}$, or that $L_{2}$ is incident with $L_{1}^{\perp}$.\newline
+
+We will denote by $\mathbb{F}^{3}$ the 3-dimensional space of \textbf{vectors%
+} $v\equiv(x,y,z)$. If $v\equiv(x,y,z)$ has coordinates which are not all
+zero, then let $[v]\equiv[x:y:z]$ denote the (hyperbolic) point, and $%
+(v)\equiv(l:m:n)$ denote the (hyperbolic) line.\newline
+
+\begin{theorem}[Joins of points]
+If $a_{1}\equiv[x_{1}:y_{1}:z_{1}]$ and $a_{2}\equiv[x_{2}:y_{2}:z_{2}]$ are
+distinct points, then there is exactly one line $L$ which passes through
+them both, namely 
+\begin{equation*}
+L\equiv
+a_{1}a_{2}%
+\equiv(y_{1}z_{2}-y_{2}z_{1}:z_{1}x_{2}-z_{2}x_{1}:x_{2}y_{1}-x_{1}y_{2}).
+\end{equation*}
+\end{theorem}
+
+The line $L\equiv a_{1}a_{2}$ is the \textbf{join} of the points $a_{1}$ and 
+$a_{2}$.\newline
+
+\begin{theorem}[Meets of lines]
+If $L_{1}\equiv(l_{1}:m_{1}:n_{1})$ and $L_{2}\equiv(l_{2}:m_{2}:n_{2})$ are
+distinct lines, then there is exactly one point $a$ which lies on both,
+namely 
+\begin{equation*}
+a\equiv L_{1}L_{2}\equiv[%
+m_{1}n_{2}-m_{2}n_{1}:n_{1}l_{2}-n_{2}l_{1}:l_{2}m_{1}-l_{1}m_{2}].
+\end{equation*}
+\end{theorem}
+
+The point $a\equiv L_{1}L_{2}$ is the \textbf{meet} of the lines $L_{1}$ and 
+$L_{2}$. These definitions give the following consequence, for any distinct
+points $a_{1}$ and $a_{2}$, and distinct lines $L_{1}$ and $L_{2}$, 
+\begin{equation*}
+(a_{1}a_{2})^{\perp}=a_{1}^{\perp}a_{2}\perp,\;\;\text{and}%
+\;\;(L_{1}L_{2})^{\perp}=L_{1}^{\perp}L_{2}^{\perp}.
+\end{equation*}
+
+Three or more points which lie on a common line are \textbf{collinear}.
+Three or more lines which pass through a common point are \textbf{concurrent}%
+.\newline
+
+\begin{theorem}[Collinear points]
+The points $a_{1}\equiv[x_{1}:y_{1}:z_{1}],\; a_{2}\equiv[x_{2}:y_{2}:z_{2}]$
+and $a_{3}\equiv[x_{3}:y_{3}:z_{3}]$ are collinear precisely when 
+\begin{equation*}
+x_{1}y_{2}z_{3}-x_{1}y_{3}z_{2}+x_{2}y_{3}z_{1}-x_{2}y_{1}z_{3}+x_{3}y_{1}z_{2}-x_{3}y_{2}z_{1}=0.
+\end{equation*}
+\end{theorem}
+
+\begin{theorem}[Concurrent lines]
+The lines $L_{1}\equiv(l_{1}:m_{1}:n_{1}),\; L_{2}\equiv(l_{2}:m_{2}:n_{2})$
+and $L_{3}\equiv(l_{3}:m_{3}:n_{3})$ are concurrent precisely when 
+\begin{equation*}
+l_{1}m_{2}n_{3}-l_{1}m_{3}n_{2}+l_{2}m_{3}n_{1}-l_{2}m_{1}n_{3}+l_{3}m_{1}n_{2}-l_{3}m_{2}n_{1}=0.
+\end{equation*}
+\end{theorem}
+
+Now that the fundamental objects and there interactions are defined will
+begin to classify these objects. Firstly we say that the point $a\equiv[x:y:z%
+]$ is \textbf{null} precisely when it lies on its dual line, that is when 
+\begin{equation*}
+x^{2}+y^{2}-z^{2}=0,
+\end{equation*}
+and analogously that the line $L\equiv(l:m:n)$ is \textbf{null} precisely
+when it passes through its dual point, that is when 
+\begin{equation*}
+l^{2}+m^{2}-n^{2}=0.
+\end{equation*}
+The dual of a null point is a null line and conversely. I'll now use the
+following theorem to further this classification of objects.\newline
+
+\begin{theorem}[Line through null points, and Point on null lines]
+Any line $L$ passes through at most two null points, and any point $a$ lies
+on at most two null lines.
+\end{theorem}
+
+Therefore we have a naturally classification of points and lines. For a
+non-null point $a$ we say that it is \textbf{internal} precisely when it
+lies on no null lines, and is \textbf{external} precisely when it lies on 2
+null lines. Whereas a non-null line $L$ is said to be \textbf{external}
+precisely when it passes through no null points and \textbf{internal}
+precisely when it passes through no null points. That is all points and
+lines are either \textit{internal, null} or \textit{external}.\newline
+Unlike null points and lines we have that the dual of an internal point is
+an external line, and the dual of an external point is an internal line and
+conversely.
+
+\pagebreak
+
+We now go onto define the geometric objects of hyperbolic geometry.\newline
+
+A \textbf{side} $\overline{a_{1}a_{2}}$ is a set $\{a_{1},a_{2}\}$ of two
+points. A \textbf{vertex} $\overline{L_{1}L_{2}}$ is a set $\{L_{1},L_{2}\}$
+of two lines. From the definition it is clear that 
+\begin{equation*}
+\overline{a_{1}a_{2}}=\overline{a_{2}a_{1}}\;\; \text{and}\;\;\overline{%
+L_{1}L_{2}}=\overline{L_{2}L_{1}}.
+\end{equation*}
+For a side $\overline{a_{1}a_{2}}$ we say that $a_{1}a_{2}$ is the \textbf{%
+line} of the side. Whilst for a vertex $\overline{L_{1}L_{2}}$ we say that $%
+L_{1}L_{2}$ is the \textbf{point} of the vertex.\newline
+
+Much like the fundamental objects, we can continue to classify these new
+objects. We say that a side $\overline{a_{1}a_{2}}$ is a \textbf{nil side}
+precisely when at least one of $a_{1}$ or $a_{2}$ is a null point. Thus we
+are able to further classify sides, such as the side $\overline{a_{1}a_{2}}$
+as a \textbf{singly-nil side}, or a \textbf{doubly-nil side} respectively,
+precisely when exactly one of the points $a_{1}$ or $a_{2}$ are null, or
+exactly both of the points $a_{1}$ and $a_{2}$ are null points respectively.
+Similarly we are able to classify the vertex $\overline{L_{1}L_{2}}$ as a 
+\textbf{singly-nil vertex} or a \textbf{doubly-nil vertex} in a natural way.%
+\newline
+
+\begin{theorem}[Perpendicular point]
+For any side $\overline{a_{1}a_{2}}$ there is a unique point $p$ which is
+perpendicular to both $a_{1}$ and $a_{2}$, namely 
+\begin{equation*}
+p\equiv a_{1}^{\perp}a_{2}^{\perp}=(a_{1}a_{2})^{\perp}.
+\end{equation*}
+\end{theorem}
+
+The point $p$ is the \textbf{perpendicular point} of $\overline{a_{1}a_{2}}$%
+. It is possible that $p$ may lie on $a_{1}a_{2}$; this occurs precisely
+when $a_{1}a_{2}$ is a null line.\newline
+
+\begin{theorem}[Perpendicular line]
+For any vertex $\overline{L_{1}L_{2}}$ there is a unique line $P$ which is
+perpendicular to both $L_{1}$ and $L_{2}$, namely 
+\begin{equation*}
+P\equiv L_{1}^{\perp}L_{2}^{\perp}=(L_{1}L_{2})^{\perp}.
+\end{equation*}
+\end{theorem}
+
+The line $P$ is the \textbf{perpendicular line} of $\overline{L_{1}L_{2}}$.
+It also may happen that $P$ passes through $L_{1}L_{2}$, which occurs
+precisely when $L_{1}L_{2}$ is a null point.\newline
+
+\pagebreak
+
+As we are in a projective setting, the definition of a (hyperbolic)
+quadrangle (quadrilateral respectively,) will come from the projective
+definition of a complete quadrangle (quadrilateral respectively.)\newline
+
+A \textbf{quadrangle} $\overline{a_{1}a_{2}a_{3}a_{4}}$ is a set $%
+\{a_{1},a_{2},a_{3},a_{4}\}$ of points which has the property that no three
+are collinear. A \textbf{quadrilateral} $\overline{L_{1}L_{2}L_{3}L_{4}}$ is
+a set $\{L_{1},L_{2},L_{3},L_{4}\}$ of lines which has the property that no
+three are concurrent.\newline
+
+The quadrangle $\square\equiv \overline{a_{1}a_{2}a_{3}a_{4}}$ has a \textbf{%
+dual quadrilateral} $\square^{\perp}\equiv\overline{a_{1}^{\perp}a_{2}^{%
+\perp}a_{3}^{\perp}a_{4}^{\perp}}$ consisting of four \textbf{dual lines} of
+the quadrangle, namely $a_{1}^{\perp},a_{2}^{\perp},a_{3}^{\perp}$ and $%
+a_{4}^{\perp}$.\newline
+
+The quadrilateral $\lozenge\equiv \overline{L_{1}L_{2}L_{3}L_{4}}$ has a 
+\textbf{dual quadrangle} $\lozenge^{\perp}\equiv\overline{%
+L_{1}^{\perp}L_{2}^{\perp}L_{3}^{\perp}L_{4}^{\perp}}$ consisting of four 
+\textbf{dual points} of the quadrilateral, namely $L_{1}^{\perp},L_{2}^{%
+\perp},L_{3}^{\perp}$ and $L_{4}^{\perp}$.\newline
+
+There are 6 distinct sides of a quadrangle, namely $\overline{a_{1}a_{2}},%
+\overline{a_{3}a_{4}},$ $\overline{a_{1}a_{3}},\overline{a_{2}a_{4}},%
+\overline{a_{1}a_{4}}$ and $\overline{a_{2}a_{3}}$. We can naturally divide
+these 6 sides into 3 pairs, $\{\overline{a_{1}a_{2}},\overline{a_{3}a_{4}}\}$%
+, $\{\overline{a_{1}a_{3}},\overline{a_{2}a_{4}}\}$, and $\{\overline{%
+a_{1}a_{4}},\overline{a_{2}a_{3}}\}$. The intersection of these pairs of
+sides give three new points called the \textbf{diagonal points} of the
+quadrangle.\newline
+Similarly there are 6 distinct vertices of a quadrilateral, namely $%
+\overline{L_{1}L_{2}},\overline{L_{3}L_{4}},$ $\overline{L_{1}L_{3}},%
+\overline{L_{2}L_{4}},\overline{L_{1}L_{4}}$and $\overline{L_{2}L_{3}}$.
+These too have a natural divide into 3 pairs, $\{\overline{L_{1}L_{2}},%
+\overline{L_{3}L_{4}}\}$, $\{\overline{L_{1}L_{3}},\overline{L_{2}L_{4}}\}$,
+and $\{\overline{L_{1}L_{4}},\overline{L_{2}L_{3}}\}$. The join of these
+pairs of vertices give three new lines called the \textbf{diagonal lines} of
+the quadrilateral.\newline
+
+\begin{theorem}[Diagonal triangle]
+The diagonal points $d_{1}\equiv(a_{1}a_{4})(a_{2}a_{3}),$\newline
+$d_{2}\equiv(a_{2}a_{4})(a_{1}a_{3})$ and $d_{3}%
+\equiv(a_{3}a_{4})(a_{1}a_{2})$ of the quadrangle $\square\equiv\overline{%
+a_{1}a_{2}a_{3}a_{4}}$ form the triangle $\triangle\equiv\overline{%
+d_{1}d_{2}d_{3}}$.
+\end{theorem}
+
+\begin{proof}
+\begin{itemize}
+\item Use join of points and meets of lines to write out each $d_{i}$.
+\item Condition for $d_{i}$s to be collinear
+\item $a_{i}$s non collinear follows $d_{i}$s non collinear.
+\end{itemize}
+\end{proof}
+
+\begin{theorem}[Diagonal trilateral]
+The diagonal lines $D_{1}\equiv(L_{1}L_{4})(L_{2}L_{3}),$\newline
+$D_{2}\equiv(L_{2}L_{4})(L_{1}L_{3})$ and $D_{3}%
+\equiv(L_{3}L_{4})(L_{1}L_{2})$ of the quadrilateral $\lozenge\equiv%
+\overline{L_{1}L_{2}L_{3}L_{4}}$ form the trilateral $\triangledown\equiv%
+\overline{D_{1}D_{2}D_{3}}$.
+\end{theorem}
+
+\begin{proof}
+Dual to the previous theorem.
+\end{proof}
+
+\pagebreak
+
+\section{\protect\bigskip Geogebra Tools}
+
+Tools that I've made to be used in GeoGebra for use in exploring Universal
+Hyperbolic geometry. Firstly I will present a list of all the tool that I
+have created within GeoGebra (using it's tool creating system), and then I
+will present how I created them.\newline
+
+\begin{itemize}
+\item Polar Line (Polar)
+
+\item Pole Point (Pole)
+
+\item Reflections (Reflect\_PiP, Reflect\_PiL, Reflect\_LiP, Reflect\_LiL)
+
+\item Midpoints
+
+\item Sydpoint
+
+\item Smydpoint
+
+\item Diagonal Triangle (DiagTri)
+\end{itemize}
+
+\textbf{Polar Line}\newline
+For the \textbf{Polar} tool I used the pre-installed \textit{Polar or
+Diameter Line} tool in GeoGebra to create the Polar Line to a Point, by
+selecting the given point and then the absolute conic, \textit{Polar($l,c$)}.%
+\newline
+\definecolor{qqqqff}{rgb}{0,0,1} %
+\definecolor{dcrutc}{rgb}{0.86275,0.07843,0.23529} 
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-1.69121,-1.11787) rectangle (2.6406,1.12308);
+\draw [color=dcrutc] (0,0) circle (1cm);
+\draw [domain=-1.69121:2.6406] plot(\x,{(--1--1.12191*\x)/-0.8384});
+\begin{scriptsize}
+\fill [color=qqqqff] (-1.12191,-0.8384) circle (1.5pt);
+\draw[color=qqqqff] (-1.40121,-0.80476) node {$A$};
+\end{scriptsize}
+\end{tikzpicture}
+
+\textbf{Pole Point}\newline
+The \textbf{Pole} tool was created by once again using the pre-installed 
+\textit{Polar or Diameter Line} tool on GeoGebra, and is used for producing
+a Pole point to a line. Given a line $L$ and the absolute conic $c$, using 
+\textit{Polar or Diameter Line} on $L$ and $c$ produces a new line $L_{1}$
+which is perpendicular (in the UHG sense) to $L$ and a diameter of $c$. The 
+\textit{Intesection of two Objects} tool on $L$ and $L_{1}$ gives the point $%
+l_{1}=(LL_{1})$. Now using \textit{Polar} on $l_{1}$ gives the line $L_{2}$
+perpendicular to $L_{1}$ and parallel to $L$. The point $l=(L_{1}L_{2})=L^{%
+\perp}$ is the pole of $L$.\newline
+\textit{Pole} is used by selecting the given line $L$ and then the absolute
+conic $c$, \textit{Pole($L,c$)}.\newline
+
+\textbf{Reflections}\newline
+The \textbf{Reflect\_PiP} is a tool to used to find the reflection of a
+point in a point. Given a reflecting point $a$, reflecter point $b$ and
+absolute $c$. First create the line $(ab)$ through the \textit{Line Between
+two Points} tool. Then use \textit{Polar or Diameter Line} with $(ab)$ and $%
+c $ to create $D_{1}$. If $D_{1}$ intersects $c$ (then it will intersect $c$
+twice), we are able to construct a cycle quadrangle from one of the
+intersection points and the points $a$ and $b$. We do this by choosing one
+of the intersection points, call it $i_{1}$ and then join it to both $a$ and 
+$b$, giving the lines $I_{2}$ and $I_{1}$ respectfully. The lines $I_{2}$
+and $I_{1}$ will then intersect $c$ once more, say at $i_{2}$ and $i_{4}$
+respectfully. If we let $I_{3}=i_{2}b$ then we get another null point $%
+i_{3}\in \{I_{3}c\}$. These four points give us the cyclic quadrangle $%
+\overline{i_{1}i_{2}i_{3}i_{4}}$ whose diagonal points either lie on $%
+B=b^{\perp }$ or are $b$ itself. Finally the reflection of $a$ in $b$ is $%
+a_{1}^{\prime }=I_{4}(ab)=(i_{3}i_{4})(ab)$.\newline
+If $D_{1}$ does not intersect $c$ (possible if $c$ is a hyperbola) then we
+use \textit{Polar or Diameter Line} with $D_{1}$ and $c$ to create another
+diameter $D_{2}$ which is perpendicular to $D_{1}$. We can then use the same
+constuction as above to create $a_{2}^{\prime }$.\newline
+If both $D_{1}$ and $D_{2}$ intersect $c$ then clearly $a_{1}^{\prime
+}=a_{2}^{\prime }$. Thus to cover all cases and ensure that the tool
+produces one point we use the inbuilt \textit{If, Then Logic} tool as
+follows, if $a_{1}^{\prime }$ is defined then $a^{\prime }=a_{1}^{\prime }$
+otherwise $a^{\prime }=a_{2}$.\newline
+Since the reflection in the point $a$ is equivalent to the reflection in the
+line $A=a^{\perp }$ the rest of the tools \textbf{Reflect\_PiL, Reflect\_LiP}
+and \textbf{Reflect\_LiL} were created using the \textit{Polar, Pole} and 
+\textit{Reflect\_PiP} tools.
+
+\section{Address later}
+
+these are wrong at the moment, not sure if it is crucial for me to put them
+in anyway
+
+spreads 
+\begin{align*}
+S(a_{1}a_{2},a_{1}a_{3})& =\frac{aD}{(ab-d^{2})(ac-e^{2})}, \\
+S(a_{1}a_{2},a_{1}a_{4})& =\frac{aD}{(ab-d^{2})(a(b+c+2f)-(d+e)^{2})}, \\
+S(a_{1}a_{3},a_{1}a_{4})& =\frac{aD}{(ac-e^{2})(a(b+c+2f)-(d+e)^{2})}, \\
+S(a_{1}a_{2},a_{2}a_{3})& =\frac{bD}{(ab-d^{2})(bc-f^{2})}, \\
+S(a_{1}a_{2},a_{2}a_{4})& =\frac{bD}{(ab-d^{2})(b(a+c+2e)-(d+f)^{2})}, \\
+S(a_{2}a_{3},a_{2}a_{3})& =\frac{bD}{(bc-f^{2})(b(a+c+2e)-(d+f)^{2})}, \\
+S(a_{1}a_{3},a_{2}a_{3})& =\frac{cD}{(ac-e^{2})(bc-f^{2})}, \\
+S(a_{1}a_{3},a_{3}a_{4})& =\frac{cD}{(ac-e^{2})(c(a+b+2d)-(e+f)^{2})}, \\
+S(a_{2}a_{3},a_{3}a_{4})& =\frac{cD}{(bc-f^{2})(c(a+b+2d)-(e+f)^{2})}, \\
+S(a_{1}a_{4},a_{2}a_{4})& =\frac{(a+b+c+2(e+d+f))D}{%
+(a(b+c+2f)-(d+e)^{2})(b(a+c+2e)-(d+f)^{2})}, \\
+S(a_{1}a_{4},a_{3}a_{4})& =\frac{(a+b+c+2(e+d+f))D}{%
+(c(a+b+2d)-(e+f)^{2})(b(a+c+2e)-(d+f)^{2})}, \\
+S(a_{2}a_{4},a_{3}a_{4})& =\frac{(a+b+c+2(e+d+f))D}{%
+(a(b+c+2f)-(d+e)^{2})(c(a+b+2d)-(e+f)^{2})}.
+\end{align*}
+
+\begin{align*}
+1-S(a_{1}a_{2},a_{1}a_{3})& =\frac{(af-de)^{2}}{(ab-d^{2})(ac-e^{2})}, \\
+1-S(a_{1}a_{2},a_{1}a_{4})& =\frac{(af-de)^{2}}{%
+(ab-d^{2})(a(b+c+2f)-(d+e)^{2})}, \\
+1-S(a_{1}a_{3},a_{1}a_{4})& =\frac{(af-de)^{2}}{%
+(ac-e^{2})(a(b+c+2f)-(d+e)^{2})}, \\
+1-S(a_{1}a_{2},a_{2}a_{3})& =\frac{(be-df)^{2}}{(ab-d^{2})(bc-f^{2})}, \\
+1-S(a_{1}a_{2},a_{2}a_{4})& =\frac{(be-df)^{2}}{%
+(ab-d^{2})(b(a+c+2e)-(d+f)^{2})}, \\
+1-S(a_{2}a_{3},a_{2}a_{3})& =\frac{(be-df)^{2}}{%
+(bc-f^{2})(b(a+c+2e)-(d+f)^{2})}, \\
+1-S(a_{1}a_{3},a_{2}a_{3})& =\frac{(cd-ef)^{2}}{(ac-e^{2})(bc-f^{2})}, \\
+1-S(a_{1}a_{3},a_{3}a_{4})& =\frac{(cd-ef)^{2}}{%
+(ac-e^{2})(c(a+b+2d)-(e+f)^{2})}, \\
+1-S(a_{2}a_{3},a_{3}a_{4})& =\frac{(cd-ef)^{2}}{%
+(bc-f^{2})(c(a+b+2d)-(e+f)^{2})}, \\
+1-S(a_{1}a_{4},a_{2}a_{4})& =\frac{(ab-d^{2}+af+be-cd-de-df+ef)^{2}}{%
+(a(b+c+2f)-(d+e)^{2})(b(a+c+2e)-(d+f)^{2})}, \\
+1-S(a_{1}a_{4},a_{3}a_{4})& =\frac{(ac-e^{2}+af-be+cd-de+df-ef)^{2}}{%
+(c(a+b+2d)-(e+f)^{2})(b(a+c+2e)-(d+f)^{2})}, \\
+1-S(a_{2}a_{4},a_{3}a_{4})& =\frac{(bc-f^{2}-af+be+cd+de-df-ef)^{2}}{%
+(a(b+c+2f)-(d+e)^{2})(c(a+b+2d)-(e+f)^{2})}.
+\end{align*}
+
+\end{document}
