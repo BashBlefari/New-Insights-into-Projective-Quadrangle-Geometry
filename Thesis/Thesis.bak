@@ -16,7 +16,7 @@
 %TCIDATA{Version=5.50.0.2960}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Wednesday, June 29, 2016 18:46:51}
+%TCIDATA{LastRevised=Wednesday, June 29, 2016 18:20:13}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{ComputeDefs=
 %$m_{{}}$
@@ -314,28 +314,6 @@ relations}.
 Hence the side midpoints of the quadrangle $\overline{a_{1}a_{2}a_{3}a_{4}}$
 have the form
 
-$(2\ast f\symbol{94}2\ast (a+b+c-2\ast d+2\ast f-2\ast g)\symbol{94}%
-(1/2)-2\ast f\symbol{94}2\ast (a+b+c+2\ast d+2\ast f+2\ast g)\symbol{94}%
-(1/2)-2\ast a\ast c\ast (a+b+c-2\ast d+2\ast f-2\ast g)\symbol{94}(1/2)+$
-
-$2\ast a\ast c\ast (a+b+c+2\ast d+2\ast f+2\ast g)\symbol{94}(1/2)-2\ast
-c\ast d\ast (a+b+c-2\ast d+2\ast f-2\ast g)\symbol{94}(1/2)+2\ast c\ast
-d\ast (a+b+c+2\ast d-2\ast f-2\ast g)\symbol{94}(1/2)-$
-
-$2\ast a\ast g\ast (a+b+c+2\ast d-2\ast f-2\ast g)\symbol{94}(1/2)-2\ast
-a\ast g\ast (a+b+c+2\ast d+2\ast f+2\ast g)\symbol{94}(1/2)+2\ast d\ast
-f\ast (a+b+c+2\ast d-2\ast f-2\ast g)\symbol{94}(1/2)+$
-
-$2\ast d\ast f\ast (a+b+c+2\ast d+2\ast f+2\ast g)\symbol{94}(1/2)+2\ast
-f\ast g\ast (a+b+c-2\ast d+2\ast f-2\ast g)\symbol{94}(1/2)-2\ast f\ast
-g\ast (a+b+c+2\ast d-2\ast f-2\ast g)\symbol{94}(1/2))/(a+b+c+2\ast d+2\ast
-f+2\ast g)\symbol{94}(1/2)=\allowbreak \frac{1}{2}\frac{f}{a+b+c+2d+2f+2g}%
-\left(
-2a^{2}d+2a^{2}g+4abd+4abg+4acd+4acg+8ad^{2}+8adf+8adg+8afg-ag+2b^{2}d+2b^{2}g+4bcd+4bcg+8bd^{2}+8bdf+8bdg+8bfg-bg+2c^{2}d+2c^{2}g+8cd^{2}+8cdf+8cdg+8cfg-cg+8d^{3}+16d^{2}f+8d^{2}g+8df^{2}+16dfg-8dg^{2}-2dg+8f^{2}g+2fg-8g^{3}+2g^{2}\right) \allowbreak 
-$ : $\frac{1}{2}f\frac{%
-8ad^{2}+2a^{2}d+8bd^{2}+2b^{2}d+8cd^{2}+2c^{2}d+2a^{2}g+2b^{2}g+8df^{2}+2c^{2}g+16d^{2}f-8dg^{2}+8d^{2}g+8f^{2}g-ag-bg-cg-2dg+2fg+8d^{3}+2g^{2}-8g^{3}+4abd+4acd+4bcd+4abg+4acg+8adf+8adg+4bcg+8bdf+8bdg+8cdf+8afg+8cdg+8bfg+8cfg+16dfg%
-}{a+b+c+2d+2f+2g}\allowbreak $
-
 \begin{eqnarray*}
 m_{12} &\equiv &\left[ 1-\sigma _{\left\{ 1,2\right\} }A_{1}:1-\sigma
 _{\left\{ 1,2\right\} }A_{1}:1+\sigma _{\left\{ 1,2\right\} }A_{1}\right] =%
@@ -366,10 +344,7 @@ m_{31} &\equiv &\left[ 1-\sigma _{\left\{ 1,3\right\} }A_{1}:1+\sigma
 _{\left\{ 1,3\right\} }A_{1}:1-\sigma _{\left\{ 1,3\right\} }A_{1}\right] =%
 \left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma
 _{\left\{ 1,4\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{
-1,4\right\} }-\sigma _{\left\{ 3,4\right\} }\right] 
-\end{eqnarray*}
-
-\begin{eqnarray*}
+1,4\right\} }-\sigma _{\left\{ 3,4\right\} }\right]  \\
 m_{24} &\equiv &\left[ -1-\sigma _{\left\{ 2,4\right\} }A_{2}:-1+\sigma
 _{\left\{ 2,4\right\} }A_{2}:1+\sigma _{\left\{ 2,4\right\} }A_{2}\right] =%
 \left[ -\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,4\right\}
@@ -463,19 +438,7 @@ M_{32}& \equiv \left\langle -a-d+f+\left( -a+d-f\right) \sigma _{\left\{
 \end{align*}%
 The four sets of four circumcenters for the four triangles $\overline{%
 a_{1}a_{2}a_{3}},\overline{a_{1}a_{2}a_{4}},\overline{a_{1}a_{3}a_{4}}$ and $%
-\overline{a_{2}a_{3}a_{4}}$ are
-
-\bigskip 
-
-\begin{eqnarray*}
-c_{41} &\equiv &M_{21}M_{32}=M_{32}M_{31},\qquad c_{42}\equiv
-M_{21}M_{23}=M_{23}M_{13},\qquad c_{43}\equiv
-M_{12}M_{32}=M_{32}M_{13},\qquad c_{44}\equiv M_{12}M_{23}=M_{23}M_{31} \\
-c_{31} &\equiv &M_{21}M_{24}=M_{24}M_{14},\qquad c_{32}\equiv
-M_{21}M_{42}=M_{42}M_{41}, \\
-c_{21} &\equiv &M_{32}M_{34}=M_{34}M_{14},\qquad c_{22}\equiv M_{13}M \\
-c_{11} &\equiv &M_{32}M_{34}=M_{34}M_{24},
-\end{eqnarray*}
+\overline{a_{2}a_{3}a_{4}}$ are 
 \begin{align*}
 c41& \equiv \lbrack
 (f+k)(dk/m-ek/n-f+k):(e-n)(dk/m+ek/n+f+k):-(d+m)(dk/m+ek/n-f-k)] \\

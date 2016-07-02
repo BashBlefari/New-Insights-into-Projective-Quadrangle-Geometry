@@ -18,11 +18,15 @@ d1=smeet(L12,L34);d2=smeet(L13,L24);d3=smeet(L14,L23);
 [m14,m41,M14,M41]=midpoint(a1,a4,A);[m23,m32,M23,M32]=midpoint(a2,a3,A);
 
 % circumcenters
-c41=tmeet(M21,M32,M31);c42=tmeet(M21,M23,M13);c43=tmeet(M12,M32,M13);c44=tmeet(M12,M23,M31);
-c31=tmeet(M21,M24,M14);c32=tmeet(M21,M42,M41);c33=tmeet(M12,M42,M14);c34=tmeet(M12,M24,M41);
-c21=tmeet(M31,M34,M14);c22=tmeet(M13,M34,M41);c23=tmeet(M13,M43,M14);c24=tmeet(M31,M43,M41);
-c11=tmeet(M32,M34,M24);c12=tmeet(M23,M34,M42);c13=tmeet(M32,M43,M42);c14=tmeet(M23,M43,M24);
+c411=tmeet(M32,M31,M21);c422=tmeet(M23,M13,M21);c433=tmeet(M23,M31,M12);c444=tmeet(M32,M13,M12);
+c313=tmeet(M21,M24,M14);c324=tmeet(M21,M42,M41);c331=tmeet(M12,M24,M41);c342=tmeet(M12,M42,M14);
+c214=tmeet(M14,M31,M34);c223=tmeet(M41,M13,M34);c232=tmeet(M41,M31,M43);c241=tmeet(M14,M13,M43);
+c112=tmeet(M34,M24,M32);c121=tmeet(M34,M42,M23);c134=tmeet(M43,M24,M23);c143=tmeet(M43,M42,M32);
 
+% c411=tmeet(M32,M31,M21);c422=tmeet(M23,M13,M21);c433=tmeet(M23,M31,M12);c444=tmeet(M32,M13,M12);
+% c314=tmeet(M21,M24,M14);c323=tmeet(M21,M42,M41);c332=tmeet(M12,M24,M41);c341=tmeet(M12,M42,M14);
+% c212=tmeet(M14,M31,M34);c221=tmeet(M41,M13,M34);c234=tmeet(M41,M31,M43);c243=tmeet(M14,M13,M43);
+% c113=tmeet(M34,M24,M32);c124=tmeet(M34,M42,M23);c131=tmeet(M43,M24,M23);c142=tmeet(M43,M42,M32);
 %bimedains
 %inside {{m12,m34},{m13,m24},{m14,m23}}, 
 %outside {{m21,m43},{m31,m42},{m41,m32}}
