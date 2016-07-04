@@ -17,12 +17,20 @@ a1=[1 1 1];a2=[-1 -1 1];a3=[1 -1 1];a4=[-1 1 1];
 [m13,m31,M13,M31]=midpoint(a1,a3,A);[m24,m42,M24,M42]=midpoint(a2,a4,A);
 [m14,m41,M14,M41]=midpoint(a1,a4,A);[m23,m32,M23,M32]=midpoint(a2,a3,A);
 
+% Circumlines
+C41=tjoin(m21,m31,m32);C42=tjoin(m21,m13,m23);C43=tjoin(m12,m31,m23);C44=tjoin(m12,m13,m32);
+C31=tjoin(m21,m24,m14);C32=tjoin(m21,m42,m41);C33=tjoin(m12,m24,m41);C34=tjoin(m12,m42,m14);
+C21=tjoin(m14,m31,m34);C22=tjoin(m41,m13,m34);C23=tjoin(m41,m31,m43);C24=tjoin(m14,m13,m43);
+C11=tjoin(m24,m32,m34);C12=tjoin(m42,m23,m34);C13=tjoin(m24,m23,m43);C14=tjoin(m42,m32,m43);
+
 % % circumcenters
 % c411=tmeet(M32,M31,M21);c422=tmeet(M23,M13,M21);c433=tmeet(M23,M31,M12);c444=tmeet(M32,M13,M12);
 % c313=tmeet(M21,M24,M14);c324=tmeet(M21,M42,M41);c331=tmeet(M12,M24,M41);c342=tmeet(M12,M42,M14);
 % c214=tmeet(M14,M31,M34);c223=tmeet(M41,M13,M34);c232=tmeet(M41,M31,M43);c241=tmeet(M14,M13,M43);
 % c112=tmeet(M34,M24,M32);c121=tmeet(M34,M42,M23);c134=tmeet(M43,M24,M23);c143=tmeet(M43,M42,M32);
 
+
+%second label   
 % c411=tmeet(M32,M31,M21);c422=tmeet(M23,M13,M21);c433=tmeet(M23,M31,M12);c444=tmeet(M32,M13,M12);
 % c314=tmeet(M21,M24,M14);c323=tmeet(M21,M42,M41);c332=tmeet(M12,M24,M41);c341=tmeet(M12,M42,M14);
 % c212=tmeet(M14,M31,M34);c221=tmeet(M41,M13,M34);c234=tmeet(M41,M31,M43);c243=tmeet(M14,M13,M43);
