@@ -18,23 +18,25 @@ a1=[1 1 1];a2=[-1 -1 1];a3=[1 -1 1];a4=[-1 1 1];
 [m14,m41,M14,M41]=midpoint(a1,a4,A);[m23,m32,M23,M32]=midpoint(a2,a3,A);
 
 % Circumlines
-C41=tjoin(m21,m31,m32);C42=tjoin(m21,m13,m23);C43=tjoin(m12,m31,m23);C44=tjoin(m12,m13,m32);
-C31=tjoin(m21,m24,m14);C32=tjoin(m21,m42,m41);C33=tjoin(m12,m24,m41);C34=tjoin(m12,m42,m14);
-C21=tjoin(m14,m31,m34);C22=tjoin(m41,m13,m34);C23=tjoin(m41,m31,m43);C24=tjoin(m14,m13,m43);
-C11=tjoin(m24,m32,m34);C12=tjoin(m42,m23,m34);C13=tjoin(m24,m23,m43);C14=tjoin(m42,m32,m43);
+C41=tjoin(m32,m31,m21);C42=tjoin(m23,m13,m21);C43=tjoin(m23,m31,m12);C44=tjoin(m32,m13,m12);
+C31=tjoin(m21,m42,m41);C32=tjoin(m21,m24,m14);C33=tjoin(m12,m42,m14);C34=tjoin(m12,m24,m41);
+C21=tjoin(m41,m31,m43);C22=tjoin(m14,m13,m43);C23=tjoin(m14,m31,m34);C24=tjoin(m41,m13,m34);
+C11=tjoin(m42,m32,m43);C12=tjoin(m24,m23,m43);C13=tjoin(m42,m23,m34);C14=tjoin(m24,m32,m34);
 
-% % circumcenters
-% c411=tmeet(M32,M31,M21);c422=tmeet(M23,M13,M21);c433=tmeet(M23,M31,M12);c444=tmeet(M32,M13,M12);
-% c313=tmeet(M21,M24,M14);c324=tmeet(M21,M42,M41);c331=tmeet(M12,M24,M41);c342=tmeet(M12,M42,M14);
-% c214=tmeet(M14,M31,M34);c223=tmeet(M41,M13,M34);c232=tmeet(M41,M31,M43);c241=tmeet(M14,M13,M43);
-% c112=tmeet(M34,M24,M32);c121=tmeet(M34,M42,M23);c134=tmeet(M43,M24,M23);c143=tmeet(M43,M42,M32);
+% circumcenters
+% first label
+% c41=tmeet(M32,M31,M21);c42=tmeet(M23,M13,M21);c43=tmeet(M23,M31,M12);c44=tmeet(M32,M13,M12);
+% c31=tmeet(M21,M42,M41);c32=tmeet(M21,M24,M14);c33=tmeet(M12,M42,M14);c34=tmeet(M12,M24,M41);
+% c21=tmeet(M41,M31,M43);c22=tmeet(M14,M13,M43);c23=tmeet(M14,M31,M34);c24=tmeet(M41,M13,M34);
+% c11=tmeet(M43,M42,M32);c12=tmeet(M43,M24,M23);c13=tmeet(M34,M42,M23);c14=tmeet(M34,M24,M32);
+
+% second label
+c41=tmeet(M32,M31,M21);c42=tmeet(M23,M13,M21);c43=tmeet(M23,M31,M12);c44=tmeet(M32,M13,M12);
+c31=tmeet(M21,M24,M14);c32=tmeet(M21,M42,M41);c33=tmeet(M12,M24,M41);c34=tmeet(M12,M42,M14);
+c21=tmeet(M14,M31,M34);c22=tmeet(M41,M13,M34);c23=tmeet(M41,M31,M43);c24=tmeet(M14,M13,M43);
+c11=tmeet(M34,M24,M32);c12=tmeet(M34,M42,M23);c13=tmeet(M43,M24,M23);c14=tmeet(M43,M42,M32);
 
 
-%second label   
-% c411=tmeet(M32,M31,M21);c422=tmeet(M23,M13,M21);c433=tmeet(M23,M31,M12);c444=tmeet(M32,M13,M12);
-% c314=tmeet(M21,M24,M14);c323=tmeet(M21,M42,M41);c332=tmeet(M12,M24,M41);c341=tmeet(M12,M42,M14);
-% c212=tmeet(M14,M31,M34);c221=tmeet(M41,M13,M34);c234=tmeet(M41,M31,M43);c243=tmeet(M14,M13,M43);
-% c113=tmeet(M34,M24,M32);c124=tmeet(M34,M42,M23);c131=tmeet(M43,M24,M23);c142=tmeet(M43,M42,M32);
 %bimedains
 %inside {{m12,m34},{m13,m24},{m14,m23}}, 
 %outside {{m21,m43},{m31,m42},{m41,m32}}

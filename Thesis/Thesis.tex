@@ -16,7 +16,7 @@
 %TCIDATA{Version=5.50.0.2960}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Monday, July 04, 2016 13:39:47}
+%TCIDATA{LastRevised=Monday, July 04, 2016 22:54:52}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{ComputeDefs=
 %$m_{{}}$
@@ -383,20 +383,21 @@ precisely the duals to each side midpoint. That is they are given by the
 matrix multiplications $M_{ij}\equiv \mathbf{A}m_{ij}^{T},$ which highlights
 the opposite relations aluuded to above.
 
-There is a natural divison of the quadrangle $\overline{a_{1}a_{2}a_{3}a_{4}}
-$ into four distinct triangles triangles $\overline{a_{1}a_{2}a_{3}},%
-\overline{a_{1}a_{2}a_{4}},\overline{a_{1}a_{3}a_{4}}$ and $\overline{%
-a_{2}a_{3}a_{4}}$,
+A \textbf{subtriangle} is one of the natural divisons of the quadrangle $%
+\overline{a_{1}a_{2}a_{3}a_{4}}$ into distinct triangles triangles $%
+\triangle _{4}\equiv \overline{a_{1}a_{2}a_{3}},\triangle _{3}\equiv 
+\overline{a_{1}a_{2}a_{4}},\triangle _{2}\equiv \overline{a_{1}a_{3}a_{4}}$
+and $\triangle _{1}\equiv \overline{a_{2}a_{3}a_{4}}$.
 
 \begin{theorem}[Circumlines and circumcenters]
 Midpoints $m_{ij}$ for $i\neq j\in \left\{ 1,2,3\right\} $ are collinear
 three at a time, lying on four distinct \textbf{Circumlines} $C_{1}^{\left(
 4\right) },C_{2}^{\left( 4\right) },C_{2}^{\left( 4\right) },$ and $%
 C_{3}^{\left( 4\right) }.$ Midlines $M_{ij}$ for $i\neq j\in \left\{
-1,2,3\right\} $ of the triangle $\overline{a_{1}a_{2}a_{3}}$ are concurrent
-three at a time, meeting at four distinct \textbf{Circumcenters} $%
-c_{1}^{\left( 4\right) },c_{2}^{\left( 4\right) },c_{3}^{\left( 4\right) }$
-and $c_{4}^{\left( 4\right) }$\textbf{.}
+1,2,3\right\} $ of the subtriangle $\triangle _{4}\equiv \overline{%
+a_{1}a_{2}a_{3}}$ are concurrent three at a time, meeting at four distinct 
+\textbf{Circumcenters} $c_{1}^{\left( 4\right) },c_{2}^{\left( 4\right)
+},c_{3}^{\left( 4\right) }$ and $c_{4}^{\left( 4\right) }$\textbf{.}
 \end{theorem}
 
 The following triples of midpoints $m_{ij}$ for $i\neq j\in \left\{
@@ -556,27 +557,10 @@ for $i\neq j\in \left\{ 1,2,3\right\} $ is precisely dual. $\square $
 
 \bigskip
 
-The Circumlines for the triangles $\overline{a_{1}a_{2}a_{4}}$, $\overline{%
-a_{1}a_{3}a_{4}}$, and $\overline{a_{2}a_{3}a_{4}}$, are as follows
+The Circumlines for the subtriangles $\triangle _{3},\triangle _{2}$, and $%
+\triangle _{1}$, are as follows
 
 $C_{1}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
-}+\sigma _{\left\{ 2,4\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma
-_{\left\{ 1,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
-2,4\right\} }\right\rangle $ through
-
-\begin{eqnarray*}
-m_{21} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
-2,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
-}:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] , \\
-m_{24} &\equiv &\left[ -\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
-1,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,2\right\}
-}:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 1,4\right\} }\right] , \\
-m_{14} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
-2,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
-}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right] ,
-\end{eqnarray*}
-
-$C_{2}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
 }-\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma
 _{\left\{ 1,2\right\} }:-\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
 2,4\right\} }\right\rangle $ through
@@ -593,24 +577,24 @@ m_{41} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
 }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] ,
 \end{eqnarray*}
 
-$C_{3}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
-}-\sigma _{\left\{ 2,4\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma
-_{\left\{ 1,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
+$C_{2}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
+}+\sigma _{\left\{ 2,4\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma
+_{\left\{ 1,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
 2,4\right\} }\right\rangle $ through
 
 \begin{eqnarray*}
-m_{12} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
-2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
-}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right] , \\
+m_{21} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
+2,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] , \\
 m_{24} &\equiv &\left[ -\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
 1,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,2\right\}
 }:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 1,4\right\} }\right] , \\
-m_{41} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
-2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
-}:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] ,
+m_{14} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
+2,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right] ,
 \end{eqnarray*}
 
-$C_{4}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
+$C_{3}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
 }+\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma
 _{\left\{ 1,2\right\} }:\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{
 1,4\right\} }\right\rangle $ through
@@ -624,50 +608,196 @@ m_{42} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
 }:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,4\right\} }\right] , \\
 m_{14} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
-}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right] .
+}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right] ,
+\end{eqnarray*}
+
+$C_{4}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
+}-\sigma _{\left\{ 2,4\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma
+_{\left\{ 1,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
+2,4\right\} }\right\rangle $ through
+
+\begin{eqnarray*}
+m_{12} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
+2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right] , \\
+m_{24} &\equiv &\left[ -\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
+1,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,2\right\}
+}:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 1,4\right\} }\right] , \\
+m_{41} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
+2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] .
 \end{eqnarray*}
 
 Also
 
-$C_{1}^{\left( 2\right) }\equiv \left\langle -\sigma _{\left\{ 1,3\right\}
-}-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma
-_{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
-1,4\right\} }\right\rangle $, through $m_{34},m_{31},m_{14}$,
-
-$C_{2}^{\left( 2\right) }\equiv \left\langle \sigma _{\left\{ 1,3\right\}
-}-\sigma _{\left\{ 3,4\right\} }:-\sigma _{\left\{ 1,4\right\} }-\sigma
-_{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
-1,3\right\} }\right\rangle $, through $m_{34},m_{13},m_{41}$,
-
-$C_{3}^{\left( 2\right) }\equiv \left\langle \sigma _{\left\{ 3,4\right\}
+$C_{1}^{\left( 2\right) }\equiv \left\langle \sigma _{\left\{ 3,4\right\}
 }-\sigma _{\left\{ 1,3\right\} }:\sigma _{\left\{ 3,4\right\} }-\sigma
 _{\left\{ 1,4\right\} }:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{
 1,4\right\} }\right\rangle $, through $m_{43},m_{31},m_{41}$,
 
-$C_{4}^{\left( 2\right) }\equiv \left\langle \sigma _{\left\{ 1,3\right\}
+$C_{2}^{\left( 2\right) }\equiv \left\langle \sigma _{\left\{ 1,3\right\}
 }+\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma
 _{\left\{ 3,4\right\} }:-\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
 1,4\right\} }\right\rangle $, through $m_{43},m_{13},m_{14}$,
 
-$C_{1}^{\left( 1\right) }\equiv \left\langle \sigma _{\left\{ 2,4\right\}
-}-\sigma _{\left\{ 3,4\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma
-_{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{
-2,3\right\} }\right\rangle $, through $m_{34},m_{32},m_{24}$,
+$C_{3}^{\left( 2\right) }\equiv \left\langle -\sigma _{\left\{ 1,3\right\}
+}-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma
+_{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
+1,4\right\} }\right\rangle $, through $m_{34},m_{31},m_{14}$,
 
-$C_{2}^{\left( 1\right) }\equiv \left\langle -\sigma _{\left\{ 2,4\right\}
-}-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma
-_{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
-2,4\right\} }\right\rangle $, through $m_{34},m_{23},m_{42}$,
+$C_{4}^{\left( 2\right) }\equiv \left\langle \sigma _{\left\{ 1,3\right\}
+}-\sigma _{\left\{ 3,4\right\} }:-\sigma _{\left\{ 1,4\right\} }-\sigma
+_{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
+1,3\right\} }\right\rangle $, through $m_{34},m_{13},m_{41}$,
 
-$C_{3}^{\left( 1\right) }\equiv \left\langle \sigma _{\left\{ 2,4\right\}
+$C_{1}^{\left( 1\right) }\equiv \left\langle \sigma _{\left\{ 3,4\right\}
+}-\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{ 3,4\right\} }-\sigma
+_{\left\{ 2,3\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
+2,4\right\} }\right\rangle $, through $m_{43},m_{32},m_{42}$,
+
+$C_{2}^{\left( 1\right) }\equiv \left\langle \sigma _{\left\{ 2,4\right\}
 }+\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }+\sigma
 _{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
 2,4\right\} }\right\rangle $, through $m_{43},m_{23},m_{24}$,
 
-$C_{4}^{\left( 1\right) }\equiv \left\langle \sigma _{\left\{ 3,4\right\}
-}-\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{ 3,4\right\} }-\sigma
-_{\left\{ 2,3\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
-2,4\right\} }\right\rangle $, through $m_{43},m_{32},m_{42}$.
+$C_{3}^{\left( 1\right) }\equiv \left\langle -\sigma _{\left\{ 2,4\right\}
+}-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma
+_{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
+2,4\right\} }\right\rangle $, through $m_{34},m_{23},m_{42}$,
+
+$C_{4}^{\left( 1\right) }\equiv \left\langle \sigma _{\left\{ 2,4\right\}
+}-\sigma _{\left\{ 3,4\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma
+_{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{
+2,3\right\} }\right\rangle $, through $m_{34},m_{32},m_{24}$,
+
+\bigskip 
+
+Though the labeling may seem arbitrary infact it is a little more subtle
+than this. Now for any triangle there are four circumlines which are the
+joins of three distinct midpoints. Therefore by counting we see that each
+midpoint is incident with two distinct circumlines. 
+
+For the quadrangle $\square $ any two subtriangles share exactly one side.
+Say subtriangle $\triangle _{i}$ and $\triangle _{i}$ for $i\neq j\in
+\left\{ 1,2,3,4\right\} $ share the side $\overline{a_{\ell }a_{k}}$ where $%
+\ell \neq k\in \left\{ 1,2,3,4\right\} \setminus \left\{ i,j\right\} $, that
+is for subtriangles $\triangle _{1}$ and $\triangle _{2}$ they share the
+side $\overline{a_{3}a_{4}}$, and so on. Thus each midpoint $m$ of the
+quadrangle $\square $ is associated to four circumlines $C$, two distinct
+circumlines from each of the subtriangles that share the side corresponding
+to the midpoint $m$. Therefore there is a type of pairing of pairs of
+circumlines of each subtriangle $P_{ij}\equiv \left\{ C_{r}^{\left( i\right)
+},C_{s}^{\left( i\right) },C_{\ell }^{\left( j\right) },C_{k}^{\left(
+j\right) }\right\} $ for some $r\neq s,\ell \neq k\in \left\{
+1,2,3,4\right\} $, for each midpoint $m_{ij}$.
+
+We will say that circumlines $C_{k}^{\left( i\right) }$ and $C_{\ell
+}^{\left( j\right) }$ are \textbf{(midpoint) neighbours} if one of the
+pairings $P_{ij}$ and $P_{ji}$\ induced from the midpoints $m_{ij}$ and $%
+m_{ji}$ contains both $C_{k}^{\left( i\right) }$ and $C_{\ell }^{\left(
+j\right) }$.
+
+\bigskip 
+
+After forcing a label on one set of circumlines (in this case for the
+subtriangle $\triangle _{4}$) the aim is to label the rest in such a way so
+that for each pairing $P_{ij}=\left\{ C_{r}^{\left( i\right) },C_{s}^{\left(
+i\right) },C_{\ell }^{\left( j\right) },C_{k}^{\left( j\right) }\right\} $
+we have that $\ell =r$ and $k=s$. It turns out there are exactly two such
+labelings one is giving above;
+
+\bigskip $%
+\begin{array}{cc}
+P_{12}\equiv \left\{ C_{3}^{\left( 3\right) },C_{4}^{\left( 3\right)
+},C_{3}^{\left( 4\right) },C_{4}^{\left( 4\right) }\right\} , & P_{21}\equiv
+\left\{ C_{1}^{\left( 3\right) },C_{2}^{\left( 3\right) },C_{1}^{\left(
+4\right) },C_{2}^{\left( 4\right) }\right\} , \\ 
+P_{34}\equiv \left\{ C_{3}^{\left( 1\right) },C_{4}^{\left( 1\right)
+},C_{3}^{\left( 2\right) },C_{4}^{\left( 2\right) }\right\} , & P_{43}\equiv
+\left\{ C_{1}^{\left( 1\right) },C_{2}^{\left( 1\right) },C_{1}^{\left(
+2\right) },C_{2}^{\left( 2\right) }\right\} , \\ 
+P_{13}\equiv \left\{ C_{2}^{\left( 2\right) },C_{4}^{\left( 2\right)
+},C_{2}^{\left( 4\right) },C_{4}^{\left( 4\right) }\right\} , & P_{31}\equiv
+\left\{ C_{1}^{\left( 2\right) },C_{3}^{\left( 2\right) },C_{1}^{\left(
+4\right) },C_{3}^{\left( 4\right) }\right\} , \\ 
+P_{24}\equiv \left\{ C_{2}^{\left( 1\right) },C_{4}^{\left( 1\right)
+},C_{2}^{\left( 3\right) },C_{4}^{\left( 3\right) }\right\} , & P_{42}\equiv
+\left\{ C_{1}^{\left( 1\right) },C_{3}^{\left( 1\right) },C_{1}^{\left(
+3\right) },C_{3}^{\left( 3\right) }\right\} , \\ 
+P_{14}\equiv \left\{ C_{2}^{\left( 2\right) },C_{3}^{\left( 2\right)
+},C_{2}^{\left( 3\right) },C_{3}^{\left( 3\right) }\right\} , & P_{41}\equiv
+\left\{ C_{1}^{\left( 2\right) },C_{4}^{\left( 2\right) },C_{1}^{\left(
+3\right) },C_{4}^{\left( 3\right) }\right\} , \\ 
+P_{23}\equiv \left\{ C_{2}^{\left( 1\right) },C_{3}^{\left( 1\right)
+},C_{2}^{\left( 4\right) },C_{3}^{\left( 4\right) }\right\} , & P_{32}\equiv
+\left\{ C_{1}^{\left( 1\right) },C_{4}^{\left( 1\right) },C_{1}^{\left(
+4\right) },C_{4}^{\left( 4\right) }\right\} .%
+\end{array}%
+$\newline
+
+Moreover if we define $\pi _{4}\equiv \left( 1\right) ,\pi _{3}\equiv \left(
+12\right) \left( 34\right) ,\pi _{2}\equiv \left( 13\right) \left( 24\right) 
+$ and $\pi _{1}\equiv \left( 14\right) \left( 23\right) $, then the other
+labeling is giving as follows $C_{\pi _{i}\left( j\right) }^{\left( i\right)
+}$ for $i,j\in \left\{ 1,2,3,4\right\} $.
+
+Furthermore both of these labelings of the circumlines we get that the
+elements of the sets $\left\{ C_{i}^{\left( 1\right) },C_{i}^{\left(
+2\right) },C_{i}^{\left( 3\right) },C_{i}^{\left( 4\right) }\right\} $ for $%
+i=1,2,3,4$ are neighbours. 
+
+\begin{theorem}[Meets of Circumlines]
+The meets of non-neighbouring circumlines are collinear four at a time,
+producing twelve distinct c-lines.
+\end{theorem}
+
+\textit{Proof} \ Each circumline of the subtriangle $\triangle _{1}$ is a
+neighbour to exactly two circumlines of each other subtriangle. If we create
+the quadpartite graph with vertex set $\ V=\cup _{i\in \left[ 4\right]
+}\left\{ C_{j}^{\left( i\right) }:j\in \left[ 4\right] \right\} $, and edge
+set $E=\left\{ C_{r}^{\left( i\right) }C_{s}^{\left( j\right) }:i\neq
+j,r\neq s\in \left[ 4\right] \right\} $. From the previous sentence the
+degree of each vertex is six and so by the handshaking lemma there are
+fourtyeight edges and thus meets of non-neighbouring circumlines.
+
+Looking at the subsetset of vertices $V_{1}\cup V_{2}$, from the pairings we
+are able to work out the edge set and hence the bipartite subgraph. The edge
+set of the of the subgraph corresponding to the joins on non-neighbouring
+circumlines of subtriangles $\triangle _{1}$ and $\triangle _{2}$ is
+
+\begin{equation*}
+\left\{ \left( C_{1}^{\left( 1\right) }C_{2}^{\left( 4\right) }\right)
+,\left( C_{2}^{\left( 4\right) }C_{1}^{\left( 2\right) }\right) ,\left(
+C_{1}^{\left( 2\right) }C_{2}^{\left( 3\right) }\right) ,\left(
+C_{2}^{\left( 3\right) }C_{1}^{\left( 1\right) }\right) ,\left(
+C_{2}^{\left( 1\right) }C_{1}^{\left( 4\right) }\right) ,\left(
+C_{1}^{\left( 4\right) }C_{2}^{\left( 2\right) }\right) ,\left(
+C_{2}^{\left( 2\right) }C_{1}^{\left( 3\right) }\right) ,\left(
+C_{1}^{\left( 3\right) }C_{2}^{\left( 1\right) }\right) \right\} ,
+\end{equation*}
+
+Thus the bipartite subgraph is the union of distjoint cycles 
+
+\begin{equation*}
+C_{1}^{\left( 1\right) }C_{2}^{\left( 4\right) }C_{1}^{\left( 2\right)
+}C_{2}^{\left( 3\right) }C_{1}^{\left( 1\right) }\text{ and }C_{2}^{\left(
+1\right) }C_{1}^{\left( 4\right) }C_{2}^{\left( 2\right) }C_{1}^{\left(
+3\right) }C_{2}^{\left( 1\right) }.
+\end{equation*}
+
+This is similarly true for 
+
+\begin{eqnarray*}
+&&\left( C_{1}^{\left( 4\right) }C_{3}^{\left( 3\right) }\right) \left(
+C_{2}^{\left( 4\right) }C_{4}^{\left( 3\right) }\right) ,\left(
+C_{1}^{\left( 2\right) }C_{3}^{\left( 1\right) }\right) \left( C_{2}^{\left(
+2\right) }C_{4}^{\left( 1\right) }\right)  \\
+&&\left( C_{1}^{\left( 4\right) }C_{4}^{\left( 3\right) }\right) \left(
+C_{2}^{\left( 4\right) }C_{3}^{\left( 3\right) }\right) ,\left(
+C_{1}^{\left( 1\right) }C_{4}^{\left( 2\right) }\right) \left( C_{2}^{\left(
+1\right) }C_{3}^{\left( 2\right) }\right)  \\
+&&\left( {}\right) 
+\end{eqnarray*}
 
 \bigskip \pagebreak 
 
