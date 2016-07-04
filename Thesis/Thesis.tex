@@ -16,7 +16,7 @@
 %TCIDATA{Version=5.50.0.2960}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Wednesday, June 29, 2016 18:46:51}
+%TCIDATA{LastRevised=Monday, July 04, 2016 11:06:53}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{ComputeDefs=
 %$m_{{}}$
@@ -67,7 +67,7 @@ a_{i}a_{j}}$ for $i\neq j\in \lbrack 6]$, which determine the six lines
 \begin{align*}
 L_{\{1,2\}}& \equiv a_{1}a_{2}\equiv \langle 1:-1:0\rangle , & L_{\{1,3\}}&
 \equiv a_{1}a_{3}\equiv \langle 1:0:-1\rangle , & L_{\{1,4\}}& \equiv
-a_{1}a_{4}\equiv \langle 0:1:-1\rangle \\
+a_{1}a_{4}\equiv \langle 0:1:-1\rangle  \\
 L_{\{3,4\}}& \equiv a_{3}a_{4}\equiv \langle 1:1:0\rangle , & L_{\{2,4\}}&
 \equiv a_{2}a_{4}\equiv \langle 1:0:1\rangle , & L_{\{2,3\}}& \equiv
 a_{2}a_{3}\equiv \langle 0:1:1\rangle .
@@ -75,13 +75,11 @@ a_{2}a_{3}\equiv \langle 0:1:1\rangle .
 These six lines of the respective sides let us find the diagonal triangle $%
 \overline{d_{1}d_{2}d_{3}}$ of the standard quadrangle, 
 \begin{eqnarray*}
-d_{\{\{1,2\},\{3,4\}\}} &\equiv &L_{\{1,2\}}L_{\{3,4\}}\equiv \lbrack
-0:0:1],\;\; \\
-d_{\{\{1,3\},\{2,4\}\}} &\equiv &L_{\{1,3\}}L_{\{2,4\}}\equiv \lbrack
-0:1:0],\;\; \\
-d_{\{\{1,4\},\{2,3\}\}} &\equiv &L_{\{1,4\}}L_{\{2,3\}}\equiv \lbrack 1:0:0].
+d_{\alpha } &\equiv &L_{\{1,2\}}L_{\{3,4\}}\equiv \lbrack 0:0:1],\;\; \\
+d_{\beta } &\equiv &L_{\{1,3\}}L_{\{2,4\}}\equiv \lbrack 0:1:0],\;\; \\
+d_{\gamma } &\equiv &L_{\{1,4\}}L_{\{2,3\}}\equiv \lbrack 1:0:0].
 \end{eqnarray*}%
-Define 
+The labeling will become more obvious below. Define 
 \begin{equation*}
 D\equiv abc+2fdg-ag^{2}-bf^{2}-cd^{2}.
 \end{equation*}%
@@ -314,28 +312,6 @@ relations}.
 Hence the side midpoints of the quadrangle $\overline{a_{1}a_{2}a_{3}a_{4}}$
 have the form
 
-$(2\ast f\symbol{94}2\ast (a+b+c-2\ast d+2\ast f-2\ast g)\symbol{94}%
-(1/2)-2\ast f\symbol{94}2\ast (a+b+c+2\ast d+2\ast f+2\ast g)\symbol{94}%
-(1/2)-2\ast a\ast c\ast (a+b+c-2\ast d+2\ast f-2\ast g)\symbol{94}(1/2)+$
-
-$2\ast a\ast c\ast (a+b+c+2\ast d+2\ast f+2\ast g)\symbol{94}(1/2)-2\ast
-c\ast d\ast (a+b+c-2\ast d+2\ast f-2\ast g)\symbol{94}(1/2)+2\ast c\ast
-d\ast (a+b+c+2\ast d-2\ast f-2\ast g)\symbol{94}(1/2)-$
-
-$2\ast a\ast g\ast (a+b+c+2\ast d-2\ast f-2\ast g)\symbol{94}(1/2)-2\ast
-a\ast g\ast (a+b+c+2\ast d+2\ast f+2\ast g)\symbol{94}(1/2)+2\ast d\ast
-f\ast (a+b+c+2\ast d-2\ast f-2\ast g)\symbol{94}(1/2)+$
-
-$2\ast d\ast f\ast (a+b+c+2\ast d+2\ast f+2\ast g)\symbol{94}(1/2)+2\ast
-f\ast g\ast (a+b+c-2\ast d+2\ast f-2\ast g)\symbol{94}(1/2)-2\ast f\ast
-g\ast (a+b+c+2\ast d-2\ast f-2\ast g)\symbol{94}(1/2))/(a+b+c+2\ast d+2\ast
-f+2\ast g)\symbol{94}(1/2)=\allowbreak \frac{1}{2}\frac{f}{a+b+c+2d+2f+2g}%
-\left(
-2a^{2}d+2a^{2}g+4abd+4abg+4acd+4acg+8ad^{2}+8adf+8adg+8afg-ag+2b^{2}d+2b^{2}g+4bcd+4bcg+8bd^{2}+8bdf+8bdg+8bfg-bg+2c^{2}d+2c^{2}g+8cd^{2}+8cdf+8cdg+8cfg-cg+8d^{3}+16d^{2}f+8d^{2}g+8df^{2}+16dfg-8dg^{2}-2dg+8f^{2}g+2fg-8g^{3}+2g^{2}\right) \allowbreak 
-$ : $\frac{1}{2}f\frac{%
-8ad^{2}+2a^{2}d+8bd^{2}+2b^{2}d+8cd^{2}+2c^{2}d+2a^{2}g+2b^{2}g+8df^{2}+2c^{2}g+16d^{2}f-8dg^{2}+8d^{2}g+8f^{2}g-ag-bg-cg-2dg+2fg+8d^{3}+2g^{2}-8g^{3}+4abd+4acd+4bcd+4abg+4acg+8adf+8adg+4bcg+8bdf+8bdg+8cdf+8afg+8cdg+8bfg+8cfg+16dfg%
-}{a+b+c+2d+2f+2g}\allowbreak $
-
 \begin{eqnarray*}
 m_{12} &\equiv &\left[ 1-\sigma _{\left\{ 1,2\right\} }A_{1}:1-\sigma
 _{\left\{ 1,2\right\} }A_{1}:1+\sigma _{\left\{ 1,2\right\} }A_{1}\right] =%
@@ -402,93 +378,262 @@ _{\left\{ 2,3\right\} }A_{2}:1-\sigma _{\left\{ 2,3\right\} }A_{2}\right] =%
 _{\left\{ 2,4\right\} }-\sigma _{\left\{ 3,4\right\} }\right] 
 \end{eqnarray*}
 
-with corresponding side midlines
+These side midpoints have corresponding \textit{side midlines}, which are
+precisely the duals to each side midpoint. That is they are given by the
+matrix multiplications $M_{ij}\equiv \mathbf{A}m_{ij}^{T},$ which highlights
+the opposite relations aluuded to above. 
 
-\begin{align*}
-M_{12}& \equiv \left\langle \left( a+d+f\right) \sigma _{\left\{ 1,3\right\}
-}+\left( -a-d+f\right) \sigma _{\left\{ 2,3\right\} }:(d+b+g)\sigma
-_{\left\{ 1,3\right\} }+\left( -d-b+g\right) \sigma _{\left\{ 2,3\right\}
-}:(f+g+c)\sigma _{\left\{ 1,3\right\} }+\left( -f-g+c\right) \sigma
-_{\left\{ 2,3\right\} }\right\rangle ,\;\;\;\;\; \\
-M_{21}& \equiv \left\langle (a+d+f)\sigma _{\left\{ 1,4\right\} }+\left(
-a+d-f\right) \sigma _{\left\{ 2,4\right\} }:(d+b+g)\sigma _{\left\{
-1,4\right\} }+\left( d+b-g\right) \sigma _{\left\{ 2,4\right\}
-}:(f+g+c)\sigma _{\left\{ 1,4\right\} }+\left( f+g-c\right) \sigma _{\left\{
-2,4\right\} }\right\rangle , \\
-M_{34}& \equiv \left\langle (a-d+f)\sigma _{\left\{ 1,3\right\} }+\left(
--a+d+f\right) \sigma _{\left\{ 1,4\right\} }:(d-b+g)\sigma _{\left\{
-1,3\right\} }+\left( -d+b+g\right) \sigma _{\left\{ 1,4\right\}
-}:(f-g+c)\sigma _{\left\{ 1,3\right\} }+\left( -f+g+c\right) \sigma
-_{\left\{ 1,4\right\} }\right\rangle , \\
-M_{43}& \equiv \left\langle (a-d+f)\sigma _{\left\{ 2,3\right\} }+\left(
-a-d-f\right) \sigma _{\left\{ 2,4\right\} }:(d-b+g)\sigma _{\left\{
-2,3\right\} }+\left( d-b-g\right) \sigma _{\left\{ 2,4\right\}
-}:(f-g+c)\sigma _{\left\{ 2,3\right\} }+\left( f-g-c\right) \sigma _{\left\{
-2,4\right\} }\right\rangle , \\
-M_{13}& \equiv \left\langle a+d+f+\left( a-d+f\right) \sigma _{\left\{
-1,3\right\} }A_{1}:d+b+g+\left( d-b+g\right) \sigma _{\left\{ 1,3\right\}
-}A_{1}:f+g+c+\left( f-g+c\right) \sigma _{\left\{ 1,3\right\}
-}A_{1}\right\rangle , \\
-M_{31}& \equiv \left\langle a+d+f+\left( -a+d-f\right) \sigma _{\left\{
-1,3\right\} }A_{1}:d+b+g+\left( -d+b-g\right) \sigma _{\left\{ 1,3\right\}
-}A_{1}:f+g+c+\left( -f+g-c\right) \sigma _{\left\{ 1,3\right\}
-}A_{1}\right\rangle ,
-\end{align*}
+There is a natural divison of the quadrangle $\overline{a_{1}a_{2}a_{3}a_{4}}
+$ into four distinct triangles triangles $\overline{a_{1}a_{2}a_{3}},%
+\overline{a_{1}a_{2}a_{4}},\overline{a_{1}a_{3}a_{4}}$ and $\overline{%
+a_{2}a_{3}a_{4}}$,
 
-\begin{align*}
-M_{24}& \equiv \left\langle -a-d+f+\left( -a+d+f\right) \sigma _{\left\{
-2,4\right\} }A_{2}:-d-b+g+\left( -d+b+g\right) \sigma _{\left\{ 2,4\right\}
-}A_{2}:-f-g+c+\left( -f+g+c\right) \sigma _{\left\{ 2,4\right\}
-}A_{2}\right\rangle , \\
-M_{42}& \equiv \left\langle -a-d+f+\left( a-d-f\right) \sigma _{\left\{
-2,4\right\} }A_{2}:-d-b+g+\left( d-b-g\right) \sigma _{\left\{ 2,4\right\}
-}A_{2}:-f-g+c+\left( f-g-c\right) \sigma _{\left\{ 2,4\right\}
-}A_{2}\right\rangle , \\
-M_{14}& \equiv \left\langle a+d+f+\left( -a+d+f\right) \sigma _{\left\{
-1,4\right\} }A_{1}:d+b+g+\left( -d+b+g\right) \sigma _{\left\{ 1,4\right\}
-}A_{1}:f+g+c+\left( -f+g+c\right) \sigma _{\left\{ 1,4\right\}
-}A_{1}\right\rangle , \\
-M_{41}& \equiv \left\langle a+d+f+\left( a-d-f\right) \sigma _{\left\{
-1,4\right\} }A_{1}:d+b+g+\left( d-b-g\right) \sigma _{\left\{ 1,4\right\}
-}A_{1}:f+g+c+\left( f-g-c\right) \sigma _{\left\{ 1,4\right\}
-}A_{1}\right\rangle , \\
-M_{23}& \equiv \left\langle -a-d+f+\left( a-d+f\right) \sigma _{\left\{
-2,3\right\} }A_{2}:-d-b+g+\left( d-b+g\right) \sigma _{\left\{ 2,3\right\}
-}A_{2}:-f-g+c+\left( f-g+c\right) \sigma _{\left\{ 2,3\right\}
-}A_{2}\right\rangle , \\
-M_{32}& \equiv \left\langle -a-d+f+\left( -a+d-f\right) \sigma _{\left\{
-2,3\right\} }A_{2}:-d-b+g+\left( -d+b-g\right) \sigma _{\left\{ 2,3\right\}
-}A_{2}:-f-g+c+\left( -f+g-c\right) \sigma _{\left\{ 2,3\right\}
-}A_{2}\right\rangle ,
-\end{align*}%
-The four sets of four circumcenters for the four triangles $\overline{%
-a_{1}a_{2}a_{3}},\overline{a_{1}a_{2}a_{4}},\overline{a_{1}a_{3}a_{4}}$ and $%
-\overline{a_{2}a_{3}a_{4}}$ are
+\begin{theorem}[Circumlines and circumcenters]
+Midpoints $m_{ij}$ for $i\neq j\in \left\{ 1,2,3\right\} $ are collinear
+three at a time, lying on four distinct \textbf{Circumlines} $C_{1}^{\left(
+4\right) },C_{2}^{\left( 4\right) },C_{2}^{\left( 4\right) },$ and $%
+C_{3}^{\left( 4\right) }.$ Midlines $M_{ij}$ for $i\neq j\in \left\{
+1,2,3\right\} $ of the triangle $\overline{a_{1}a_{2}a_{3}}$ are concurrent
+three at a time, meeting at four distinct \textbf{Circumcenters} $%
+c_{1}^{\left( 4\right) },c_{2}^{\left( 4\right) },c_{3}^{\left( 4\right) }$
+and $c_{4}^{\left( 4\right) }$\textbf{.}
+\end{theorem}
+
+The following triples of midpoints $m_{ij}$ for $i\neq j\in \left\{
+1,2,3\right\} $ are colinear:
+
+\begin{eqnarray*}
+m_{21} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{31} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{32} &\equiv &\left[ -\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
+1,3\right\} }:-\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\}
+}:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\right] 
+\end{eqnarray*}
+
+on $C_{1}^{\left( 4\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
+}-\sigma _{\left\{ 1,3\right\} }:-\sigma _{\left\{ 1,2\right\} }+\sigma
+_{\left\{ 2,3\right\} }:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{
+2,3\right\} }\right\rangle ,$
+
+\begin{eqnarray*}
+m_{21} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{13} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{23} &\equiv &\left[ -\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
+1,3\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\}
+}:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\right] 
+\end{eqnarray*}
+
+on $C_{2}^{\left( 4\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
+}+\sigma _{\left\{ 1,3\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma
+_{\left\{ 2,3\right\} }:-\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
+2,3\right\} }\right\rangle ,$
+
+\begin{eqnarray*}
+m_{12} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{31} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{23} &\equiv &\left[ -\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
+1,3\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\}
+}:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\right] 
+\end{eqnarray*}
+
+on $C_{3}^{\left( 4\right) }\equiv \left\langle -\sigma _{\left\{
+1,2\right\} }-\sigma _{\left\{ 1,3\right\} }:\sigma _{\left\{ 1,2\right\}
+}-\sigma _{\left\{ 2,3\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma
+_{\left\{ 2,3\right\} }\right\rangle ,$
+
+\begin{eqnarray*}
+m_{12} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{13} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{32} &\equiv &\left[ -\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
+1,3\right\} }:-\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\}
+}:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\right] 
+\end{eqnarray*}
+
+on $C_{4}^{\left( 4\right) }\equiv \left\langle -\sigma _{\left\{
+1,2\right\} }+\sigma _{\left\{ 1,3\right\} }:\sigma _{\left\{ 1,2\right\}
+}+\sigma _{\left\{ 2,3\right\} }:-\sigma _{\left\{ 1,3\right\} }+\sigma
+_{\left\{ 2,3\right\} }\right\rangle .$
+
+This is checked by computing 
+
+\begin{eqnarray*}
+&&\det \left( 
+\begin{array}{ccc}
+\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma
+_{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
+1,3\right\} }-\sigma _{\left\{ 2,3\right\} } \\ 
+\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma
+_{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
+1,2\right\} }-\sigma _{\left\{ 2,3\right\} } \\ 
+-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} } & -\sigma
+_{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} } & \sigma _{\left\{
+2,3\right\} }-\sigma _{\left\{ 1,3\right\} }%
+\end{array}%
+\right)  \\
+&=&\det \left( 
+\begin{array}{ccc}
+\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma
+_{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
+1,3\right\} }-\sigma _{\left\{ 2,3\right\} } \\ 
+\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma
+_{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
+1,2\right\} }+\sigma _{\left\{ 2,3\right\} } \\ 
+-\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} } & -\sigma
+_{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} } & \sigma _{\left\{
+2,3\right\} }+\sigma _{\left\{ 1,3\right\} }%
+\end{array}%
+\right)  \\
+&=&\det \left( 
+\begin{array}{ccc}
+\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma
+_{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
+1,3\right\} }+\sigma _{\left\{ 2,3\right\} } \\ 
+\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma
+_{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
+1,2\right\} }-\sigma _{\left\{ 2,3\right\} } \\ 
+-\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} } & -\sigma
+_{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} } & \sigma _{\left\{
+2,3\right\} }+\sigma _{\left\{ 1,3\right\} }%
+\end{array}%
+\right)  \\
+&=&\det \left( 
+\begin{array}{ccc}
+\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma
+_{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
+1,3\right\} }+\sigma _{\left\{ 2,3\right\} } \\ 
+\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma
+_{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
+1,2\right\} }+\sigma _{\left\{ 2,3\right\} } \\ 
+-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} } & -\sigma
+_{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} } & \sigma _{\left\{
+2,3\right\} }-\sigma _{\left\{ 1,3\right\} }%
+\end{array}%
+\right) =0.
+\end{eqnarray*}
+
+The corresponding meets are 
+
+\begin{eqnarray*}
+&&\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} }:\sigma
+_{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }\right] \times \left[
+\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma
+_{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }:\sigma _{\left\{
+1,2\right\} }-\sigma _{\left\{ 2,3\right\} }\right]  \\
+&=&\left\langle \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,3\right\}
+}:-\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }:\sigma
+_{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} }\right\rangle \equiv
+C_{1}^{\left( 4\right) },
+\end{eqnarray*}
+
+and similarly for the other circumlines. The situation with midlines $M_{ij}$
+for $i\neq j\in \left\{ 1,2,3\right\} $ is precisely dual. $\square $
+
+\bigskip 
+
+The Circumlines for the triangles $\overline{a_{1}a_{2}a_{4}}$, $\overline{%
+a_{1}a_{3}a_{4}}$, and $\overline{a_{2}a_{3}a_{4}}$, are as follows
+
+\begin{eqnarray*}
+m_{21} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{24} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{14} &\equiv &\left[ -\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
+1,3\right\} }:-\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\}
+}:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\right] 
+\end{eqnarray*}
+
+on $C_{1}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
+}-\sigma _{\left\{ 1,3\right\} }:-\sigma _{\left\{ 1,2\right\} }+\sigma
+_{\left\{ 2,3\right\} }:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{
+2,3\right\} }\right\rangle ,$
+
+\begin{eqnarray*}
+m_{21} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{42} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{41} &\equiv &\left[ -\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
+1,3\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\}
+}:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\right] 
+\end{eqnarray*}
+
+on $C_{2}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
+}+\sigma _{\left\{ 1,3\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma
+_{\left\{ 2,3\right\} }:-\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
+2,3\right\} }\right\rangle ,$
+
+\begin{eqnarray*}
+m_{12} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{24} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{41} &\equiv &\left[ -\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
+1,3\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\}
+}:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\right] 
+\end{eqnarray*}
+
+on $C_{3}^{\left( 3\right) }\equiv \left\langle -\sigma _{\left\{
+1,2\right\} }-\sigma _{\left\{ 1,3\right\} }:\sigma _{\left\{ 1,2\right\}
+}-\sigma _{\left\{ 2,3\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma
+_{\left\{ 2,3\right\} }\right\rangle ,$
+
+\begin{eqnarray*}
+m_{12} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{42} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }\right] , \\
+m_{14} &\equiv &\left[ -\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
+1,3\right\} }:-\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\}
+}:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\right] 
+\end{eqnarray*}
+
+on $C_{4}^{\left( 4\right) }\equiv \left\langle -\sigma _{\left\{
+1,2\right\} }+\sigma _{\left\{ 1,3\right\} }:\sigma _{\left\{ 1,2\right\}
+}+\sigma _{\left\{ 2,3\right\} }:-\sigma _{\left\{ 1,3\right\} }+\sigma
+_{\left\{ 2,3\right\} }\right\rangle .$
 
 \bigskip 
 
 \begin{eqnarray*}
 c_{41} &\equiv &M_{21}M_{32}=M_{32}M_{31},\qquad c_{42}\equiv
 M_{21}M_{23}=M_{23}M_{13},\qquad c_{43}\equiv
-M_{12}M_{32}=M_{32}M_{13},\qquad c_{44}\equiv M_{12}M_{23}=M_{23}M_{31} \\
+M_{12}M_{23}=M_{23}M_{31},\qquad c_{44}\equiv M_{12}M_{32}=M_{32}M_{13}, \\
 c_{31} &\equiv &M_{21}M_{24}=M_{24}M_{14},\qquad c_{32}\equiv
-M_{21}M_{42}=M_{42}M_{41}, \\
-c_{21} &\equiv &M_{32}M_{34}=M_{34}M_{14},\qquad c_{22}\equiv M_{13}M \\
-c_{11} &\equiv &M_{32}M_{34}=M_{34}M_{24},
+M_{21}M_{42}=M_{42}M_{41},\qquad c_{33}\equiv
+M_{12}M_{24}=M_{24}M_{41},\qquad c_{34}\equiv M_{12}M_{42}=M_{42}M_{14}, \\
+c_{21} &\equiv &M_{32}M_{34}=M_{34}M_{14},\qquad c_{22}\equiv
+M_{13}M_{34}=M_{34}M_{41,}\qquad c_{23}\equiv
+M_{31}M_{43}=M_{43}M_{41},\qquad c_{24}\equiv M_{13}M_{43}=M_{43}M_{14,} \\
+c_{11} &\equiv &M_{32}M_{34}=M_{34}M_{24},\qquad c_{12}\equiv
+M_{23}M_{34}=M_{34}M_{42},\qquad c_{13}\equiv
+M_{23}M_{43}=M_{43}M_{24},\qquad c_{14}\equiv M_{32}M_{43}=M_{43}M_{42}
 \end{eqnarray*}
-\begin{align*}
-c41& \equiv \lbrack
-(f+k)(dk/m-ek/n-f+k):(e-n)(dk/m+ek/n+f+k):-(d+m)(dk/m+ek/n-f-k)] \\
-c42& \equiv \lbrack
-(f-k)(dk/m+ek/n+f+k):(e+n)(dk/m-ek/n-f+k):-(d+m)(dk/m-ek/n+f-k)] \\
-c43& \equiv \lbrack
-(f+k)(dk/m-ek/n+f-k):(e+n)(dk/m+ek/n-f-k):-(d-m)(dk/m+ek/n+f+k)] \\
-c44& \equiv \lbrack
-(f-k)(dk/m+ek/n-f-k):(e-n)(dk/m-ek/n+f-k):-(d-m)(dk/m-ek/n-f+k)] \\
-c31& \equiv \lbrack k^{2}-f^{2}+df(k(1+t)/n-1)-dk^{2}/m+ek(f-s+b)/n+eb: \\
-ef-de+fm+kn-fr-e^{2}k/n-dek/n-dc+fa+des/m& : \\
-& (d-m)(b-s-ds/m+m+dk/n+ek/n+d+f)]
-\end{align*}%
 \pagebreak 
 
 \section{\protect\bigskip Introduction}
@@ -972,6 +1117,65 @@ and \textbf{Reflect\_LiL} were created using the \textit{Polar, Pole} and
 \textit{Reflect\_PiP} tools.
 
 \section{Address later}
+
+\bigskip 
+\begin{align*}
+M_{12}& \equiv \left\langle \left( a+d+f\right) \sigma _{\left\{ 1,3\right\}
+}+\left( -a-d+f\right) \sigma _{\left\{ 2,3\right\} }:(d+b+g)\sigma
+_{\left\{ 1,3\right\} }+\left( -d-b+g\right) \sigma _{\left\{ 2,3\right\}
+}:(f+g+c)\sigma _{\left\{ 1,3\right\} }+\left( -f-g+c\right) \sigma
+_{\left\{ 2,3\right\} }\right\rangle ,\;\;\;\;\; \\
+M_{21}& \equiv \left\langle (a+d+f)\sigma _{\left\{ 1,4\right\} }+\left(
+a+d-f\right) \sigma _{\left\{ 2,4\right\} }:(d+b+g)\sigma _{\left\{
+1,4\right\} }+\left( d+b-g\right) \sigma _{\left\{ 2,4\right\}
+}:(f+g+c)\sigma _{\left\{ 1,4\right\} }+\left( f+g-c\right) \sigma _{\left\{
+2,4\right\} }\right\rangle , \\
+M_{34}& \equiv \left\langle (a-d+f)\sigma _{\left\{ 1,3\right\} }+\left(
+-a+d+f\right) \sigma _{\left\{ 1,4\right\} }:(d-b+g)\sigma _{\left\{
+1,3\right\} }+\left( -d+b+g\right) \sigma _{\left\{ 1,4\right\}
+}:(f-g+c)\sigma _{\left\{ 1,3\right\} }+\left( -f+g+c\right) \sigma
+_{\left\{ 1,4\right\} }\right\rangle , \\
+M_{43}& \equiv \left\langle (a-d+f)\sigma _{\left\{ 2,3\right\} }+\left(
+a-d-f\right) \sigma _{\left\{ 2,4\right\} }:(d-b+g)\sigma _{\left\{
+2,3\right\} }+\left( d-b-g\right) \sigma _{\left\{ 2,4\right\}
+}:(f-g+c)\sigma _{\left\{ 2,3\right\} }+\left( f-g-c\right) \sigma _{\left\{
+2,4\right\} }\right\rangle , \\
+M_{13}& \equiv \left\langle a+d+f+\left( a-d+f\right) \sigma _{\left\{
+1,3\right\} }A_{1}:d+b+g+\left( d-b+g\right) \sigma _{\left\{ 1,3\right\}
+}A_{1}:f+g+c+\left( f-g+c\right) \sigma _{\left\{ 1,3\right\}
+}A_{1}\right\rangle , \\
+M_{31}& \equiv \left\langle a+d+f+\left( -a+d-f\right) \sigma _{\left\{
+1,3\right\} }A_{1}:d+b+g+\left( -d+b-g\right) \sigma _{\left\{ 1,3\right\}
+}A_{1}:f+g+c+\left( -f+g-c\right) \sigma _{\left\{ 1,3\right\}
+}A_{1}\right\rangle ,
+\end{align*}
+
+\begin{align*}
+M_{24}& \equiv \left\langle -a-d+f+\left( -a+d+f\right) \sigma _{\left\{
+2,4\right\} }A_{2}:-d-b+g+\left( -d+b+g\right) \sigma _{\left\{ 2,4\right\}
+}A_{2}:-f-g+c+\left( -f+g+c\right) \sigma _{\left\{ 2,4\right\}
+}A_{2}\right\rangle , \\
+M_{42}& \equiv \left\langle -a-d+f+\left( a-d-f\right) \sigma _{\left\{
+2,4\right\} }A_{2}:-d-b+g+\left( d-b-g\right) \sigma _{\left\{ 2,4\right\}
+}A_{2}:-f-g+c+\left( f-g-c\right) \sigma _{\left\{ 2,4\right\}
+}A_{2}\right\rangle , \\
+M_{14}& \equiv \left\langle a+d+f+\left( -a+d+f\right) \sigma _{\left\{
+1,4\right\} }A_{1}:d+b+g+\left( -d+b+g\right) \sigma _{\left\{ 1,4\right\}
+}A_{1}:f+g+c+\left( -f+g+c\right) \sigma _{\left\{ 1,4\right\}
+}A_{1}\right\rangle , \\
+M_{41}& \equiv \left\langle a+d+f+\left( a-d-f\right) \sigma _{\left\{
+1,4\right\} }A_{1}:d+b+g+\left( d-b-g\right) \sigma _{\left\{ 1,4\right\}
+}A_{1}:f+g+c+\left( f-g-c\right) \sigma _{\left\{ 1,4\right\}
+}A_{1}\right\rangle , \\
+M_{23}& \equiv \left\langle -a-d+f+\left( a-d+f\right) \sigma _{\left\{
+2,3\right\} }A_{2}:-d-b+g+\left( d-b+g\right) \sigma _{\left\{ 2,3\right\}
+}A_{2}:-f-g+c+\left( f-g+c\right) \sigma _{\left\{ 2,3\right\}
+}A_{2}\right\rangle , \\
+M_{32}& \equiv \left\langle -a-d+f+\left( -a+d-f\right) \sigma _{\left\{
+2,3\right\} }A_{2}:-d-b+g+\left( -d+b-g\right) \sigma _{\left\{ 2,3\right\}
+}A_{2}:-f-g+c+\left( -f+g-c\right) \sigma _{\left\{ 2,3\right\}
+}A_{2}\right\rangle ,
+\end{align*}
 
 these are wrong at the moment, not sure if it is crucial for me to put them
 in anyway
