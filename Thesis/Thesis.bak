@@ -16,7 +16,7 @@
 %TCIDATA{Version=5.50.0.2960}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Monday, July 04, 2016 10:53:18}
+%TCIDATA{LastRevised=Monday, July 04, 2016 13:18:24}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{ComputeDefs=
 %$m_{{}}$
@@ -67,7 +67,7 @@ a_{i}a_{j}}$ for $i\neq j\in \lbrack 6]$, which determine the six lines
 \begin{align*}
 L_{\{1,2\}}& \equiv a_{1}a_{2}\equiv \langle 1:-1:0\rangle , & L_{\{1,3\}}&
 \equiv a_{1}a_{3}\equiv \langle 1:0:-1\rangle , & L_{\{1,4\}}& \equiv
-a_{1}a_{4}\equiv \langle 0:1:-1\rangle  \\
+a_{1}a_{4}\equiv \langle 0:1:-1\rangle \\
 L_{\{3,4\}}& \equiv a_{3}a_{4}\equiv \langle 1:1:0\rangle , & L_{\{2,4\}}&
 \equiv a_{2}a_{4}\equiv \langle 1:0:1\rangle , & L_{\{2,3\}}& \equiv
 a_{2}a_{3}\equiv \langle 0:1:1\rangle .
@@ -230,7 +230,7 @@ nonzero. These quadratic relations give rise to the \textbf{cubic relations}
 \frac{1}{A_{1}A_{2}A_{3}} &=&\sigma _{\left\{ 1,2\right\} }\sigma _{\left\{
 2,3\right\} }\sigma _{\left\{ 1,3\right\} },\quad \frac{1}{A_{1}A_{2}A_{4}}%
 =\sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 2,4\right\} }\sigma
-_{\left\{ 1,4\right\} },\quad   \label{Cubic Relations} \\
+_{\left\{ 1,4\right\} },\quad  \label{Cubic Relations} \\
 \frac{1}{A_{1}A_{3}A_{4}} &=&\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
 3,4\right\} }\sigma _{\left\{ 1,4\right\} },\quad \frac{1}{A_{2}A_{3}A_{4}}%
 =\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{ 3,4\right\} }\sigma
@@ -307,7 +307,7 @@ m\equiv \left[ \sigma _{\left\{ 1,3\right\} }\pm \sigma _{\left\{
 _{\left\{ 1,4\right\} }\mp \sigma _{\left\{ 2,4\right\} }\right] ,
 \end{equation*}%
 or some other combination with respect to the $\alpha $ \textit{sigma
-relations}. 
+relations}.
 
 Hence the side midpoints of the quadrangle $\overline{a_{1}a_{2}a_{3}a_{4}}$
 have the form
@@ -317,32 +317,32 @@ m_{12} &\equiv &\left[ 1-\sigma _{\left\{ 1,2\right\} }A_{1}:1-\sigma
 _{\left\{ 1,2\right\} }A_{1}:1+\sigma _{\left\{ 1,2\right\} }A_{1}\right] =%
 \left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma
 _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma _{\left\{
-1,3\right\} }+\sigma _{\left\{ 2,3\right\} }\right]  \\
+1,3\right\} }+\sigma _{\left\{ 2,3\right\} }\right] \\
 m_{21} &\equiv &\left[ 1+\sigma _{\left\{ 1,2\right\} }A_{1}:1+\sigma
 _{\left\{ 1,2\right\} }A_{1}:1-\sigma _{\left\{ 1,2\right\} }A_{1}\right] =%
 \left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }:\sigma
 _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{
-1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right]  \\
+1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] \\
 m_{34} &\equiv &\left[ 1-\sigma _{\left\{ 3,4\right\} }A_{3}:-1+\sigma
 _{\left\{ 3,4\right\} }A_{3}:1+\sigma _{\left\{ 3,4\right\} }A_{3}\right] =%
 \left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 1,4\right\} }:-\sigma
 _{\left\{ 1,3\right\} }+\sigma _{\left\{ 1,4\right\} }:\sigma _{\left\{
-1,3\right\} }+\sigma _{\left\{ 1,4\right\} }\right]  \\
+1,3\right\} }+\sigma _{\left\{ 1,4\right\} }\right] \\
 m_{43} &\equiv &\left[ 1+\sigma _{\left\{ 3,4\right\} }A_{3}:-1-\sigma
 _{\left\{ 3,4\right\} }A_{3}:1-\sigma _{\left\{ 3,4\right\} }A_{3}\right] =%
 \left[ \sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 2,4\right\} }:-\sigma
 _{\left\{ 2,3\right\} }-\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{
-2,3\right\} }-\sigma _{\left\{ 2,4\right\} }\right]  \\
+2,3\right\} }-\sigma _{\left\{ 2,4\right\} }\right] \\
 m_{13} &\equiv &\left[ 1+\sigma _{\left\{ 1,3\right\} }A_{1}:1-\sigma
 _{\left\{ 1,3\right\} }A_{1}:1+\sigma _{\left\{ 1,3\right\} }A_{1}\right] =%
 \left[ \sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }:\sigma
 _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma _{\left\{
-1,2\right\} }+\sigma _{\left\{ 2,3\right\} }\right]  \\
+1,2\right\} }+\sigma _{\left\{ 2,3\right\} }\right] \\
 m_{31} &\equiv &\left[ 1-\sigma _{\left\{ 1,3\right\} }A_{1}:1+\sigma
 _{\left\{ 1,3\right\} }A_{1}:1-\sigma _{\left\{ 1,3\right\} }A_{1}\right] =%
 \left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma
 _{\left\{ 1,4\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{
-1,4\right\} }-\sigma _{\left\{ 3,4\right\} }\right] 
+1,4\right\} }-\sigma _{\left\{ 3,4\right\} }\right]
 \end{eqnarray*}
 
 \begin{eqnarray*}
@@ -350,38 +350,38 @@ m_{24} &\equiv &\left[ -1-\sigma _{\left\{ 2,4\right\} }A_{2}:-1+\sigma
 _{\left\{ 2,4\right\} }A_{2}:1+\sigma _{\left\{ 2,4\right\} }A_{2}\right] =%
 \left[ -\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,4\right\}
 }:-\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 1,4\right\} }:\sigma
-_{\left\{ 1,2\right\} }+\sigma _{\left\{ 1,4\right\} }\right]  \\
+_{\left\{ 1,2\right\} }+\sigma _{\left\{ 1,4\right\} }\right] \\
 m_{42} &\equiv &\left[ -1+\sigma _{\left\{ 2,4\right\} }A_{2}:-1-\sigma
 _{\left\{ 2,4\right\} }A_{2}:1-\sigma _{\left\{ 2,4\right\} }A_{2}\right] =%
 \left[ -\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 3,4\right\}
 }:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma
-_{\left\{ 2,3\right\} }-\sigma _{\left\{ 3,4\right\} }\right]  \\
+_{\left\{ 2,3\right\} }-\sigma _{\left\{ 3,4\right\} }\right] \\
 m_{14} &\equiv &\left[ 1-\sigma _{\left\{ 1,4\right\} }A_{1}:1+\sigma
 _{\left\{ 1,4\right\} }A_{1}:1+\sigma _{\left\{ 1,4\right\} }A_{1}\right] =%
 \left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }:\sigma
 _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{
-1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right]  \\
+1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right] \\
 m_{41} &\equiv &\left[ 1+\sigma _{\left\{ 1,4\right\} }A_{1}:1-\sigma
 _{\left\{ 1,4\right\} }A_{1}:1-\sigma _{\left\{ 1,4\right\} }A_{1}\right] =%
 \left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma
 _{\left\{ 1,3\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{
-1,3\right\} }-\sigma _{\left\{ 3,4\right\} }\right]  \\
+1,3\right\} }-\sigma _{\left\{ 3,4\right\} }\right] \\
 m_{23} &\equiv &\left[ -1+\sigma _{\left\{ 2,3\right\} }A_{2}:-1-\sigma
 _{\left\{ 2,3\right\} }A_{2}:1+\sigma _{\left\{ 2,3\right\} }A_{2}\right] =%
 \left[ -\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\}
 }:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }:\sigma
-_{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\right]  \\
+_{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\right] \\
 m_{32} &\equiv &\left[ -1-\sigma _{\left\{ 2,3\right\} }A_{2}:-1+\sigma
 _{\left\{ 2,3\right\} }A_{2}:1-\sigma _{\left\{ 2,3\right\} }A_{2}\right] =%
 \left[ -\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{ 3,4\right\}
 }:-\sigma _{\left\{ 2,4\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma
-_{\left\{ 2,4\right\} }-\sigma _{\left\{ 3,4\right\} }\right] 
+_{\left\{ 2,4\right\} }-\sigma _{\left\{ 3,4\right\} }\right]
 \end{eqnarray*}
 
 These side midpoints have corresponding \textit{side midlines}, which are
 precisely the duals to each side midpoint. That is they are given by the
 matrix multiplications $M_{ij}\equiv \mathbf{A}m_{ij}^{T},$ which highlights
-the opposite relations aluuded to above. 
+the opposite relations aluuded to above.
 
 There is a natural divison of the quadrangle $\overline{a_{1}a_{2}a_{3}a_{4}}
 $ into four distinct triangles triangles $\overline{a_{1}a_{2}a_{3}},%
@@ -411,7 +411,7 @@ m_{31} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
 }:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} }\right] , \\
 m_{32} &\equiv &\left[ -\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
 1,3\right\} }:-\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\}
-}:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\right] 
+}:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\right]
 \end{eqnarray*}
 
 on $C_{1}^{\left( 4\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
@@ -428,7 +428,7 @@ m_{13} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{
 }:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }\right] , \\
 m_{23} &\equiv &\left[ -\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
 1,3\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\}
-}:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\right] 
+}:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\right]
 \end{eqnarray*}
 
 on $C_{2}^{\left( 4\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
@@ -445,7 +445,7 @@ m_{31} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
 }:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} }\right] , \\
 m_{23} &\equiv &\left[ -\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
 1,3\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\}
-}:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\right] 
+}:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\right]
 \end{eqnarray*}
 
 on $C_{3}^{\left( 4\right) }\equiv \left\langle -\sigma _{\left\{
@@ -462,7 +462,7 @@ m_{13} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{
 }:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }\right] , \\
 m_{32} &\equiv &\left[ -\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
 1,3\right\} }:-\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\}
-}:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\right] 
+}:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\right]
 \end{eqnarray*}
 
 on $C_{4}^{\left( 4\right) }\equiv \left\langle -\sigma _{\left\{
@@ -470,10 +470,10 @@ on $C_{4}^{\left( 4\right) }\equiv \left\langle -\sigma _{\left\{
 }+\sigma _{\left\{ 2,3\right\} }:-\sigma _{\left\{ 1,3\right\} }+\sigma
 _{\left\{ 2,3\right\} }\right\rangle .$
 
-This is checked by computing 
+This is checked by computing
 
-\begin{eqnarray*}
-&&\det \left( 
+\begin{equation*}
+\det \left( 
 \begin{array}{ccc}
 \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma
 _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
@@ -485,8 +485,11 @@ _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
 _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} } & \sigma _{\left\{
 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }%
 \end{array}%
-\right)  \\
-&=&\det \left( 
+\right) =0
+\end{equation*}
+
+\begin{equation*}
+=\det \left( 
 \begin{array}{ccc}
 \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma
 _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
@@ -498,8 +501,11 @@ _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
 _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} } & \sigma _{\left\{
 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }%
 \end{array}%
-\right)  \\
-&=&\det \left( 
+\right) 
+\end{equation*}
+
+\begin{equation*}
+=\det \left( 
 \begin{array}{ccc}
 \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma
 _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
@@ -511,8 +517,11 @@ _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
 _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} } & \sigma _{\left\{
 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }%
 \end{array}%
-\right)  \\
-&=&\det \left( 
+\right) 
+\end{equation*}
+
+\begin{equation*}
+=\det \left( 
 \begin{array}{ccc}
 \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma
 _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
@@ -524,10 +533,10 @@ _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
 _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} } & \sigma _{\left\{
 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }%
 \end{array}%
-\right) =0.
-\end{eqnarray*}
+\right) .
+\end{equation*}
 
-The corresponding meets are 
+The corresponding meets are
 
 \begin{eqnarray*}
 &&\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\}
@@ -535,33 +544,130 @@ The corresponding meets are
 _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }\right] \times \left[
 \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma
 _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }:\sigma _{\left\{
-1,2\right\} }-\sigma _{\left\{ 2,3\right\} }\right]  \\
+1,2\right\} }-\sigma _{\left\{ 2,3\right\} }\right] \\
 &=&\left\langle \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,3\right\}
 }:-\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }:\sigma
 _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} }\right\rangle \equiv
-C_{1}^{\left( 4\right) }
+C_{1}^{\left( 4\right) },
 \end{eqnarray*}
 
 and similarly for the other circumlines. The situation with midlines $M_{ij}$
-for $i\neq j\in \left\{ 1,2,3\right\} $ is precisely dual.
+for $i\neq j\in \left\{ 1,2,3\right\} $ is precisely dual. $\square $
 
-\bigskip 
+\bigskip
+
+The Circumlines for the triangles $\overline{a_{1}a_{2}a_{4}}$, $\overline{%
+a_{1}a_{3}a_{4}}$, and $\overline{a_{2}a_{3}a_{4}}$, are as follows
 
 \begin{eqnarray*}
-c_{41} &\equiv &M_{21}M_{32}=M_{32}M_{31},\qquad c_{42}\equiv
-M_{21}M_{23}=M_{23}M_{13},\qquad c_{43}\equiv
-M_{12}M_{23}=M_{23}M_{31},\qquad c_{44}\equiv M_{12}M_{32}=M_{32}M_{13}, \\
-c_{31} &\equiv &M_{21}M_{24}=M_{24}M_{14},\qquad c_{32}\equiv
-M_{21}M_{42}=M_{42}M_{41},\qquad c_{33}\equiv
-M_{12}M_{24}=M_{24}M_{41},\qquad c_{34}\equiv M_{12}M_{42}=M_{42}M_{14}, \\
-c_{21} &\equiv &M_{32}M_{34}=M_{34}M_{14},\qquad c_{22}\equiv
-M_{13}M_{34}=M_{34}M_{41,}\qquad c_{23}\equiv
-M_{31}M_{43}=M_{43}M_{41},\qquad c_{24}\equiv M_{13}M_{43}=M_{43}M_{14,} \\
-c_{11} &\equiv &M_{32}M_{34}=M_{34}M_{24},\qquad c_{12}\equiv
-M_{23}M_{34}=M_{34}M_{42},\qquad c_{13}\equiv
-M_{23}M_{43}=M_{43}M_{24},\qquad c_{14}\equiv M_{32}M_{43}=M_{43}M_{42}
+m_{21} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
+2,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] , \\
+m_{24} &\equiv &\left[ -\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
+1,4\right\} }:-\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 1,4\right\}
+}:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 1,4\right\} }\right] , \\
+m_{14} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
+2,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right] 
 \end{eqnarray*}
-\pagebreak 
+
+on $C_{1}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
+}+\sigma _{\left\{ 2,4\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma
+_{\left\{ 1,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
+2,4\right\} }\right\rangle ,$
+
+\begin{eqnarray*}
+m_{21} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
+2,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] , \\
+m_{42} &\equiv &\left[ -\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{
+1,4\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,4\right\}
+}:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,4\right\} }\right] , \\
+m_{41} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
+2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] 
+\end{eqnarray*}
+
+on $C_{2}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
+}-\sigma _{\left\{ 2,4\right\} }:-\sigma _{\left\{ 1,2\right\} }+\sigma
+_{\left\{ 1,4\right\} }:-\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
+2,4\right\} }\right\rangle ,$
+
+\begin{eqnarray*}
+m_{12} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
+2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right] , \\
+m_{24} &\equiv &\left[ -\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
+1,4\right\} }:-\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 1,4\right\}
+}:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 1,4\right\} }\right] , \\
+m_{41} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
+2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] 
+\end{eqnarray*}
+
+on $C_{3}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
+}-\sigma _{\left\{ 2,4\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma
+_{\left\{ 1,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
+2,4\right\} }\right\rangle ,$
+
+\begin{eqnarray*}
+m_{12} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
+2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right] , \\
+m_{42} &\equiv &\left[ -\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{
+1,4\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,4\right\}
+}:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,4\right\} }\right] , \\
+m_{14} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
+2,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right] 
+\end{eqnarray*}
+
+on $C_{4}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
+}+\sigma _{\left\{ 2,4\right\} }:-\sigma _{\left\{ 1,2\right\} }+\sigma
+_{\left\{ 1,4\right\} }:-\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
+2,4\right\} }\right\rangle .$ Also
+
+$C_{1}^{\left( 2\right) }\equiv \left\langle -\sigma _{\left\{ 1,3\right\}
+}-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma
+_{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
+1,4\right\} }\right\rangle $, through $m_{34},m_{31},m_{14}$,
+
+$C_{2}^{\left( 2\right) }\equiv \left\langle \sigma _{\left\{ 1,3\right\}
+}-\sigma _{\left\{ 3,4\right\} }:-\sigma _{\left\{ 1,4\right\} }-\sigma
+_{\left\{ 3,4\right\} }:-\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{
+1,4\right\} }\right\rangle $, through $m_{34},m_{13},m_{41}$,
+
+$C_{3}^{\left( 2\right) }\equiv \left\langle -\sigma _{\left\{ 1,3\right\}
+}+\sigma _{\left\{ 3,4\right\} }:-\sigma _{\left\{ 1,4\right\} }+\sigma
+_{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{
+1,4\right\} }\right\rangle $, through $m_{43},m_{31},m_{41}$,
+
+$C_{4}^{\left( 2\right) }\equiv \left\langle \sigma _{\left\{ 1,3\right\}
+}+\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma
+_{\left\{ 3,4\right\} }:-\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
+1,4\right\} }\right\rangle $, through $m_{43},m_{13},m_{14}$,
+
+$C_{1}^{\left( 1\right) }\equiv \left\langle \sigma _{\left\{ 2,4\right\}
+}-\sigma _{\left\{ 3,4\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma
+_{\left\{ 3,4\right\} }:-\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
+2,4\right\} }\right\rangle $, through $m_{34},m_{32},m_{24}$,
+
+$C_{2}^{\left( 1\right) }\equiv \left\langle -\sigma _{\left\{ 2,4\right\}
+}-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma
+_{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
+2,4\right\} }\right\rangle $, through $m_{34},m_{23},m_{42}$,
+
+$C_{3}^{\left( 1\right) }\equiv \left\langle \sigma _{\left\{ 2,4\right\}
+}+\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }+\sigma
+_{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
+2,4\right\} }\right\rangle $, through $m_{43},m_{23},m_{24}$,
+
+$C_{4}^{\left( 1\right) }\equiv \left\langle -\sigma _{\left\{ 2,4\right\}
+}+\sigma _{\left\{ 3,4\right\} }:-\sigma _{\left\{ 2,3\right\} }+\sigma
+_{\left\{ 3,4\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
+2,4\right\} }\right\rangle $, through $m_{43},m_{32},m_{42}$.
+
+\bigskip \pagebreak 
 
 \section{\protect\bigskip Introduction}
 
