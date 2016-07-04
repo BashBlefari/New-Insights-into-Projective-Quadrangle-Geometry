@@ -9,10 +9,12 @@ else
     y=x(1);
 end
 m1=simplify((y*a1+a2));m2=simplify((y*a1-a2));
-if factor(quadrance(a1,m1,A)-quadrance(a2,m1,A))==0
+I=quadrance(a1,m1,A)-quadrance(a2,m1,A);
+a=checkzero(I);
+if a
     M1=simplify((A*m1.'));M2=simplify((A*m2.'));
 else 
-    m1=zero(1,3);m2=m1;
+    m1=zeros(1,3);m2=m1;
     M1=simplify((A*m1.'));M2=simplify((A*m2.'));
      display('no')
     return
