@@ -1,6 +1,6 @@
 function x=incident(a,L)
-I=factor(a*L);
-if I==0
+I=checkzero(a*L);
+if I
     x=1;
 else
     x=0;
