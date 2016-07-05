@@ -1,4 +1,4 @@
-function a=sdot(a1,a2,A)
+function a=dots(a1,a2,A)
 x=factor(a1*A*a2.');
     a=1;
     for i=1:length(x)
