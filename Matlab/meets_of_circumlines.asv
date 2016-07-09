@@ -23,7 +23,9 @@ C12=[x24+x34;x23+x34;x23+x24];
 C13=[-x24-x34;x23-x34;x23-x24];
 C14=[x24-x34;-x23-x34;-x23+x24];
 %meets of Circumlines
-L1234_1324=joinqx(meetx(C11,C23),meetx(C12,C24),meetx(C31,C43),meetx(C32,C44));
+C1132=;C2142=;C1334=;C2344=;
+C1123=;C1224=;C3143=;C3244=meetx(C32,C44);
+L1234_1324=joinqx(meetx(C11,C23),meetx(C12,C24),C3143,C3244);
 L1243_1423=joinqx(meetx(C11,C24),meetx(C12,C23),meetx(C41,C34),meetx(C42,C33));
 L2134_4132=joinqx(meetx(C13,C22),meetx(C14,C21),meetx(C43,C32),meetx(C44,C31));
 L2143_3142=joinqx(meetx(C13,C21),meetx(C14,C22),meetx(C41,C33),meetx(C42,C34));
