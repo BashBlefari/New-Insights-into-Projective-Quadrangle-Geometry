@@ -1,59 +1,86 @@
 
-\documentclass[11pt]{article}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{amsfonts}
+\documentclass{unswthesis}
 \usepackage{amssymb}
-\usepackage{amsthm}
-\usepackage{latexsym,amsmath}
-\usepackage{graphicx}
-\usepackage{afterpage}
-\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
-\usepackage[utf8]{inputenc}
-\usepackage{pgf,tikz}
+\usepackage{amsmath}
 
-\setcounter{MaxMatrixCols}{10}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+
 %TCIDATA{OutputFilter=LATEX.DLL}
 %TCIDATA{Version=5.50.0.2960}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="2">}
 %TCIDATA{BibliographyScheme=Manual}
-%TCIDATA{LastRevised=Thursday, July 07, 2016 21:26:02}
+%TCIDATA{Created=Friday, July 08, 2016 00:30:17}
+%TCIDATA{LastRevised=Saturday, July 09, 2016 14:08:41}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
-%TCIDATA{ComputeDefs=
-%$m_{{}}$
-%}
-
+%TCIDATA{<META NAME="Title" CONTENT="Universal Projective Quadrangle Geometry">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Theses\SW\University of New South Wales">}
+%TCIDATA{CSTFile=unswthesis.cst}
+%TCIDATA{<META NAME="PrintViewPercent" CONTENT="100">}
 
 \newtheorem{theorem}{Theorem}
-\newtheorem{theorem}{Lemma}
-\usetikzlibrary{arrows}
-\pagestyle{empty}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
 \input{tcilatex}
+
 \begin{document}
 
-\author{Sebastian Blefari}
-\date{}
+\thesisschool{School Of Mathematics and Statistics}
+\thesistitle{A Look into Projective Quadrangle Geometry}
+\thesisauthor{Sebastian E. Blefari (z3416129)}
+\thesisdegree{Bachelor of Advanced Mathematics (Honours)}
+\thesisdate{}
+\thesissupervisor{A/Prof.\ Norman J. Wildberger}
+\thesisassessor{}
+\title{Not used (see Thesis Title above), but \textsl{SWP} always adds when
+using the Make Title field.}
+\author{Not used (see Thesis Author above), but \textsl{SWP} always adds
+when using the Make Title field.}
+\maketitle
+\tableofcontents
+\listoffigures
+\listoftables
 
-\section{Bilinear Form}
+\chapter{Bilinear Form}
 
 Fundamental Theorem of Projective Geometry:\newline
 We are able to use a transformation to send any four arbitrary non-collinear
 points of a quadrangle to the four points; 
-\begin{equation*}
+\[
 a_{1}\equiv \lbrack 1:1:1],\;\;a_{2}\equiv \lbrack -1:-1:1],\;\;a_{3}\equiv
 \lbrack 1:-1:1],\;\;a_{4}\equiv \lbrack -1:1:1].
-\end{equation*}%
+\]%
 This transformation results in a change of Bilinear form to 
-\begin{equation*}
+\[
 \mathbf{A}\equiv 
 \begin{bmatrix}
-a & d & f \\ 
+af & d & f \\ 
 d & b & g \\ 
 f & g & c%
 \end{bmatrix}%
 ,\;\;\text{for some}\;\;a,b,c,d,e,f\in \text{Nat},
-\end{equation*}%
+\]%
 with inverse 
-\begin{equation*}
+\[
 \mathbf{B}\equiv 
 \begin{bmatrix}
 g^{2}-bc & dc-fg & fb-dg \\ 
@@ -61,14 +88,14 @@ dc-fg & f^{2}-ac & ga-df \\
 fb-dg & ga-df & d^{2}-ab%
 \end{bmatrix}%
 .
-\end{equation*}%
+\]%
 We will refer to the quadrangle $\overline{a_{1}a_{2}a_{3}a_{4}}$ as the
 standard quadrangle. The standard quadrangle has six sides $\overline{%
 a_{i}a_{j}}$ for $i\neq j\in \lbrack 6]$, which determine the six lines 
 \begin{align*}
 L_{\{1,2\}}& \equiv a_{1}a_{2}\equiv \langle 1:-1:0\rangle , & L_{\{1,3\}}&
 \equiv a_{1}a_{3}\equiv \langle 1:0:-1\rangle , & L_{\{1,4\}}& \equiv
-a_{1}a_{4}\equiv \langle 0:1:-1\rangle \\
+a_{1}a_{4}\equiv \langle 0:1:-1\rangle  \\
 L_{\{3,4\}}& \equiv a_{3}a_{4}\equiv \langle 1:1:0\rangle , & L_{\{2,4\}}&
 \equiv a_{2}a_{4}\equiv \langle 1:0:1\rangle , & L_{\{2,3\}}& \equiv
 a_{2}a_{3}\equiv \langle 0:1:1\rangle .
@@ -81,9 +108,9 @@ d_{\beta } &\equiv &L_{\{1,3\}}L_{\{2,4\}}\equiv \lbrack 0:1:0],\;\; \\
 d_{\gamma } &\equiv &L_{\{1,4\}}L_{\{2,3\}}\equiv \lbrack 1:0:0].
 \end{eqnarray*}%
 The labeling will become more obvious below. Define 
-\begin{equation*}
+\[
 D\equiv abc+2fdg-ag^{2}-bf^{2}-cd^{2}.
-\end{equation*}%
+\]%
 Then indeed we have that 
 \begin{align*}
 det(A)& =det%
@@ -135,32 +162,34 @@ These numbers also satisfy
 \end{align*}
 \end{theorem}
 
-\textit{Proof. }Computations give you these results. $\square $
+\begin{proof}
+Computations give you these results. $\square $
+\end{proof}
 
-\begin{theorem}[Side midpoints]
+\begin{theorem}
+\begin{theorem}[Side Midpoints]
 Suppose that $p_{1}$ and $p_{2}$ are non-null, non-perpendicular points,
 forming a non-null side $\overline{p_{1}p_{2}}$. Then $\overline{p_{1}p_{2}}$
 has a non-null midpoint $m$ precisely when $1-q(p_{1},p_{2})$ is a square,
 and in this case there are exactly two perpendicular midpoints $m$.
 \end{theorem}
+\end{theorem}
 
+\begin{proof}
 \textit{Proof \ }We suppose that without loss of generality that $%
 p_{1}=a_{1}\equiv \lbrack 1:1:1]$ and $p_{2}=a_{2}\equiv \lbrack -1:-1:1]$
-so that by the spreads and quadrances theorem
-
-\begin{equation*}
+so that by the spreads and quadrances theorem%
+\[
 1-q(p_{1},p_{2})=\frac{(c-b-a-2d)^{2}}{A_{1}A_{2}}
-\end{equation*}
-
+\]%
 By assumption each of the variables $A_{1}$ and $A_{2}$ are nonzero. An
 arbitrary point $m$ on the line $L_{\{1,2\}}\equiv \left\langle
 1:-1:0\right\rangle $ has the form $m=[x-y:x-y:x+y]$, which is null
 precisely when 
-\begin{equation*}
+\[
 (a+b+2d)(x-y)^{2}+c(x+y)^{2}+2\left( f+g\right) (x^{2}-y^{2})=0
-\end{equation*}
-by the Null point theorem. Assuming that $m$ is non-null, we compute that
-
+\]%
+by the Null point theorem. Assuming that $m$ is non-null, we compute that%
 \begin{eqnarray*}
 q(p_{1},m) &=&\frac{4y^{2}\left( c\left( a+b+d\right) -\left( f+g\right)
 ^{2}\right) }{A_{1}\left( (a+b+2d)(x-y)^{2}+c(x+y)^{2}+2\left( f+g\right)
@@ -169,34 +198,29 @@ q(p_{2},m) &=&\frac{4x^{2}\left( c\left( a+b+d\right) -\left( f+g\right)
 ^{2}\right) }{A_{2}\left( (a+b+2d)(x-y)^{2}+c(x+y)^{2}+2\left( f+g\right)
 (x^{2}-y^{2})\right) }
 \end{eqnarray*}%
-\linebreak
-
-By assumption $\overline{p_{1}p_{2}}$ is non-null, so by the Corollary to
-the Null points/lines theorem, $c\left( a+b+d\right) -\left( f+g\right)
-^{2}\neq 0$, and so the above expressions are equal precisely when 
-\begin{equation*}
+\linebreak By assumption $\overline{p_{1}p_{2}}$ is non-null, so by the
+Corollary to the Null points/lines theorem, $c\left( a+b+d\right) -\left(
+f+g\right) ^{2}\neq 0$, and so the above expressions are equal precisely
+when 
+\[
 y^{2}A_{2}=x^{2}A_{1}
-\end{equation*}
+\]%
 has a solution, which occurs precisely when $1-q(p_{1},p_{2})$ is a square.
-In fact if
-
-\begin{equation*}
+In fact if%
+\[
 \frac{1}{A_{1}A_{2}}=\sigma _{\left\{ 1,2\right\} }^{2}
-\end{equation*}
-
-then the two midpoints are
-
-\begin{equation*}
+\]%
+then the two midpoints are%
+\[
 m\equiv \left[ 1\pm \sigma _{\left\{ 1,2\right\} }A_{1}:1\pm \sigma
-_{\left\{ 1,2\right\} }A_{1}:1\mp \sigma _{\left\{ 1,2\right\} }A_{1}\right]
-\end{equation*}
-and they are perpendicular, since
-
-\begin{equation*}
+_{\left\{ 1,2\right\} }A_{1}:1\mp \sigma _{\left\{ 1,2\right\} }A_{1}\right] 
+\]%
+and they are perpendicular, since%
+\[
 m_{+}\mathbf{A}m_{-}^{T}=0
-\end{equation*}
-
-\bigskip by computations. $\square $
+\]%
+by computations. $\square $
+\end{proof}
 
 We denote the pair of midpoints as \textbf{opposites}. Where it follows that
 the dual line $M$ of a midpoint $m$ is incident with the opposite midpoint.
@@ -208,11 +232,10 @@ Dual
 We want to impose the conditions that all six sides $\overline{a_{i}a_{j}}$
 for $i\neq j\in \lbrack 4]$ have midpoints. From the Side midpoint theorem
 we know this is true precisely when $1-q(a_{i},a_{j})$ is a square. This
-condition is equivalent to having natural numbers $\sigma _{\left\{
-1,2\right\} },\sigma _{\left\{ 3,4\right\} },\sigma _{\left\{ 1,3\right\}
-},\sigma _{\left\{ 2,4\right\} },\sigma _{\left\{ 1,4\right\} },\sigma
-_{\left\{ 2,3\right\} }\in \text{Rat}$, satisfying the \textbf{quadratic
-relations}
+condition is equivalent to having numbers $\sigma _{\left\{ 1,2\right\}
+},\sigma _{\left\{ 3,4\right\} },\sigma _{\left\{ 1,3\right\} },\sigma
+_{\left\{ 2,4\right\} },\sigma _{\left\{ 1,4\right\} },\sigma _{\left\{
+2,3\right\} }\in \text{Rat}$, satisfying the \textbf{quadratic relations}
 
 \begin{align}
 \frac{1}{A_{1}A_{2}}& =\sigma _{\left\{ 1,2\right\} }^{2},\quad \frac{1}{%
@@ -220,26 +243,28 @@ A_{1}A_{3}}=\sigma _{\left\{ 1,3\right\} }^{2},\quad \frac{1}{A_{1}A_{4}}%
 =\sigma _{\left\{ 1,4\right\} }^{2},  \label{Quadratic Relations} \\
 \frac{1}{A_{3}A_{4}}& =\sigma _{\left\{ 3,4\right\} }^{2},\quad \frac{1}{%
 A_{2}A_{4}}=\sigma _{\left\{ 2,4\right\} }^{2},\quad \frac{1}{A_{2}A_{3}}%
-=\sigma _{\left\{ 2,3\right\} }^{2}
+=\sigma _{\left\{ 2,3\right\} }^{2}.
 \end{align}%
 \qquad Clearly all of $\sigma _{\left\{ 1,2\right\} },\sigma _{\left\{
 3,4\right\} },\sigma _{\left\{ 1,3\right\} },\sigma _{\left\{ 2,4\right\}
 },\sigma _{\left\{ 1,4\right\} },\sigma _{\left\{ 2,3\right\} }$ are
-nonzero. These quadratic relations give rise to the \textbf{cubic relations}
-
+nonzero. We can further take the product of these quadratic relations in
+threes, say $\frac{1}{A_{1}A_{2}}=\sigma _{\left\{ 1,2\right\} }^{2}$,$\frac{%
+1}{A_{1}A_{3}}=\sigma _{\left\{ 1,3\right\} }^{2}$,$\ $and $\frac{1}{%
+A_{2}A_{3}}=\sigma _{\left\{ 2,3\right\} }^{2}$, with possibly changing the
+sign of any or all of \textit{sigma} values to produce the following \textbf{%
+cubic relations}%
 \begin{eqnarray}
 \frac{1}{A_{1}A_{2}A_{3}} &=&\sigma _{\left\{ 1,2\right\} }\sigma _{\left\{
 2,3\right\} }\sigma _{\left\{ 1,3\right\} },\quad \frac{1}{A_{1}A_{2}A_{4}}%
 =\sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 2,4\right\} }\sigma
-_{\left\{ 1,4\right\} },\quad  \label{Cubic Relations} \\
+_{\left\{ 1,4\right\} },  \label{Cubic Relations} \\
 \frac{1}{A_{1}A_{3}A_{4}} &=&\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
 3,4\right\} }\sigma _{\left\{ 1,4\right\} },\quad \frac{1}{A_{2}A_{3}A_{4}}%
 =\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{ 3,4\right\} }\sigma
-_{\left\{ 2,4\right\} },  \notag
-\end{eqnarray}
-
-From these relations we get
-
+_{\left\{ 2,4\right\} }.  \nonumber
+\end{eqnarray}%
+From these relations we get%
 \begin{eqnarray*}
 A_{1} &=&\frac{\sigma _{\left\{ 2,3\right\} }}{\sigma _{\left\{ 1,2\right\}
 }\sigma _{\left\{ 1,3\right\} }}=\frac{\sigma _{\left\{ 2,4\right\} }}{%
@@ -261,10 +286,8 @@ A_{4} &=&\frac{\sigma _{\left\{ 1,2\right\} }}{\sigma _{\left\{ 1,4\right\}
 \sigma _{\left\{ 1,4\right\} }\sigma _{\left\{ 3,4\right\} }}=\frac{\sigma
 _{\left\{ 2,3\right\} }}{\sigma _{\left\{ 2,4\right\} }\sigma _{\left\{
 3,4\right\} }}.
-\end{eqnarray*}
-
-Furthermore these in turn imply the relations
-
+\end{eqnarray*}%
+Furthermore these in turn imply the relations%
 \begin{equation}
 \frac{\sigma _{\left\{ 2,3\right\} }}{\sigma _{\left\{ 1,3\right\} }}=\frac{%
 \sigma _{\left\{ 2,4\right\} }}{\sigma _{\left\{ 1,4\right\} }},\qquad \frac{%
@@ -273,30 +296,28 @@ _{\left\{ 3,4\right\} }}{\sigma _{\left\{ 1,4\right\} }},\qquad \frac{\sigma
 _{\left\{ 2,4\right\} }}{\sigma _{\left\{ 1,2\right\} }}=\frac{\sigma
 _{\left\{ 3,4\right\} }}{\sigma _{\left\{ 1,3\right\} }},
 \label{Sigma Relations}
-\end{equation}
-
-or simply
-
-\begin{equation*}
+\end{equation}%
+or simply%
+\[
 \sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 3,4\right\} }=\sigma
 _{\left\{ 1,3\right\} }\sigma _{\left\{ 2,4\right\} }=\sigma _{\left\{
 1,4\right\} }\sigma _{\left\{ 2,3\right\} }.
-\end{equation*}
+\]
 
 All these realtions have a strong correlation with the symmetries of four
 objects, namely that described realtion is the division of four objects into
 three pairs of two, that is the pairing%
-\begin{equation*}
+\[
 \left\{ \left\{ 1,2\right\} ,\left\{ 3,4\right\} \right\} ,~\left\{ \left\{
 1,3\right\} ,\left\{ 2,4\right\} \right\} ,~\left\{ \left\{ 1,4\right\}
 ,\left\{ 2,3\right\} \right\}
-\end{equation*}
+\]
 
 with respect to the order given. We will from now on refer to the three
 pairings aboves as \textbf{pairing }$\alpha ,\beta $ and $\gamma $
 respectfully.
 
-\subsection{Midpoints}
+\section{Midpoints}
 
 By the Side midpoint theorem for a side $\overline{a_{i}a_{j}}$ where $%
 a_{i}=[v_{i}]$ and $a_{j}=[v_{j}]$ we are able to normalise $v_{i}$ and $%
@@ -307,14 +328,14 @@ the Side midpoints Theorem we see that the midpoints for the side $\overline{%
 a_{1}a_{2}}$ are $m\equiv \left[ 1\pm \sigma _{\left\{ 1,2\right\}
 }A_{1}:1\pm \sigma _{\left\{ 1,2\right\} }A_{1}:1\mp \sigma _{\left\{
 1,2\right\} }A_{1}\right] $, but from above these can be rewritten as 
-\begin{equation*}
+\[
 m\equiv \left[ \sigma _{\left\{ 1,3\right\} }\pm \sigma _{\left\{
 2,3\right\} }:\sigma _{\left\{ 1,3\right\} }\pm \sigma _{\left\{ 2,3\right\}
 }:\sigma _{\left\{ 1,3\right\} }\mp \sigma _{\left\{ 2,3\right\} }\right] =%
 \left[ \sigma _{\left\{ 1,4\right\} }\pm \sigma _{\left\{ 2,4\right\}
 }:\sigma _{\left\{ 1,4\right\} }\pm \sigma _{\left\{ 2,4\right\} }:\sigma
 _{\left\{ 1,4\right\} }\mp \sigma _{\left\{ 2,4\right\} }\right] ,
-\end{equation*}%
+\]%
 or some other combination with respect to the $\alpha $ \textit{sigma
 relations}.
 
@@ -323,72 +344,112 @@ The side midpoints of the quadrangle $\overline{a_{1}a_{2}a_{3}a_{4}}$ have
 the form 
 \begin{eqnarray*}
 m_{12} &\equiv &\left[ 1-\sigma _{\left\{ 1,2\right\} }A_{1}:1-\sigma
-_{\left\{ 1,2\right\} }A_{1}:1+\sigma _{\left\{ 1,2\right\} }A_{1}\right] =%
-\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma
-_{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma _{\left\{
-1,3\right\} }+\sigma _{\left\{ 2,3\right\} }\right]  \\
+_{\left\{ 1,2\right\} }A_{1}:1+\sigma _{\left\{ 1,2\right\} }A_{1}\right]  \\
+&=&\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma
+_{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} }\right]  \\
+&=&\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }:\sigma
+_{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right]  \\
 m_{21} &\equiv &\left[ 1+\sigma _{\left\{ 1,2\right\} }A_{1}:1+\sigma
-_{\left\{ 1,2\right\} }A_{1}:1-\sigma _{\left\{ 1,2\right\} }A_{1}\right] =%
-\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }:\sigma
-_{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{
-1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right]  \\
+_{\left\{ 1,2\right\} }A_{1}:1-\sigma _{\left\{ 1,2\right\} }A_{1}\right]  \\
+&=&\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} }:\sigma
+_{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }\right]  \\
+&=&\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }:\sigma
+_{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right]  \\
 m_{34} &\equiv &\left[ 1-\sigma _{\left\{ 3,4\right\} }A_{3}:\sigma
-_{\left\{ 3,4\right\} }A_{3}-1:1+\sigma _{\left\{ 3,4\right\} }A_{3}\right] =%
-\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 1,4\right\} }:\sigma
-_{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,3\right\} }:\sigma _{\left\{
-1,3\right\} }+\sigma _{\left\{ 1,4\right\} }\right]  \\
+_{\left\{ 3,4\right\} }A_{3}-1:1+\sigma _{\left\{ 3,4\right\} }A_{3}\right] 
+\\
+&=&\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 1,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,3\right\} }:\sigma
+_{\left\{ 1,3\right\} }+\sigma _{\left\{ 1,4\right\} }\right]  \\
+&=&\left[ \sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma
+_{\left\{ 2,3\right\} }+\sigma _{\left\{ 2,4\right\} }\right]  \\
 m_{43} &\equiv &\left[ 1+\sigma _{\left\{ 3,4\right\} }A_{3}:-1-\sigma
-_{\left\{ 3,4\right\} }A_{3}:1-\sigma _{\left\{ 3,4\right\} }A_{3}\right] =%
-\left[ \sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 2,4\right\} }:-\sigma
-_{\left\{ 2,3\right\} }-\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{
-2,3\right\} }-\sigma _{\left\{ 2,4\right\} }\right]  \\
+_{\left\{ 3,4\right\} }A_{3}:1-\sigma _{\left\{ 3,4\right\} }A_{3}\right]  \\
+&=&\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 1,4\right\}
+}:-\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 1,4\right\} }:\sigma
+_{\left\{ 1,3\right\} }-\sigma _{\left\{ 1,4\right\} }\right]  \\
+&=&\left[ \sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 2,4\right\}
+}:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 2,4\right\} }:\sigma
+_{\left\{ 2,3\right\} }-\sigma _{\left\{ 2,4\right\} }\right]  \\
 m_{13} &\equiv &\left[ 1+\sigma _{\left\{ 1,3\right\} }A_{1}:1-\sigma
-_{\left\{ 1,3\right\} }A_{1}:1+\sigma _{\left\{ 1,3\right\} }A_{1}\right] =%
-\left[ \sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }:\sigma
-_{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma _{\left\{
-1,2\right\} }+\sigma _{\left\{ 2,3\right\} }\right]  \\
+_{\left\{ 1,3\right\} }A_{1}:1+\sigma _{\left\{ 1,3\right\} }A_{1}\right]  \\
+&=&\left[ \sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma
+_{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }\right]  \\
+&=&\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 3,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma
+_{\left\{ 1,4\right\} }+\sigma _{\left\{ 3,4\right\} }\right]  \\
 m_{31} &\equiv &\left[ 1-\sigma _{\left\{ 1,3\right\} }A_{1}:1+\sigma
-_{\left\{ 1,3\right\} }A_{1}:1-\sigma _{\left\{ 1,3\right\} }A_{1}\right] =%
-\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma
-_{\left\{ 1,4\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{
-1,4\right\} }-\sigma _{\left\{ 3,4\right\} }\right] 
+_{\left\{ 1,3\right\} }A_{1}:1-\sigma _{\left\{ 1,3\right\} }A_{1}\right]  \\
+&=&\left[ \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\}
+}:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }:\sigma
+_{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} }\right]  \\
+&=&\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 3,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma
+_{\left\{ 1,4\right\} }-\sigma _{\left\{ 3,4\right\} }\right] 
 \end{eqnarray*}%
 \begin{eqnarray*}
 m_{24} &\equiv &\left[ -1-\sigma _{\left\{ 2,4\right\} }A_{2}:\sigma
-_{\left\{ 2,4\right\} }A_{2}-1:1+\sigma _{\left\{ 2,4\right\} }A_{2}\right] =%
-\left[ -\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,4\right\} }:\sigma
-_{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,2\right\} }:\sigma _{\left\{
-1,2\right\} }+\sigma _{\left\{ 1,4\right\} }\right]  \\
-m_{42} &\equiv &\left[ \sigma _{\left\{ 2,4\right\} }A_{2}-1:-1-\sigma
-_{\left\{ 2,4\right\} }A_{2}:1-\sigma _{\left\{ 2,4\right\} }A_{2}\right] =%
-\left[ \sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{ 2,3\right\} }:-\sigma
-_{\left\{ 2,3\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{
-2,3\right\} }-\sigma _{\left\{ 3,4\right\} }\right]  \\
+_{\left\{ 2,4\right\} }A_{2}-1:1+\sigma _{\left\{ 2,4\right\} }A_{2}\right] 
+\\
+&=&\left[ -\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,2\right\} }:\sigma
+_{\left\{ 1,2\right\} }+\sigma _{\left\{ 1,4\right\} }\right]  \\
+&=&\left[ -\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 3,4\right\}
+}:\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma
+_{\left\{ 2,3\right\} }+\sigma _{\left\{ 3,4\right\} }\right]  \\
+m_{42} &\equiv &\left[ 1-\sigma _{\left\{ 2,4\right\} }A_{2}:1+\sigma
+_{\left\{ 2,4\right\} }A_{2}:\sigma _{\left\{ 2,4\right\} }A_{2}-1\right]  \\
+&=&\left[ \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 1,2\right\} }:\sigma
+_{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,2\right\} }\right]  \\
+&=&\left[ \sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 3,4\right\}
+}:\sigma _{\left\{ 3,4\right\} }+\sigma _{\left\{ 2,3\right\} }:\sigma
+_{\left\{ 3,4\right\} }-\sigma _{\left\{ 2,3\right\} }\right]  \\
 m_{14} &\equiv &\left[ 1-\sigma _{\left\{ 1,4\right\} }A_{1}:1+\sigma
-_{\left\{ 1,4\right\} }A_{1}:1+\sigma _{\left\{ 1,4\right\} }A_{1}\right] =%
-\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }:\sigma
-_{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{
-1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right]  \\
+_{\left\{ 1,4\right\} }A_{1}:1+\sigma _{\left\{ 1,4\right\} }A_{1}\right]  \\
+&=&\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }:\sigma
+_{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right]  \\
+&=&\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 3,4\right\}
+}:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma
+_{\left\{ 1,3\right\} }+\sigma _{\left\{ 3,4\right\} }\right]  \\
 m_{41} &\equiv &\left[ 1+\sigma _{\left\{ 1,4\right\} }A_{1}:1-\sigma
-_{\left\{ 1,4\right\} }A_{1}:1-\sigma _{\left\{ 1,4\right\} }A_{1}\right] =%
-\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma
-_{\left\{ 1,3\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{
-1,3\right\} }-\sigma _{\left\{ 3,4\right\} }\right]  \\
+_{\left\{ 1,4\right\} }A_{1}:1-\sigma _{\left\{ 1,4\right\} }A_{1}\right]  \\
+&=&\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }:\sigma
+_{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right]  \\
+&=&\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 3,4\right\}
+}:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma
+_{\left\{ 1,3\right\} }-\sigma _{\left\{ 3,4\right\} }\right]  \\
 m_{23} &\equiv &\left[ \sigma _{\left\{ 2,3\right\} }A_{2}-1:-1-\sigma
-_{\left\{ 2,3\right\} }A_{2}:1+\sigma _{\left\{ 2,3\right\} }A_{2}\right] =%
-\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }:-\sigma
-_{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }:\sigma _{\left\{
-2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\right]  \\
-m_{32} &\equiv &\left[ -1-\sigma _{\left\{ 2,3\right\} }A_{2}:\sigma
-_{\left\{ 2,3\right\} }A_{2}-1:1-\sigma _{\left\{ 2,3\right\} }A_{2}\right] =%
-\left[ -\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma
-_{\left\{ 3,4\right\} }-\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{
-2,4\right\} }-\sigma _{\left\{ 3,4\right\} }\right] 
+_{\left\{ 2,3\right\} }A_{2}:1+\sigma _{\left\{ 2,3\right\} }A_{2}\right]  \\
+&=&\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\}
+}:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }:\sigma
+_{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\right]  \\
+&=&\left[ \sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{ 2,4\right\}
+}:-\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma
+_{\left\{ 2,4\right\} }+\sigma _{\left\{ 3,4\right\} }\right]  \\
+m_{32} &\equiv &\left[ 1+\sigma _{\left\{ 2,3\right\} }A_{2}:1-\sigma
+_{\left\{ 2,3\right\} }A_{2}:\sigma _{\left\{ 2,3\right\} }A_{2}-1\right]  \\
+&=&\left[ \sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\}
+}:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }:\sigma
+_{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }\right]  \\
+&=&\left[ \sigma _{\left\{ 2,4\right\} }+\sigma _{\left\{ 3,4\right\}
+}:\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma
+_{\left\{ 3,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] .
 \end{eqnarray*}
-\end{theorem}
 
-\textit{Proof }This is shown through computations and then careful use of
-the identities described above.$\ \square $
+\begin{proof}
+This is shown through computations and then careful use of the identities
+described above.$\ $
+\end{proof}
+\end{theorem}
 
 These side midpoints have corresponding \textit{side midlines}, which are
 precisely the duals to each side midpoint. That is they are given by the
@@ -408,22 +469,21 @@ and $\triangle _{1}\equiv \overline{a_{2}a_{3}a_{4}}$.
 \begin{theorem}[Circumlines and circumcenters]
 Midpoints $m_{ij}$ for $i\neq j\in \left\{ 1,2,3\right\} $ of the
 subtriangle $\triangle _{4}$ are collinear three at a time, lying on four
-distinct \textbf{Circumlines} $C_{1}^{\left( 4\right) },C_{2}^{\left(
-4\right) },C_{2}^{\left( 4\right) },$ and $C_{3}^{\left( 4\right) }.$
-Midlines $M_{ij}$ for $i\neq j\in \left\{ 1,2,3\right\} $ of the subtriangle 
-$\triangle _{4}$ are con5current three at a time, meeting at four distinct 
-\textbf{Circumcenters} $c_{1}^{\left( 4\right) },c_{2}^{\left( 4\right)
-},c_{3}^{\left( 4\right) }$ and $c_{4}^{\left( 4\right) }$\textbf{.}
+distinct \textbf{Circumlines} $C_{1}^{4},C_{2}^{4},C_{2}^{4},$ and $%
+C_{3}^{4}.$ Midlines $M_{ij}$ for $i\neq j\in \left\{ 1,2,3\right\} $ of the
+subtriangle $\triangle _{4}$ are con5current three at a time, meeting at
+four distinct \textbf{Circumcenters} $c_{1}^{4},c_{2}^{4},c_{3}^{4}$ and $%
+c_{4}^{4}$\textbf{.}
 \end{theorem}
 
-\textit{Proof} The following triples of midpoints $m_{ij}$ for $i\neq j\in
-\left\{ 1,2,3\right\} $ are colinear:
+\begin{proof}
+The following triples of midpoints $m_{ij}$ for $i\neq j\in \left\{
+1,2,3\right\} $ are colinear:
 
-$C_{1}^{\left( 4\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
-}-\sigma _{\left\{ 1,3\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma
-_{\left\{ 1,2\right\} }:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{
-2,3\right\} }\right\rangle $ through
-
+$C_{1}^{4}\equiv \left\langle \sigma _{\left\{ 1,2\right\} }-\sigma
+_{\left\{ 1,3\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
+1,2\right\} }:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\}
+}\right\rangle $ through,%
 \begin{eqnarray*}
 m_{21} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{
 2,3\right\} }:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\}
@@ -431,16 +491,14 @@ m_{21} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{
 m_{31} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
 2,3\right\} }:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\}
 }:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} }\right] , \\
-m_{32} &\equiv &\left[ -\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
-1,3\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\}
-}:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\right] ,
-\end{eqnarray*}
-
-$C_{2}^{\left( 4\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
-}+\sigma _{\left\{ 1,3\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma
-_{\left\{ 2,3\right\} }:-\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
-2,3\right\} }\right\rangle $ through
-
+m_{32} &\equiv &\left[ \sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
+1,3\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\}
+}:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }\right] ,
+\end{eqnarray*}%
+$C_{2}^{4}\equiv \left\langle \sigma _{\left\{ 1,2\right\} }+\sigma
+_{\left\{ 1,3\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
+2,3\right\} }:-\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\}
+}\right\rangle $ through,%
 \begin{eqnarray*}
 m_{21} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{
 2,3\right\} }:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\}
@@ -451,13 +509,11 @@ m_{13} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{
 m_{23} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
 2,3\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\}
 }:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\right] ,
-\end{eqnarray*}
-
-$C_{3}^{\left( 4\right) }\equiv \left\langle -\sigma _{\left\{ 1,2\right\}
-}-\sigma _{\left\{ 1,3\right\} }:\sigma _{\left\{ 1,2\right\} }-\sigma
-_{\left\{ 2,3\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
-2,3\right\} }\right\rangle $ through
-
+\end{eqnarray*}%
+$C_{3}^{4}\equiv \left\langle -\sigma _{\left\{ 1,2\right\} }-\sigma
+_{\left\{ 1,3\right\} }:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\}
+}\right\rangle $ through,%
 \begin{eqnarray*}
 m_{12} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
 2,3\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\}
@@ -468,13 +524,11 @@ m_{31} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
 m_{23} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
 2,3\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\}
 }:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\right] ,
-\end{eqnarray*}
-
-$C_{4}^{\left( 4\right) }\equiv \left\langle \sigma _{\left\{ 1,3\right\}
-}-\sigma _{\left\{ 1,2\right\} }:\sigma _{\left\{ 1,2\right\} }+\sigma
-_{\left\{ 2,3\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
-1,3\right\} }\right\rangle $ through,
-
+\end{eqnarray*}%
+$C_{4}^{4}\equiv \left\langle \sigma _{\left\{ 1,3\right\} }-\sigma
+_{\left\{ 1,2\right\} }:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\}
+}\right\rangle $ through,%
 \begin{eqnarray*}
 m_{12} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
 2,3\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\}
@@ -482,15 +536,13 @@ m_{12} &\equiv &\left[ \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
 m_{13} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{
 2,3\right\} }:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\}
 }:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }\right] , \\
-m_{32} &\equiv &\left[ -\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
-1,3\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\}
-}:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\right] .
-\end{eqnarray*}
-
-This is checked by computing
-
-\begin{equation*}
-\det \left( 
+m_{32} &\equiv &\left[ \sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
+1,3\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\}
+}:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }\right] .
+\end{eqnarray*}%
+This is checked by computing%
+\begin{eqnarray*}
+0 &=&\det \left( 
 \begin{array}{ccc}
 \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma
 _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
@@ -498,15 +550,12 @@ _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
 \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma
 _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
 1,2\right\} }-\sigma _{\left\{ 2,3\right\} } \\ 
--\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} } & \sigma
-_{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
-2,3\right\} }-\sigma _{\left\{ 1,3\right\} }%
+\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} } & \sigma
+_{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} } & \sigma _{\left\{
+1,3\right\} }-\sigma _{\left\{ 2,3\right\} }%
 \end{array}%
-\right) =0
-\end{equation*}
-
-\begin{equation*}
-=\det \left( 
+\right)  \\
+&=&\det \left( 
 \begin{array}{ccc}
 \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma
 _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
@@ -518,11 +567,8 @@ _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
 _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} } & \sigma _{\left\{
 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }%
 \end{array}%
-\right)
-\end{equation*}
-
-\begin{equation*}
-=\det \left( 
+\right)  \\
+&=&\det \left( 
 \begin{array}{ccc}
 \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma
 _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
@@ -534,11 +580,8 @@ _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
 _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} } & \sigma _{\left\{
 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }%
 \end{array}%
-\right)
-\end{equation*}
-
-\begin{equation*}
-=\det \left( 
+\right)  \\
+&=&\det \left( 
 \begin{array}{ccc}
 \sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma
 _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
@@ -546,58 +589,56 @@ _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
 \sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} } & \sigma
 _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
 1,2\right\} }+\sigma _{\left\{ 2,3\right\} } \\ 
--\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} } & \sigma
-_{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} } & \sigma _{\left\{
-2,3\right\} }-\sigma _{\left\{ 1,3\right\} }%
+\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} } & \sigma
+_{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} } & \sigma _{\left\{
+1,3\right\} }-\sigma _{\left\{ 2,3\right\} }%
 \end{array}%
 \right) .
-\end{equation*}
-
-The corresponding meets are
-
+\end{eqnarray*}%
+The corresponding meets are%
 \begin{eqnarray*}
 &&\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\}
 }:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} }:\sigma
 _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }\right] \times \left[
 \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma
 _{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,3\right\} }:\sigma _{\left\{
-1,2\right\} }-\sigma _{\left\{ 2,3\right\} }\right] \\
+1,2\right\} }-\sigma _{\left\{ 2,3\right\} }\right]  \\
 &=&\left\langle \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,3\right\}
 }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,2\right\} }:\sigma
 _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} }\right\rangle \equiv
-C_{1}^{\left( 4\right) },
-\end{eqnarray*}
-
+C_{1}^{4},
+\end{eqnarray*}%
 and similarly for the other circumlines. The situation with midlines $M_{ij}$
-for $i\neq j\in \left\{ 1,2,3\right\} $ is precisely dual. $\square $
+for $i\neq j\in \left\{ 1,2,3\right\} $ is precisely dual. 
+\end{proof}
 
-\bigskip
+\bigskip 
 
-The Circumlines for the subtriangles $\triangle _{3},\triangle _{2}$, and $%
-\triangle _{1}$, are as follows
+\begin{theorem}[Subtriangle Circumlines of the Quadrangle]
+The Circumlines for the Subtriangles $\triangle _{3},\triangle _{2}$, and $%
+\triangle _{1}$, are as follows;
 
-$C_{1}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
-}-\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma
-_{\left\{ 1,2\right\} }:-\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
-2,4\right\} }\right\rangle $ through
+The Circumlines for the subtriangle $\triangle _{3}\,:$
 
+$C_{1}^{3}\equiv \left\langle \sigma _{\left\{ 1,2\right\} }-\sigma
+_{\left\{ 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
+1,2\right\} }:-\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
+}\right\rangle $ through%
 \begin{eqnarray*}
 m_{21} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
 }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] , \\
-m_{42} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
-1,2\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,4\right\}
-}:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,4\right\} }\right] , \\
+m_{42} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
+1,4\right\} }:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 1,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,2\right\} }\right] , \\
 m_{41} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
 }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] ,
-\end{eqnarray*}
-
-$C_{2}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
-}+\sigma _{\left\{ 2,4\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma
-_{\left\{ 1,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
-2,4\right\} }\right\rangle $ through
-
+\end{eqnarray*}%
+$C_{2}^{3}\equiv \left\langle \sigma _{\left\{ 1,2\right\} }+\sigma
+_{\left\{ 2,4\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
+1,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
+}\right\rangle $ through%
 \begin{eqnarray*}
 m_{21} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
@@ -608,30 +649,26 @@ m_{24} &\equiv &\left[ -\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
 m_{14} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
 }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right] ,
-\end{eqnarray*}
-
-$C_{3}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
-}+\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma
-_{\left\{ 1,2\right\} }:\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{
-1,4\right\} }\right\rangle $ through
-
+\end{eqnarray*}%
+$C_{3}^{3}\equiv \left\langle \sigma _{\left\{ 1,2\right\} }+\sigma
+_{\left\{ 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
+1,2\right\} }:\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{ 1,4\right\}
+}\right\rangle $ through%
 \begin{eqnarray*}
 m_{12} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
 }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right] , \\
-m_{42} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
-1,2\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,4\right\}
-}:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,4\right\} }\right] , \\
+m_{42} &\equiv &\left[ \sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
+1,4\right\} }:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 1,4\right\}
+}:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,2\right\} }\right] , \\
 m_{14} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
 }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right] ,
-\end{eqnarray*}
-
-$C_{4}^{\left( 3\right) }\equiv \left\langle \sigma _{\left\{ 1,2\right\}
-}-\sigma _{\left\{ 2,4\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma
-_{\left\{ 1,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
-2,4\right\} }\right\rangle $ through
-
+\end{eqnarray*}%
+$C_{4}^{3}\equiv \left\langle \sigma _{\left\{ 1,2\right\} }-\sigma
+_{\left\{ 2,4\right\} }:-\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
+1,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
+}\right\rangle $ through%
 \begin{eqnarray*}
 m_{12} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
@@ -642,51 +679,46 @@ m_{24} &\equiv &\left[ -\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
 m_{41} &\equiv &\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
 }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] .
-\end{eqnarray*}
-
-Also
-
-$C_{1}^{\left( 2\right) }\equiv \left\langle \sigma _{\left\{ 3,4\right\}
-}-\sigma _{\left\{ 1,3\right\} }:\sigma _{\left\{ 3,4\right\} }-\sigma
-_{\left\{ 1,4\right\} }:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{
-1,4\right\} }\right\rangle $, through $m_{43},m_{31},m_{41}$,
-
-$C_{2}^{\left( 2\right) }\equiv \left\langle \sigma _{\left\{ 1,3\right\}
-}+\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma
-_{\left\{ 3,4\right\} }:-\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
-1,4\right\} }\right\rangle $, through $m_{43},m_{13},m_{14}$,
-
-$C_{3}^{\left( 2\right) }\equiv \left\langle -\sigma _{\left\{ 1,3\right\}
-}-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma
-_{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
-1,4\right\} }\right\rangle $, through $m_{34},m_{31},m_{14}$,
-
-$C_{4}^{\left( 2\right) }\equiv \left\langle \sigma _{\left\{ 1,3\right\}
-}-\sigma _{\left\{ 3,4\right\} }:-\sigma _{\left\{ 1,4\right\} }-\sigma
-_{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
-1,3\right\} }\right\rangle $, through $m_{34},m_{13},m_{41}$,
-
-$C_{1}^{\left( 1\right) }\equiv \left\langle \sigma _{\left\{ 3,4\right\}
-}-\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{ 3,4\right\} }-\sigma
-_{\left\{ 2,3\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
-2,4\right\} }\right\rangle $, through $m_{43},m_{32},m_{42}$,
-
-$C_{2}^{\left( 1\right) }\equiv \left\langle \sigma _{\left\{ 2,4\right\}
-}+\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }+\sigma
-_{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
-2,4\right\} }\right\rangle $, through $m_{43},m_{23},m_{24}$,
-
-$C_{3}^{\left( 1\right) }\equiv \left\langle -\sigma _{\left\{ 2,4\right\}
-}-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma
+\end{eqnarray*}%
+The Circumlines for the subtriangle $\triangle _{2}\,:$%
+\begin{eqnarray*}
+C_{1}^{2} &\equiv &\left\langle \sigma _{\left\{ 3,4\right\} }-\sigma
+_{\left\{ 1,3\right\} }:\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{
+1,4\right\} }:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 1,4\right\}
+}\right\rangle ,\text{ through }m_{43},m_{31},m_{41}, \\
+C_{2}^{2} &\equiv &\left\langle \sigma _{\left\{ 1,3\right\} }+\sigma
+_{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
+3,4\right\} }:-\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 1,4\right\}
+}\right\rangle ,\text{ through }m_{43},m_{13},m_{14}, \\
+C_{3}^{2} &\equiv &\left\langle \sigma _{\left\{ 1,3\right\} }+\sigma
+_{\left\{ 3,4\right\} }:\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{
+1,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,3\right\}
+}\right\rangle ,\text{ through }m_{34},m_{31},m_{14}, \\
+C_{4}^{2} &\equiv &\left\langle \sigma _{\left\{ 3,4\right\} }-\sigma
+_{\left\{ 1,3\right\} }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
+3,4\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 1,4\right\}
+}\right\rangle ,\text{ through }m_{34},m_{13},m_{41},
+\end{eqnarray*}%
+The Circumlines for the subtriangle $\triangle _{2}\,:$%
+\begin{eqnarray*}
+C_{1}^{1} &\equiv &\left\langle \sigma _{\left\{ 2,4\right\} }-\sigma
 _{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
-2,4\right\} }\right\rangle $, through $m_{34},m_{23},m_{42}$,
-
-$C_{4}^{\left( 1\right) }\equiv \left\langle \sigma _{\left\{ 2,4\right\}
-}-\sigma _{\left\{ 3,4\right\} }:-\sigma _{\left\{ 2,3\right\} }-\sigma
-_{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{
-2,3\right\} }\right\rangle $, through $m_{34},m_{32},m_{24}$,
-
-\bigskip
+3,4\right\} }:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 2,4\right\}
+}\right\rangle ,\text{ through }m_{43},m_{32},m_{42} \\
+C_{2}^{1} &\equiv &\left\langle \sigma _{\left\{ 2,4\right\} }+\sigma
+_{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
+3,4\right\} }:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 2,4\right\}
+}\right\rangle ,\text{ through }m_{43},m_{23},m_{24}, \\
+C_{3}^{1} &\equiv &\left\langle \sigma _{\left\{ 2,4\right\} }+\sigma
+_{\left\{ 3,4\right\} }:\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{
+2,3\right\} }:\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{ 2,3\right\}
+}\right\rangle ,\text{ through }m_{34},m_{23},m_{42}, \\
+C_{4}^{1} &\equiv &\left\langle \sigma _{\left\{ 3,4\right\} }-\sigma
+_{\left\{ 2,4\right\} }:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
+3,4\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 2,4\right\}
+}\right\rangle ,\text{ through }m_{34},m_{32},m_{24}.
+\end{eqnarray*}
+\end{theorem}
 
 Though the labeling may seem arbitrary infact it is a little more subtle
 than this. Now for any triangle there are four circumlines which are the
@@ -702,90 +734,75 @@ side $\overline{a_{3}a_{4}}$, and so on. Thus each midpoint $m$ of the
 quadrangle $\square $ is associated to four circumlines $C$, two distinct
 circumlines from each of the subtriangles that share the side corresponding
 to the midpoint $m$. Therefore there is a type of pairing of pairs of
-circumlines of each subtriangle $P_{ij}\equiv \left\{ C_{r}^{\left( i\right)
-},C_{s}^{\left( i\right) },C_{\ell }^{\left( j\right) },C_{k}^{\left(
-j\right) }\right\} $ for some $r\neq s,\ell \neq k\in \left\{
-1,2,3,4\right\} $, for each midpoint $m_{ij}$.
+circumlines from different subtriangles $P_{ij}\equiv \left\{
+C_{r}^{i},C_{s}^{i},C_{\ell }^{j},C_{k}^{j}\right\} $ for some $r\neq s,\ell
+\neq k\in \left\{ 1,2,3,4\right\} $, for each midpoint $m_{ij}$.  The set $%
+P_{ij}$ will be called a \textbf{pairing} of circumlines.
 
-We will say that circumlines $C_{k}^{\left( i\right) }$ and $C_{\ell
-}^{\left( j\right) }$ are \textbf{(midpoint) neighbours} if one of the
-pairings $P_{ij}$ and $P_{ji}$\ induced from the midpoints $m_{ij}$ and $%
-m_{ji}$ contains both $C_{k}^{\left( i\right) }$ and $C_{\ell }^{\left(
-j\right) }$.
+We will say that circumlines $C_{k}^{i}$ and $C_{\ell }^{j}$ are \textbf{%
+(midpoint) neighbours} if one of the pairings $P_{ij}$ and $P_{ji}$\ induced
+from the midpoints $m_{ij}$ and $m_{ji}$ contains both $C_{k}^{i}$ and $%
+C_{\ell }^{j}$.
 
 \bigskip
 
 After forcing a label on one set of circumlines (in this case for the
 subtriangle $\triangle _{4}$) the aim is to label the rest in such a way so
-that for each pairing $P_{ij}=\left\{ C_{r}^{\left( i\right) },C_{s}^{\left(
-i\right) },C_{\ell }^{\left( j\right) },C_{k}^{\left( j\right) }\right\} $
-we have that $\ell =r$ and $k=s$. It turns out there are exactly two such
-labelings one is giving above;
+that for each pairing $P_{ij}=\left\{ C_{r}^{i},C_{s}^{i},C_{\ell
+}^{j},C_{k}^{j}\right\} $ we have that $\ell =r$ and $k=s$. It turns out
+there are exactly two such labelings one is giving above;
 
-\begin{equation*}
+\[
 \begin{array}{cc}
-P_{12}\equiv \left\{ C_{3}^{\left( 3\right) },C_{4}^{\left( 3\right)
-},C_{3}^{\left( 4\right) },C_{4}^{\left( 4\right) }\right\} , & P_{21}\equiv
-\left\{ C_{1}^{\left( 3\right) },C_{2}^{\left( 3\right) },C_{1}^{\left(
-4\right) },C_{2}^{\left( 4\right) }\right\} , \\ 
-P_{34}\equiv \left\{ C_{3}^{\left( 1\right) },C_{4}^{\left( 1\right)
-},C_{3}^{\left( 2\right) },C_{4}^{\left( 2\right) }\right\} , & P_{43}\equiv
-\left\{ C_{1}^{\left( 1\right) },C_{2}^{\left( 1\right) },C_{1}^{\left(
-2\right) },C_{2}^{\left( 2\right) }\right\} , \\ 
-P_{13}\equiv \left\{ C_{2}^{\left( 2\right) },C_{4}^{\left( 2\right)
-},C_{2}^{\left( 4\right) },C_{4}^{\left( 4\right) }\right\} , & P_{31}\equiv
-\left\{ C_{1}^{\left( 2\right) },C_{3}^{\left( 2\right) },C_{1}^{\left(
-4\right) },C_{3}^{\left( 4\right) }\right\} , \\ 
-P_{24}\equiv \left\{ C_{2}^{\left( 1\right) },C_{4}^{\left( 1\right)
-},C_{2}^{\left( 3\right) },C_{4}^{\left( 3\right) }\right\} , & P_{42}\equiv
-\left\{ C_{1}^{\left( 1\right) },C_{3}^{\left( 1\right) },C_{1}^{\left(
-3\right) },C_{3}^{\left( 3\right) }\right\} , \\ 
-P_{14}\equiv \left\{ C_{2}^{\left( 2\right) },C_{3}^{\left( 2\right)
-},C_{2}^{\left( 3\right) },C_{3}^{\left( 3\right) }\right\} , & P_{41}\equiv
-\left\{ C_{1}^{\left( 2\right) },C_{4}^{\left( 2\right) },C_{1}^{\left(
-3\right) },C_{4}^{\left( 3\right) }\right\} , \\ 
-P_{23}\equiv \left\{ C_{2}^{\left( 1\right) },C_{3}^{\left( 1\right)
-},C_{2}^{\left( 4\right) },C_{3}^{\left( 4\right) }\right\} , & P_{32}\equiv
-\left\{ C_{1}^{\left( 1\right) },C_{4}^{\left( 1\right) },C_{1}^{\left(
-4\right) },C_{4}^{\left( 4\right) }\right\} .%
+P_{12}\equiv \left\{ C_{3}^{3},C_{4}^{3},C_{3}^{4},C_{4}^{4}\right\} , & 
+P_{21}\equiv \left\{ C_{1}^{3},C_{2}^{3},C_{1}^{4},C_{2}^{4}\right\} , \\ 
+P_{34}\equiv \left\{ C_{3}^{1},C_{4}^{1},C_{3}^{2},C_{4}^{2}\right\} , & 
+P_{43}\equiv \left\{ C_{1}^{1},C_{2}^{1},C_{1}^{2},C_{2}^{2}\right\} , \\ 
+P_{13}\equiv \left\{ C_{2}^{2},C_{4}^{2},C_{2}^{4},C_{4}^{4}\right\} , & 
+P_{31}\equiv \left\{ C_{1}^{2},C_{3}^{2},C_{1}^{4},C_{3}^{4}\right\} , \\ 
+P_{24}\equiv \left\{ C_{2}^{1},C_{4}^{1},C_{2}^{3},C_{4}^{3}\right\} , & 
+P_{42}\equiv \left\{ C_{1}^{1},C_{3}^{1},C_{1}^{3},C_{3}^{3}\right\} , \\ 
+P_{14}\equiv \left\{ C_{2}^{2},C_{3}^{2},C_{2}^{3},C_{3}^{3}\right\} , & 
+P_{41}\equiv \left\{ C_{1}^{2},C_{4}^{2},C_{1}^{3},C_{4}^{3}\right\} , \\ 
+P_{23}\equiv \left\{ C_{2}^{1},C_{3}^{1},C_{2}^{4},C_{3}^{4}\right\} , & 
+P_{32}\equiv \left\{ C_{1}^{1},C_{4}^{1},C_{1}^{4},C_{4}^{4}\right\} .%
 \end{array}%
 \newline
-\end{equation*}
+\]
 
 Moreover if we define $\pi _{4}\equiv \left( 1\right) ,\pi _{3}\equiv \left(
 12\right) \left( 34\right) ,\pi _{2}\equiv \left( 13\right) \left( 24\right) 
 $ and $\pi _{1}\equiv \left( 14\right) \left( 23\right) $, then the other
-labeling is giving as follows $C_{\pi _{i}\left( j\right) }^{\left( i\right)
-}$ for $i,j\in \left\{ 1,2,3,4\right\} $.
+labeling is giving as follows $C_{\pi _{i}\left( j\right) }^{i}$ for $i,j\in
+\left\{ 1,2,3,4\right\} $.
 
 Furthermore both of these labelings of the circumlines we get that the
-elements of the sets $\mathcal{C}_{i}\equiv \left\{ C_{i}^{\left( 1\right)
-},C_{i}^{\left( 2\right) },C_{i}^{\left( 3\right) },C_{i}^{\left( 4\right)
-}\right\} $ for $i=1,2,3,4$ are neighbours.
+elements of the sets $\mathcal{C}_{i}\equiv \left\{
+C_{i}^{1},C_{i}^{2},C_{i}^{3},C_{i}^{4}\right\} $ for $i=1,2,3,4$ are
+neighbours.
 
 \bigskip
 
-Define $\mathcal{C}^{\left( i\right) }\equiv \left\{ C_{1}^{\left( i\right)
-},C_{2}^{\left( i\right) },C_{3}^{\left( i\right) },C_{4}^{\left( i\right)
-}\right\} $ to be the set of circumlines assosciated with the subtriangle $%
-\triangle _{i},$ and $\mathcal{C}_{i}$ as above. Lets consider the
-circumlines of the the quadrangle $\square $ as vertices and say that two
-vertices share an edge precisely when the \textit{corresponding circumlines
-are not midpoint neighbours}. Note that by definition the induced graph is
-quadpartite with respect to the vertex partition $\cup _{i}\mathcal{C}%
-^{\left( i\right) }$. Furthermore as each $\mathcal{C}_{i}$ contains no
-neighbours, the vertex quad-partion $\cup _{i}\mathcal{C}_{i}$ is consistent
-with the previous one. Moreover as graphs they are isomorphic with respect
-to the map $C_{j}^{\left( i\right) }\mapsto C_{i}^{\left( j\right) }$.
+Define $\mathcal{C}^{i}\equiv \left\{
+C_{1}^{i},C_{2}^{i},C_{3}^{i},C_{4}^{i}\right\} $ to be the set of
+circumlines assosciated with the subtriangle $\triangle _{i},$ and $\mathcal{%
+C}_{i}$ as above. Lets consider the circumlines of the the quadrangle $%
+\square $ as vertices and say that two vertices share an edge precisely when
+the \textit{corresponding circumlines are not midpoint neighbours}. Note
+that by definition the induced graph is quadpartite with respect to the
+vertex partition $\cup _{i}\mathcal{C}^{i}$. Furthermore as each $\mathcal{C}%
+_{i}$ contains no neighbours, the vertex quad-partion $\cup _{i}\mathcal{C}%
+_{i}$ is consistent with the previous one. Moreover as graphs they are
+isomorphic with respect to the map $C_{j}^{i}\mapsto C_{i}^{j}$.
 
-Now each vetex $C_{j}^{\left( i\right) }$ for some subtriangle $\triangle
-_{i}$ and index $j$, has exactly two midpoint neighbours in $\mathcal{C}%
-^{\left( k\right) }$ and $\mathcal{C}_{k}$ for $k\neq i$ and $k\neq j$
-respectfully. Thus each vertex has degree six and so by the Handshanking
-lemma from Graph Theory there are exactly fourtyeight edges and hence
-distinct meets of non-neighbouring circumlines. It turns out that these
-meets are collinear four at a time producing twelve distinct lines, but
-before we get to that some structure of the circumlines needs to be explored.
+Now each vetex $C_{j}^{i}$ for some subtriangle $\triangle _{i}$ and index $j
+$, has exactly two midpoint neighbours in $\mathcal{C}^{k}$ and $\mathcal{C}%
+_{k}$ for $k\neq i$ and $k\neq j$ respectfully. Thus each vertex has degree
+six and so by the Handshanking lemma from Graph Theory there are exactly
+fourtyeight edges and hence distinct meets of non-neighbouring circumlines.
+It turns out that these meets are collinear four at a time producing twelve
+distinct lines, but before we get to that some structure of the circumlines
+needs to be explored.
 
 \bigskip
 
@@ -793,341 +810,259 @@ Looking at the bipartite subgraph with vertex set $\mathcal{C}_{1}\cup
 \mathcal{C}_{2}$ the edge set can be worked out by exaiming the pairings $%
 P_{ij}$ for $i\neq j\in \left[ 4\right] $, above. What results is the set,
 
-\begin{equation*}
-\left\{ \left( C_{1}^{\left( 1\right) }C_{2}^{\left( 4\right) }\right)
-,\left( C_{2}^{\left( 4\right) }C_{1}^{\left( 2\right) }\right) ,\left(
-C_{1}^{\left( 2\right) }C_{2}^{\left( 3\right) }\right) ,\left(
-C_{2}^{\left( 3\right) }C_{1}^{\left( 1\right) }\right) ,\left(
-C_{2}^{\left( 1\right) }C_{1}^{\left( 4\right) }\right) ,\left(
-C_{1}^{\left( 4\right) }C_{2}^{\left( 2\right) }\right) ,\left(
-C_{2}^{\left( 2\right) }C_{1}^{\left( 3\right) }\right) ,\left(
-C_{1}^{\left( 3\right) }C_{2}^{\left( 1\right) }\right) \right\} ,
-\end{equation*}
+\[
+\left\{ \left( C_{1}^{1}C_{2}^{4}\right) ,\left( C_{2}^{4}C_{1}^{2}\right)
+,\left( C_{1}^{2}C_{2}^{3}\right) ,\left( C_{2}^{3}C_{1}^{1}\right) ,\left(
+C_{2}^{1}C_{1}^{4}\right) ,\left( C_{1}^{4}C_{2}^{2}\right) ,\left(
+C_{2}^{2}C_{1}^{3}\right) ,\left( C_{1}^{3}C_{2}^{1}\right) \right\} ,
+\]
 
 and so the edge set of the bipartite subgraph is the union of distjoint
 cycles%
 \begin{equation}
-\mathcal{C}_{12}\equiv C_{1}^{\left( 1\right) }C_{2}^{\left( 3\right)
-}C_{1}^{\left( 2\right) }C_{2}^{\left( 4\right) }C_{1}^{\left( 1\right) }%
-\text{ and }\mathcal{C}_{21}\equiv C_{2}^{\left( 1\right) }C_{1}^{\left(
-3\right) }C_{2}^{\left( 2\right) }C_{1}^{\left( 4\right) }C_{2}^{\left(
-1\right) }.  \notag
+\mathcal{C}_{12}\equiv C_{1}^{1}C_{2}^{3}C_{1}^{2}C_{2}^{4}C_{1}^{1}\text{
+and }\mathcal{C}_{21}\equiv C_{2}^{1}C_{1}^{3}C_{2}^{2}C_{1}^{4}C_{2}^{1}. 
+\nonumber
 \end{equation}
 
 This is similarly true for the remaining bipartite subgraphs with respect to
-the partitions $\mathcal{C}_{i}$,
-
-\begin{equation*}
+the partitions $\mathcal{C}_{i}$,%
+\[
 \begin{array}{cc}
-\mathcal{C}_{3}\cup \mathcal{C}_{4}: & \mathcal{C}_{34}\equiv C_{3}^{\left(
-1\right) }C_{4}^{\left( 3\right) }C_{3}^{\left( 2\right) }C_{4}^{\left(
-4\right) }C_{3}^{\left( 1\right) }\text{ and }\mathcal{C}_{43}\equiv
-C_{4}^{\left( 1\right) }C_{3}^{\left( 3\right) }C_{4}^{\left( 2\right)
-}C_{3}^{\left( 4\right) }C_{4}^{\left( 1\right) }, \\ 
-\mathcal{C}_{1}\cup \mathcal{C}_{3}: & \mathcal{C}_{13}\equiv C_{1}^{\left(
-1\right) }C_{3}^{\left( 2\right) }C_{1}^{\left( 3\right) }C_{3}^{\left(
-4\right) }C_{1}^{\left( 1\right) }\text{ and }\mathcal{C}_{31}\equiv
-C_{3}^{\left( 1\right) }C_{1}^{\left( 2\right) }C_{3}^{\left( 3\right)
-}C_{1}^{\left( 4\right) }C_{3}^{\left( 1\right) }, \\ 
-\mathcal{C}_{2}\cup \mathcal{C}_{4}: & \mathcal{C}_{24}\equiv C_{2}^{\left(
-1\right) }C_{4}^{\left( 2\right) }C_{2}^{\left( 3\right) }C_{4}^{\left(
-4\right) }C_{2}^{\left( 1\right) }\text{ and }\mathcal{C}_{42}\equiv
-C_{4}^{\left( 1\right) }C_{2}^{\left( 2\right) }C_{4}^{\left( 3\right)
-}C_{2}^{\left( 4\right) }C_{4}^{\left( 1\right) }, \\ 
-\mathcal{C}_{1}\cup \mathcal{C}_{4}: & \mathcal{C}_{14}\equiv C_{1}^{\left(
-1\right) }C_{4}^{\left( 2\right) }C_{1}^{\left( 4\right) }C_{4}^{\left(
-3\right) }C_{1}^{\left( 1\right) }\text{ and }\mathcal{C}_{41}\equiv
-C_{4}^{\left( 1\right) }C_{1}^{\left( 2\right) }C_{4}^{\left( 4\right)
-}C_{1}^{\left( 3\right) }C_{4}^{\left( 1\right) }, \\ 
-\mathcal{C}_{2}\cup \mathcal{C}_{3}: & \mathcal{C}_{23}\equiv C_{2}^{\left(
-1\right) }C_{3}^{\left( 2\right) }C_{2}^{\left( 4\right) }C_{3}^{\left(
-3\right) }C_{2}^{\left( 1\right) }\text{ and }\mathcal{C}_{32}\equiv
-C_{3}^{\left( 1\right) }C_{2}^{\left( 2\right) }C_{3}^{\left( 4\right)
-}C_{2}^{\left( 3\right) }C_{3}^{\left( 1\right) }.%
+\mathcal{C}_{3}\cup \mathcal{C}_{4}: & \mathcal{C}_{34}\equiv
+C_{3}^{1}C_{4}^{3}C_{3}^{2}C_{4}^{4}C_{3}^{1}\text{ and }\mathcal{C}%
+_{43}\equiv C_{4}^{1}C_{3}^{3}C_{4}^{2}C_{3}^{4}C_{4}^{1}, \\ 
+\mathcal{C}_{1}\cup \mathcal{C}_{3}: & \mathcal{C}_{13}\equiv
+C_{1}^{1}C_{3}^{2}C_{1}^{3}C_{3}^{4}C_{1}^{1}\text{ and }\mathcal{C}%
+_{31}\equiv C_{3}^{1}C_{1}^{2}C_{3}^{3}C_{1}^{4}C_{3}^{1}, \\ 
+\mathcal{C}_{2}\cup \mathcal{C}_{4}: & \mathcal{C}_{24}\equiv
+C_{2}^{1}C_{4}^{2}C_{2}^{3}C_{4}^{4}C_{2}^{1}\text{ and }\mathcal{C}%
+_{42}\equiv C_{4}^{1}C_{2}^{2}C_{4}^{3}C_{2}^{4}C_{4}^{1}, \\ 
+\mathcal{C}_{1}\cup \mathcal{C}_{4}: & \mathcal{C}_{14}\equiv
+C_{1}^{1}C_{4}^{2}C_{1}^{4}C_{4}^{3}C_{1}^{1}\text{ and }\mathcal{C}%
+_{41}\equiv C_{4}^{1}C_{1}^{2}C_{4}^{4}C_{1}^{3}C_{4}^{1}, \\ 
+\mathcal{C}_{2}\cup \mathcal{C}_{3}: & \mathcal{C}_{23}\equiv
+C_{2}^{1}C_{3}^{2}C_{2}^{4}C_{3}^{3}C_{2}^{1}\text{ and }\mathcal{C}%
+_{32}\equiv C_{3}^{1}C_{2}^{2}C_{3}^{4}C_{2}^{3}C_{3}^{1}.%
 \end{array}%
-\end{equation*}
+\]
 
 There is an anologous structure to the bipartite subgraphs with repect to
-the partitions $\mathcal{C}^{\left( i\right) }$, and it is as follows,
-
-\begin{equation*}
+the partitions $\mathcal{C}^{i}$, and it is as follows,%
+\[
 \begin{array}{cc}
-\mathcal{C}^{\left( 1\right) }\cup \mathcal{C}^{\left( 2\right) }: & 
-\mathcal{C}^{\left( 12\right) }\equiv C_{1}^{\left( 1\right) }C_{3}^{\left(
-2\right) }C_{2}^{\left( 1\right) }C_{4}^{\left( 2\right) }C_{1}^{\left(
-1\right) }\text{ and }\mathcal{C}^{\left( 21\right) }\equiv C_{1}^{\left(
-2\right) }C_{3}^{\left( 1\right) }C_{2}^{\left( 2\right) }C_{4}^{\left(
-1\right) }C_{1}^{\left( 2\right) }, \\ 
-\mathcal{C}^{\left( 3\right) }\cup \mathcal{C}^{\left( 4\right) }: & 
-\mathcal{C}^{\left( 34\right) }\equiv C_{1}^{\left( 3\right) }C_{3}^{\left(
-4\right) }C_{2}^{\left( 3\right) }C_{4}^{\left( 4\right) }C_{1}^{\left(
-3\right) }\text{ and }\mathcal{C}^{\left( 43\right) }\equiv C_{1}^{\left(
-4\right) }C_{3}^{\left( 3\right) }C_{2}^{\left( 4\right) }C_{4}^{\left(
-3\right) }C_{1}^{\left( 4\right) }, \\ 
-\mathcal{C}^{\left( 1\right) }\cup \mathcal{C}^{\left( 3\right) }: & 
-\mathcal{C}^{\left( 13\right) }\equiv C_{1}^{\left( 1\right) }C_{2}^{\left(
-3\right) }C_{3}^{\left( 1\right) }C_{4}^{\left( 3\right) }C_{1}^{\left(
-1\right) }\text{ and }\mathcal{C}^{\left( 31\right) }\equiv C_{1}^{\left(
-3\right) }C_{2}^{\left( 1\right) }C_{3}^{\left( 3\right) }C_{4}^{\left(
-1\right) }C_{1}^{\left( 3\right) }, \\ 
-\mathcal{C}^{\left( 2\right) }\cup \mathcal{C}^{\left( 4\right) }: & 
-\mathcal{C}^{\left( 24\right) }\equiv C_{1}^{\left( 2\right) }C_{2}^{\left(
-4\right) }C_{3}^{\left( 2\right) }C_{4}^{\left( 4\right) }C_{1}^{\left(
-2\right) }\text{ and }\mathcal{C}^{\left( 42\right) }\equiv C_{1}^{\left(
-4\right) }C_{2}^{\left( 2\right) }C_{3}^{\left( 4\right) }C_{4}^{\left(
-2\right) }C_{1}^{\left( 4\right) }, \\ 
-\mathcal{C}^{\left( 1\right) }\cup \mathcal{C}^{\left( 4\right) }: & 
-\mathcal{C}^{\left( 14\right) }\equiv C_{1}^{\left( 1\right) }C_{2}^{\left(
-4\right) }C_{4}^{\left( 1\right) }C_{3}^{\left( 4\right) }C_{1}^{\left(
-1\right) }\text{ and }\mathcal{C}^{\left( 41\right) }\equiv C_{1}^{\left(
-4\right) }C_{2}^{\left( 1\right) }C_{4}^{\left( 4\right) }C_{3}^{\left(
-1\right) }C_{1}^{\left( 4\right) }, \\ 
-\mathcal{C}^{\left( 2\right) }\cup \mathcal{C}^{\left( 3\right) }: & 
-\mathcal{C}^{\left( 23\right) }\equiv C_{1}^{\left( 2\right) }C_{2}^{\left(
-3\right) }C_{4}^{\left( 2\right) }C_{3}^{\left( 3\right) }C_{1}^{\left(
-2\right) }\text{ and }\mathcal{C}^{\left( 32\right) }\equiv C_{1}^{\left(
-3\right) }C_{2}^{\left( 2\right) }C_{4}^{\left( 3\right) }C_{3}^{\left(
-2\right) }C_{1}^{\left( 3\right) }.%
+\mathcal{C}^{1}\cup \mathcal{C}^{2}: & \mathcal{C}^{12}\equiv
+C_{1}^{1}C_{3}^{2}C_{2}^{1}C_{4}^{2}C_{1}^{1}\text{ and }\mathcal{C}%
+^{21}\equiv C_{1}^{2}C_{3}^{1}C_{2}^{2}C_{4}^{1}C_{1}^{2}, \\ 
+\mathcal{C}^{3}\cup \mathcal{C}^{4}: & \mathcal{C}^{34}\equiv
+C_{1}^{3}C_{3}^{4}C_{2}^{3}C_{4}^{4}C_{1}^{3}\text{ and }\mathcal{C}%
+^{43}\equiv C_{1}^{4}C_{3}^{3}C_{2}^{4}C_{4}^{3}C_{1}^{4}, \\ 
+\mathcal{C}^{1}\cup \mathcal{C}^{3}: & \mathcal{C}^{13}\equiv
+C_{1}^{1}C_{2}^{3}C_{3}^{1}C_{4}^{3}C_{1}^{1}\text{ and }\mathcal{C}%
+^{31}\equiv C_{1}^{3}C_{2}^{1}C_{3}^{3}C_{4}^{1}C_{1}^{3}, \\ 
+\mathcal{C}^{2}\cup \mathcal{C}^{4}: & \mathcal{C}^{24}\equiv
+C_{1}^{2}C_{2}^{4}C_{3}^{2}C_{4}^{4}C_{1}^{2}\text{ and }\mathcal{C}%
+^{42}\equiv C_{1}^{4}C_{2}^{2}C_{3}^{4}C_{4}^{2}C_{1}^{4}, \\ 
+\mathcal{C}^{1}\cup \mathcal{C}^{4}: & \mathcal{C}^{14}\equiv
+C_{1}^{1}C_{2}^{4}C_{4}^{1}C_{3}^{4}C_{1}^{1}\text{ and }\mathcal{C}%
+^{41}\equiv C_{1}^{4}C_{2}^{1}C_{4}^{4}C_{3}^{1}C_{1}^{4}, \\ 
+\mathcal{C}^{2}\cup \mathcal{C}^{3}: & \mathcal{C}^{23}\equiv
+C_{1}^{2}C_{2}^{3}C_{4}^{2}C_{3}^{3}C_{1}^{2}\text{ and }\mathcal{C}%
+^{32}\equiv C_{1}^{3}C_{2}^{2}C_{4}^{3}C_{3}^{2}C_{1}^{3}.%
 \end{array}%
-\end{equation*}
+\]
 
 \begin{theorem}[Meets of Circumlines]
 The meets of non-neighbouring circumlines are collinear four at a time,
 producing twelve distinct c-lines.
 \end{theorem}
 
-\textit{Proof} \ Now as the graphs are isomorphic each edge, say $\left(
-C_{r}^{\left( i\right) }C_{s}^{\left( j\right) }\right) $, must appear
-exactly two cycles, $\mathcal{C}_{rs}$ or $\mathcal{C}_{sr}$ and $\mathcal{C}%
-^{\left( ij\right) }$ or $\mathcal{C}^{\left( ji\right) }$,\ one from each
-of the respective partitions. For example the edge corresponding to the meet 
-$\left( C_{1}^{\left( 1\right) }C_{2}^{\left( 3\right) }\right) $\ is in the
-cycles $\mathcal{C}_{12}$ and $\mathcal{C}^{\left( 13\right) }$.
+\begin{proof}
+Now as the graphs are isomorphic each edge, say $\left(
+C_{r}^{i}C_{s}^{j}\right) $, must appear exactly two cycles, $\mathcal{C}%
+_{rs}$ or $\mathcal{C}_{sr}$ and $\mathcal{C}^{ij}$ or $\mathcal{C}^{ji}$,\
+one from each of the respective partitions. For example the edge
+corresponding to the meet $\left( C_{1}^{1}C_{2}^{3}\right) $\ is in the
+cycles $\mathcal{C}_{12}$ and $\mathcal{C}^{13}$.
 
 Without loss of generality since meets are symetric lets assume that the
-edge $\left( C_{r}^{\left( i\right) }C_{s}^{\left( j\right) }\right) $
-appears in the cycles $\mathcal{C}_{rs}$ and $\mathcal{C}^{\left( ji\right) }
-$. There are six vertices in the union of these two cycles $\mathcal{C}%
-_{rs}\cup \mathcal{C}^{\left( ji\right) }$, and two remaining edges when
-removing the vertices $C_{r}^{\left( i\right) },C_{s}^{\left( j\right) }$.
-In our example the six vertices are
-
-\begin{equation*}
-\text{ }C_{1}^{\left( 2\right) },C_{2}^{\left( 4\right) },C_{1}^{\left(
-1\right) },C_{2}^{\left( 3\right) },C_{3}^{\left( 1\right) },C_{4}^{\left(
-3\right) }\in \mathcal{C}_{12}\cup \mathcal{C}^{\left( 13\right) }
-\end{equation*}%
-and the two edges
-
-\begin{equation*}
-\left( C_{1}^{\left( 2\right) }C_{2}^{\left( 4\right) }\right) ,\left(
-C_{3}^{\left( 1\right) }C_{4}^{\left( 3\right) }\right) \in \left( \mathcal{C%
-}_{12}\cup \mathcal{C}^{\left( 13\right) }\right) \setminus \left\{
-C_{1}^{\left( 1\right) },C_{2}^{\left( 3\right) }\right\} .
-\end{equation*}
-
+edge $\left( C_{r}^{i}C_{s}^{j}\right) $ appears in the cycles $\mathcal{C}%
+_{rs}$ and $\mathcal{C}^{ij}$. There are six vertices in the union of these
+two cycles $\mathcal{C}_{rs}\cup \mathcal{C}^{ij}$, and two remaining edges
+when removing the vertices $C_{r}^{i},C_{s}^{j}$. In our example the six
+vertices are%
+\[
+\text{ }C_{1}^{2},C_{2}^{4},C_{1}^{1},C_{2}^{3},C_{3}^{1},C_{4}^{3}\in 
+\mathcal{C}_{12}\cup \mathcal{C}^{13}
+\]%
+and the two edges%
+\[
+\left( C_{1}^{2}C_{2}^{4}\right) ,\left( C_{3}^{1}C_{4}^{3}\right) \in
+\left( \mathcal{C}_{12}\cup \mathcal{C}^{13}\right) \setminus \left\{
+C_{1}^{1},C_{2}^{3}\right\} .
+\]%
 Now computations show us that the three meets corresponding to the edges
-found above are collinear. That is the line
-
-\begin{equation*}
+found above are collinear. That is the line%
+\[
 \left\langle \sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 3,4\right\}
 }:\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{ 1,2\right\} }-\sigma
 _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma _{\left\{
-1,4\right\} }-\sigma _{\left\{ 2,3\right\} }\right\rangle
-\end{equation*}
-
-goes through the points
-
-\begin{equation*}
-\left( C_{1}^{\left( 1\right) }C_{2}^{\left( 3\right) }\right) \ ,\left(
-C_{1}^{\left( 2\right) }C_{2}^{\left( 4\right) }\right) ,\text{ and }\left(
-C_{3}^{\left( 1\right) }C_{4}^{\left( 3\right) }\right) .
-\end{equation*}
-
+1,4\right\} }-\sigma _{\left\{ 2,3\right\} }\right\rangle 
+\]%
+goes through the points%
+\[
+\left( C_{1}^{1}C_{2}^{3}\right) \ ,\left( C_{1}^{2}C_{2}^{4}\right) ,\text{
+and }\left( C_{3}^{1}C_{4}^{3}\right) .
+\]%
 Now this is true for every vertex, and so there is some double counting.
 Infact the triples produced by picking vertices will overlap four at a time.
-So the line above is associated with the cycles $\mathcal{C}^{\left(
-13\right) },\mathcal{C}^{\left( 24\right) },\mathcal{C}_{12}$ and $\mathcal{C%
-}_{34}$\ and so is also incident with the meet
-
-\begin{equation*}
-\left( C_{3}^{\left( 2\right) }C_{4}^{\left( 4\right) }\right) .
-\end{equation*}
-
+So the line above is associated with the cycles $\mathcal{C}^{13},\mathcal{C}%
+^{24},\mathcal{C}_{12}$ and $\mathcal{C}_{34}$\ and so is also incident with
+the meet%
+\[
+\left( C_{3}^{2}C_{4}^{4}\right) .
+\]%
 That is we can group the circumlines into sets of fours which are colinear
-producing twelve distinct lines
-
-\begin{equation*}
-C_{\left\{ 14,32\right\} }^{\left\{ \left( 13\right) ,\left( 42\right)
-\right\} }\equiv \left\langle \sigma _{\left\{ 1,2\right\} }-\sigma
-_{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
-1,2\right\} }-\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 3,4\right\}
-}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,3\right\} }\right\rangle
-\end{equation*}
-
-\begin{equation*}
-\text{through }\left( C_{1}^{\left( 1\right) }C_{4}^{\left( 3\right)
-}\right) \ ,\left( C_{3}^{\left( 1\right) }C_{2}^{\left( 3\right) }\right)
-,\left( C_{1}^{\left( 4\right) }C_{4}^{\left( 2\right) }\right) ,\text{ and }%
-\left( C_{3}^{\left( 4\right) }C_{2}^{\left( 2\right) }\right) ,
-\end{equation*}
-
-\begin{equation*}
-C_{\left\{ 21,43\right\} }^{\left\{ \left( 31\right) ,\left( 42\right)
-\right\} }\equiv \left\langle \sigma _{\left\{ 1,2\right\} }+\sigma
-_{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
-1,2\right\} }+\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 3,4\right\}
-}:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,4\right\} }\right\rangle
-\end{equation*}
-
-\begin{equation*}
-\text{through }\left( C_{2}^{\left( 1\right) }C_{1}^{\left( 3\right)
-}\right) \ ,\left( C_{4}^{\left( 1\right) }C_{3}^{\left( 3\right) }\right)
-,\left( C_{2}^{\left( 2\right) }C_{1}^{\left( 4\right) }\right) ,\text{ and }%
-\left( C_{4}^{\left( 2\right) }C_{3}^{\left( 4\right) }\right) ,
-\end{equation*}
-
-\begin{equation*}
-C_{\left\{ 41,23\right\} }^{\left\{ \left( 31\right) ,\left( 24\right)
-\right\} }\equiv \left\langle \sigma _{\left\{ 3,4\right\} }-\sigma
-_{\left\{ 1,2\right\} }:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
-1,4\right\} }+\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 3,4\right\}
-}:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,3\right\} }\right\rangle
-\end{equation*}
-
-\begin{equation*}
-\text{through }\left( C_{2}^{\left( 1\right) }C_{3}^{\left( 3\right)
-}\right) \ ,\left( C_{4}^{\left( 1\right) }C_{1}^{\left( 3\right) }\right)
-,\left( C_{2}^{\left( 4\right) }C_{3}^{\left( 2\right) }\right) ,\text{ and }%
-\left( C_{4}^{\left( 4\right) }C_{1}^{\left( 2\right) }\right) ,
-\end{equation*}
-
-\begin{equation*}
-C_{\left\{ 13,24\right\} }^{\left\{ \left( 12\right) ,\left( 34\right)
-\right\} }\equiv \left\langle \sigma _{\left\{ 1,3\right\} }+\sigma
-_{\left\{ 2,4\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
-1,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,3\right\}
-}+\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 2,4\right\} }\right\rangle
-\end{equation*}
-
-\begin{equation*}
-\text{through }\left( C_{1}^{\left( 1\right) }C_{3}^{\left( 2\right)
-}\right) \ ,\left( C_{2}^{\left( 1\right) }C_{4}^{\left( 2\right) }\right)
-,\left( C_{1}^{\left( 3\right) }C_{3}^{\left( 4\right) }\right) ,\text{ and }%
-\left( C_{2}^{\left( 3\right) }C_{4}^{\left( 4\right) }\right) ,
-\end{equation*}
-
-\begin{equation*}
-C_{\left\{ 14,23\right\} }^{\left\{ \left( 12\right) ,\left( 43\right)
-\right\} }\equiv \left\langle \sigma _{\left\{ 2,4\right\} }-\sigma
-_{\left\{ 1,3\right\} }:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
-1,4\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 1,4\right\}
-}+\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 2,4\right\} }\right\rangle
-\end{equation*}
-
-\begin{equation*}
-\text{through }\left( C_{1}^{\left( 1\right) }C_{4}^{\left( 2\right)
-}\right) \ ,\left( C_{2}^{\left( 1\right) }C_{3}^{\left( 2\right) }\right)
-,\left( C_{1}^{\left( 4\right) }C_{2}^{\left( 3\right) }\right) ,\text{ and }%
-\left( C_{2}^{\left( 4\right) }C_{3}^{\left( 3\right) }\right) ,
-\end{equation*}
-
-\begin{equation*}
-C_{\left\{ 31,42\right\} }^{\left\{ \left( 21\right) ,\left( 43\right)
-\right\} }\equiv \left\langle \sigma _{\left\{ 1,3\right\} }+\sigma
-_{\left\{ 2,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
-2,3\right\} }:\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{ 1,4\right\}
-}-\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }\right\rangle
-\end{equation*}
-
-\begin{equation*}
-\text{through }\left( C_{3}^{\left( 1\right) }C_{1}^{\left( 2\right)
-}\right) \ ,\left( C_{4}^{\left( 1\right) }C_{2}^{\left( 2\right) }\right)
-,\left( C_{3}^{\left( 3\right) }C_{1}^{\left( 4\right) }\right) ,\text{ and }%
-\left( C_{4}^{\left( 3\right) }C_{2}^{\left( 4\right) }\right) ,
-\end{equation*}
-
-\begin{equation*}
-C_{\left\{ 41,32\right\} }^{\left\{ \left( 21\right) ,\left( 34\right)
-\right\} }\equiv \left\langle \sigma _{\left\{ 1,3\right\} }-\sigma
-_{\left\{ 2,4\right\} }:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
-1,4\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,4\right\}
-}-\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,4\right\} }\right\rangle
-\end{equation*}
-
-\begin{equation*}
-\text{through }\left( C_{3}^{\left( 1\right) }C_{2}^{\left( 2\right)
-}\right) \ ,\left( C_{4}^{\left( 1\right) }C_{1}^{\left( 2\right) }\right)
-,\left( C_{3}^{\left( 4\right) }C_{2}^{\left( 3\right) }\right) ,\text{ and }%
-\left( C_{4}^{\left( 4\right) }C_{1}^{\left( 3\right) }\right) ,
-\end{equation*}
-
-\begin{equation*}
-C_{\left\{ 12,43\right\} }^{\left\{ \left( 14\right) ,\left( 23\right)
-\right\} }\equiv \left\langle \sigma _{\left\{ 3,4\right\} }-\sigma
-_{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
-2,4\right\} }:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 3,4\right\}
-}:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,4\right\} }\right\rangle
-\end{equation*}
-
-\begin{equation*}
-\text{through }\left( C_{1}^{\left( 1\right) }C_{2}^{\left( 4\right)
-}\right) \ ,\left( C_{4}^{\left( 1\right) }C_{3}^{\left( 4\right) }\right)
-,\left( C_{1}^{\left( 3\right) }C_{3}^{\left( 4\right) }\right) ,\text{ and }%
-\left( C_{2}^{\left( 3\right) }C_{4}^{\left( 4\right) }\right) ,
-\end{equation*}
-
-\begin{equation*}
-C_{\left\{ 13,42\right\} }^{\left\{ \left( 14\right) ,\left( 32\right)
-\right\} }\equiv \left\langle \sigma _{\left\{ 2,4\right\} }-\sigma
-_{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
-3,4\right\} }:\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 3,4\right\}
-}:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,4\right\} }\right\rangle
-\end{equation*}
-
-\begin{equation*}
-\text{through }\left( C_{1}^{\left( 1\right) }C_{3}^{\left( 4\right)
-}\right) \ ,\left( C_{4}^{\left( 1\right) }C_{2}^{\left( 4\right) }\right)
-,\left( C_{1}^{\left( 4\right) }C_{2}^{\left( 3\right) }\right) ,\text{ and }%
-\left( C_{2}^{\left( 4\right) }C_{3}^{\left( 3\right) }\right) ,
-\end{equation*}
-
-\begin{equation*}
-C_{\left\{ 21,34\right\} }^{\left\{ \left( 41\right) ,\left( 32\right)
-\right\} }\equiv \left\langle \sigma _{\left\{ 1,3\right\} }-\sigma
-_{\left\{ 1,2\right\} }+\sigma _{\left\{ 2,4\right\} }+\sigma _{\left\{
-3,4\right\} }:\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 3,4\right\}
-}:\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{ 1,3\right\} }\right\rangle
-\end{equation*}
-
-\begin{equation*}
-\text{through }\left( C_{2}^{\left( 1\right) }C_{1}^{\left( 4\right)
-}\right) \ ,\left( C_{3}^{\left( 1\right) }C_{4}^{\left( 4\right) }\right)
-,\left( C_{3}^{\left( 4\right) }C_{2}^{\left( 3\right) }\right) ,\text{ and }%
-\left( C_{4}^{\left( 4\right) }C_{1}^{\left( 3\right) }\right) ,
-\end{equation*}
-
-\begin{equation*}
-C_{\left\{ 31,24\right\} }^{\left\{ \left( 41\right) ,\left( 43\right)
-\right\} }\equiv \left\langle \sigma _{\left\{ 1,2\right\} }-\sigma
-_{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,4\right\} }+\sigma _{\left\{
-3,4\right\} }:\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{ 1,2\right\}
-}:\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,4\right\} }\right\rangle
-\end{equation*}
-
-\begin{equation*}
-\text{through }\left( C_{2}^{\left( 1\right) }C_{4}^{\left( 4\right)
-}\right) \ ,\left( C_{3}^{\left( 1\right) }C_{1}^{\left( 4\right) }\right)
-,\left( C_{3}^{\left( 3\right) }C_{1}^{\left( 4\right) }\right) ,\text{ and }%
-\left( C_{4}^{\left( 3\right) }C_{2}^{\left( 4\right) }\right) .
-\end{equation*}
-
+producing twelve distinct lines%
+\[
+C_{\left\{ 14,32\right\} }^{\left\{ 13,42\right\} }\equiv \left\langle
+\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma
+_{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{
+1,4\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,4\right\}
+}+\sigma _{\left\{ 2,3\right\} }\right\rangle 
+\]%
+\[
+\text{through }\left( C_{1}^{1}C_{4}^{3}\right) \ ,\left(
+C_{3}^{1}C_{2}^{3}\right) ,\left( C_{1}^{4}C_{4}^{2}\right) ,\text{ and }%
+\left( C_{3}^{4}C_{2}^{2}\right) ,
+\]%
+\[
+C_{\left\{ 21,43\right\} }^{\left\{ 31,42\right\} }\equiv \left\langle
+\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma
+_{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,2\right\} }+\sigma _{\left\{
+2,3\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\}
+}-\sigma _{\left\{ 1,4\right\} }\right\rangle 
+\]%
+\[
+\text{through }\left( C_{2}^{1}C_{1}^{3}\right) \ ,\left(
+C_{4}^{1}C_{3}^{3}\right) ,\left( C_{2}^{2}C_{1}^{4}\right) ,\text{ and }%
+\left( C_{4}^{2}C_{3}^{4}\right) ,
+\]%
+\[
+C_{\left\{ 41,23\right\} }^{\left\{ 31,24\right\} }\equiv \left\langle
+\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{ 1,2\right\} }:\sigma
+_{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
+2,3\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,4\right\}
+}+\sigma _{\left\{ 2,3\right\} }\right\rangle 
+\]%
+\[
+\text{through }\left( C_{2}^{1}C_{3}^{3}\right) \ ,\left(
+C_{4}^{1}C_{1}^{3}\right) ,\left( C_{2}^{4}C_{3}^{2}\right) ,\text{ and }%
+\left( C_{4}^{4}C_{1}^{2}\right) ,
+\]%
+\[
+C_{\left\{ 13,24\right\} }^{\left\{ 12,34\right\} }\equiv \left\langle
+\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,4\right\} }:\sigma
+_{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,4\right\} }:\sigma _{\left\{
+1,4\right\} }-\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\}
+}+\sigma _{\left\{ 2,4\right\} }\right\rangle 
+\]%
+\[
+\text{through }\left( C_{1}^{1}C_{3}^{2}\right) \ ,\left(
+C_{2}^{1}C_{4}^{2}\right) ,\left( C_{1}^{3}C_{3}^{4}\right) ,\text{ and }%
+\left( C_{2}^{3}C_{4}^{4}\right) ,
+\]%
+\[
+C_{\left\{ 14,23\right\} }^{\left\{ 12,43\right\} }\equiv \left\langle
+\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{ 1,3\right\} }:\sigma
+_{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,4\right\} }:\sigma _{\left\{
+1,3\right\} }-\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,3\right\}
+}+\sigma _{\left\{ 2,4\right\} }\right\rangle 
+\]%
+\[
+\text{through }\left( C_{1}^{1}C_{4}^{2}\right) \ ,\left(
+C_{2}^{1}C_{3}^{2}\right) ,\left( C_{1}^{4}C_{2}^{3}\right) ,\text{ and }%
+\left( C_{2}^{4}C_{3}^{3}\right) ,
+\]%
+\[
+C_{\left\{ 31,42\right\} }^{\left\{ 21,43\right\} }\equiv \left\langle
+\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,4\right\} }:\sigma
+_{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma _{\left\{
+2,4\right\} }-\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,3\right\}
+}-\sigma _{\left\{ 2,3\right\} }\right\rangle 
+\]%
+\[
+\text{through }\left( C_{3}^{1}C_{1}^{2}\right) \ ,\left(
+C_{4}^{1}C_{2}^{2}\right) ,\left( C_{3}^{3}C_{1}^{4}\right) ,\text{ and }%
+\left( C_{4}^{3}C_{2}^{4}\right) ,
+\]%
+\[
+C_{\left\{ 41,32\right\} }^{\left\{ 21,34\right\} }\equiv \left\langle
+\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,4\right\} }:\sigma
+_{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,4\right\} }:\sigma _{\left\{
+2,3\right\} }-\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,3\right\}
+}-\sigma _{\left\{ 2,4\right\} }\right\rangle 
+\]%
+\[
+\text{through }\left( C_{3}^{1}C_{2}^{2}\right) \ ,\left(
+C_{4}^{1}C_{1}^{2}\right) ,\left( C_{3}^{4}C_{2}^{3}\right) ,\text{ and }%
+\left( C_{4}^{4}C_{1}^{3}\right) ,
+\]%
+\[
+C_{\left\{ 12,43\right\} }^{\left\{ 14,23\right\} }\equiv \left\langle
+\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{ 1,2\right\} }-\sigma
+_{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{
+1,2\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,3\right\}
+}-\sigma _{\left\{ 2,4\right\} }\right\rangle 
+\]%
+\[
+\text{through }\left( C_{1}^{1}C_{2}^{4}\right) \ ,\left(
+C_{4}^{1}C_{3}^{4}\right) ,\left( C_{1}^{3}C_{3}^{4}\right) ,\text{ and }%
+\left( C_{2}^{3}C_{4}^{4}\right) ,
+\]%
+\[
+C_{\left\{ 13,42\right\} }^{\left\{ 14,32\right\} }\equiv \left\langle
+\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{ 1,2\right\} }-\sigma
+_{\left\{ 1,3\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{
+1,2\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,3\right\}
+}+\sigma _{\left\{ 2,4\right\} }\right\rangle 
+\]%
+\[
+\text{through }\left( C_{1}^{1}C_{3}^{4}\right) \ ,\left(
+C_{4}^{1}C_{2}^{4}\right) ,\left( C_{1}^{4}C_{2}^{3}\right) ,\text{ and }%
+\left( C_{2}^{4}C_{3}^{3}\right) ,
+\]%
+\[
+C_{\left\{ 21,34\right\} }^{\left\{ 41,32\right\} }\equiv \left\langle
+\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 1,2\right\} }+\sigma
+_{\left\{ 2,4\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{
+1,2\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,4\right\}
+}-\sigma _{\left\{ 1,3\right\} }\right\rangle 
+\]%
+\[
+\text{through }\left( C_{2}^{1}C_{1}^{4}\right) \ ,\left(
+C_{3}^{1}C_{4}^{4}\right) ,\left( C_{3}^{4}C_{2}^{3}\right) ,\text{ and }%
+\left( C_{4}^{4}C_{1}^{3}\right) ,
+\]%
+\[
+C_{\left\{ 31,24\right\} }^{\left\{ 41,43\right\} }\equiv \left\langle
+\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,3\right\} }+\sigma
+_{\left\{ 2,4\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{
+3,4\right\} }-\sigma _{\left\{ 1,2\right\} }:\sigma _{\left\{ 1,3\right\}
+}+\sigma _{\left\{ 2,4\right\} }\right\rangle 
+\]%
+\[
+\text{through }\left( C_{2}^{1}C_{4}^{4}\right) \ ,\left(
+C_{3}^{1}C_{1}^{4}\right) ,\left( C_{3}^{3}C_{1}^{4}\right) ,\text{ and }%
+\left( C_{4}^{3}C_{2}^{4}\right) .
+\]%
 These computations are all done in matlab, the github address will be
-provided at the end. $\square $
+provided at the end.
+\end{proof}
 
-\bigskip 
+\subsection{\protect\bigskip }
 
-\subsection{Centroids}
+\subsubsection{Centroids}
 
 \textbf{Median lines} (or just \textbf{medians}) $D$ of a Triangle $%
 \triangle $ are the joins of corresponding Midpoints $m$ and Points $a$.
@@ -1141,7 +1076,7 @@ The Medians of the Quadrangle $\square =\overline{a_{1}a_{2}a_{3}a_{4}}$ are
 given as follows;
 
 The Medians for the subtriangle $\triangle _{1}\,:$%
-\begin{equation*}
+\[
 \begin{array}{cc}
 D_{23}^{1}\equiv \left\langle \sigma _{\left\{ 2,4\right\} }+\sigma
 _{\left\{ 3,4\right\} }:\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{
@@ -1159,10 +1094,10 @@ _{\left\{ 2,3\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
 _{\left\{ 2,4\right\} }:\sigma _{\left\{ 2,3\right\} }:\sigma _{\left\{
 2,3\right\} }+\sigma _{\left\{ 2,4\right\} }\right\rangle .%
 \end{array}%
-\end{equation*}
+\]
 
 The Medians for the subtriangle $\triangle _{2}\,:$%
-\begin{equation*}
+\[
 \begin{array}{cc}
 D_{13}^{2}\equiv \left\langle \sigma _{\left\{ 3,4\right\} }:\sigma
 _{\left\{ 1,4\right\} }+\sigma _{\left\{ 3,4\right\} }:-\sigma _{\left\{
@@ -1180,10 +1115,10 @@ _{\left\{ 1,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
 _{\left\{ 1,3\right\} }:\sigma _{\left\{ 1,4\right\} }:-\sigma _{\left\{
 1,4\right\} }-\sigma _{\left\{ 1,3\right\} }\right\rangle .%
 \end{array}%
-\end{equation*}
+\]
 
 The Medians for the subtriangle $\triangle _{3}\,:$%
-\begin{equation*}
+\[
 \begin{array}{cc}
 D_{12}^{3}\equiv \left\langle \sigma _{\left\{ 2,4\right\} }:\sigma
 _{\left\{ 1,4\right\} }:\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{
@@ -1201,10 +1136,10 @@ _{\left\{ 2,3\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{
 _{\left\{ 2,3\right\} }:\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{
 2,3\right\} }:-\sigma _{\left\{ 3,4\right\} }\right\rangle .%
 \end{array}%
-\end{equation*}
+\]
 
 The Medians for the subtriangle $\triangle _{4}\,:$%
-\begin{equation*}
+\[
 \begin{array}{cc}
 D_{12}^{4}\equiv \left\langle \sigma _{\left\{ 1,3\right\} }:\sigma
 _{\left\{ 2,3\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
@@ -1222,10 +1157,12 @@ _{\left\{ 1,3\right\} }:\sigma _{\left\{ 1,2\right\} }:\sigma _{\left\{
 _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,3\right\} }:-\sigma _{\left\{
 1,2\right\} }:\sigma _{\left\{ 1,3\right\} }\right\rangle .%
 \end{array}%
-\end{equation*}
+\]
 \end{theorem}
 
-\textit{Proof} Simple computations will show this. $\square $
+\begin{proof}
+Simple computations will show this.
+\end{proof}
 
 \begin{theorem}[Centroids]
 The Medians lines $D$ of a Triangle $\triangle =\overline{p_{1}p_{2}p_{3}}$
@@ -1234,12 +1171,13 @@ Median points} $d$ of a Triangle are collinear in threes, joining on four
 \textbf{Centroid lines} $G$.
 \end{theorem}
 
-\textit{Proof} By the fundamental theorem of projective geometry we may
-assume without any loss of generality that $p_{1}=a_{1}\equiv \left[ 1:1:1%
-\right] ,~p_{2}=a_{2}\equiv \left[ -1:-1:1\right] $, and $p_{3}=a_{3}\equiv %
-\left[ -1:1:1\right] $, and so by the Medians of the Quadrangle Theorem the
-Median lines of the Triangle $\triangle =\overline{p_{1}p_{2}p_{3}}$ are; 
-\begin{equation*}
+\begin{proof}
+By the fundamental theorem of projective geometry we may assume without any
+loss of generality that $p_{1}=a_{1}\equiv \left[ 1:1:1\right]
+,~p_{2}=a_{2}\equiv \left[ -1:-1:1\right] $, and $p_{3}=a_{3}\equiv \left[
+-1:1:1\right] $, and so by the Medians of the Quadrangle Theorem the Median
+lines of the Triangle $\triangle =\overline{p_{1}p_{2}p_{3}}$ are; 
+\[
 \begin{array}{cc}
 D_{12}^{4}\equiv \left\langle \sigma _{\left\{ 1,3\right\} }:\sigma
 _{\left\{ 2,3\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
@@ -1257,16 +1195,13 @@ _{\left\{ 1,3\right\} }:\sigma _{\left\{ 1,2\right\} }:\sigma _{\left\{
 _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,3\right\} }:-\sigma _{\left\{
 1,2\right\} }:\sigma _{\left\{ 1,3\right\} }\right\rangle .%
 \end{array}%
-\end{equation*}
-
-The following triples of Medians are concurrent;
-
-\begin{equation*}
+\]%
+The following triples of Medians are concurrent;%
+\[
 D_{12}^{4},D_{13}^{4},D_{23}^{4},
-\end{equation*}
-
+\]%
 passing through 
-\begin{equation*}
+\[
 g_{1}^{4}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,3\right\} }-\sigma
@@ -1280,14 +1215,12 @@ _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
 2,3\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}
-
-\begin{equation*}
+\]%
+\[
 D_{12}^{4},D_{31}^{4},D_{32}^{4},
-\end{equation*}
-
+\]%
 passing through 
-\begin{equation*}
+\[
 g_{2}^{4}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,3\right\} }-\sigma
@@ -1301,14 +1234,12 @@ _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
 2,3\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}
-
-\begin{equation*}
+\]%
+\[
 D_{21}^{4},D_{13}^{4},D_{32}^{4},
-\end{equation*}
-
+\]%
 passing through 
-\begin{equation*}
+\[
 g_{3}^{4}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,3\right\} }+\sigma
@@ -1322,14 +1253,12 @@ _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
 2,3\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}
-
-\begin{equation*}
+\]%
+\[
 D_{21}^{4},D_{31}^{4},D_{23}^{4},
-\end{equation*}
-
+\]%
 passing through 
-\begin{equation*}
+\[
 g_{4}^{4}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,3\right\} }+\sigma
@@ -1343,10 +1272,8 @@ _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
 2,3\right\} }%
 \end{array}%
 \right] .
-\end{equation*}
-
-This is checked by computing
-
+\]%
+This is checked by computing%
 \begin{eqnarray*}
 0 &=&\det \left( 
 \begin{array}{ccc}
@@ -1387,17 +1314,17 @@ _{\left\{ 1,2\right\} } & \sigma _{\left\{ 2,3\right\} } \\
 -\sigma _{\left\{ 1,2\right\} }-\sigma _{\left\{ 1,3\right\} } & \sigma
 _{\left\{ 1,2\right\} } & \sigma _{\left\{ 1,3\right\} }%
 \end{pmatrix}%
-\end{eqnarray*}
-
+\end{eqnarray*}%
 The coresponding meets are given above. The situations with the Centroid
-lines $G$ is precisely dual. $\square $
+lines $G$ is precisely dual.
+\end{proof}
 
 \begin{theorem}[Subtraingle Centroids of the Quadrangle]
 The Subtriangle Centroids of the Quadrangle $\square =\overline{%
 a_{1}a_{2}a_{3}a_{4}}$ are given as follows;
 
 The Centoids for the Subtriangle $\triangle _{1}\,:$%
-\begin{equation*}
+\[
 g_{1}^{1}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 2,3\right\} }\sigma _{\left\{ 3,4\right\} }-\sigma
@@ -1411,11 +1338,11 @@ _{\left\{ 3,4\right\} }+\sigma _{\left\{ 2,4\right\} }\sigma _{\left\{
 3,4\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{23}^{1},D_{24}^{1},D_{34}^{1},
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 g_{2}^{1}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 2,3\right\} }\sigma _{\left\{ 2,4\right\} }-\sigma
@@ -1429,11 +1356,11 @@ _{\left\{ 3,4\right\} }-\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{
 2,4\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{23}^{1},D_{42}^{1},D_{43}^{1},
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 g_{3}^{1}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 2,3\right\} }\sigma _{\left\{ 2,4\right\} }+\sigma
@@ -1447,11 +1374,11 @@ _{\left\{ 2,4\right\} }-\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{
 3,4\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{32}^{1},D_{24}^{1},D_{43}^{1},
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 g_{4}^{1}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 2,3\right\} }\sigma _{\left\{ 2,4\right\} }+\sigma
@@ -1465,12 +1392,12 @@ _{\left\{ 2,4\right\} }+\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{
 3,4\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{32}^{1},D_{42}^{1},D_{34}^{1};
-\end{equation*}%
+\]%
 The Centroids for the Subtriangle $\triangle _{2}\,:$%
-\begin{equation*}
+\[
 g_{1}^{2}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,3\right\} }\sigma _{\left\{ 1,4\right\} }+\sigma
@@ -1484,11 +1411,11 @@ _{\left\{ 3,4\right\} }+\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
 3,4\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{13}^{2},D_{14}^{2},D_{34}^{2},
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 g_{2}^{2}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,3\right\} }\sigma _{\left\{ 1,4\right\} }+\sigma
@@ -1502,11 +1429,11 @@ _{\left\{ 3,4\right\} }-\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
 3,4\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{13}^{2},D_{41}^{2},D_{43}^{2},
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 g_{3}^{2}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,3\right\} }\sigma _{\left\{ 1,4\right\} }-\sigma
@@ -1520,11 +1447,11 @@ _{\left\{ 3,4\right\} }+\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
 3,4\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{31}^{2},D_{14}^{2},D_{43}^{2},
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 g_{4}^{2}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,3\right\} }\sigma _{\left\{ 1,4\right\} }-\sigma
@@ -1538,12 +1465,12 @@ _{\left\{ 3,4\right\} }-\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
 3,4\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{31}^{2},D_{41}^{2},D_{34}^{2};
-\end{equation*}%
+\]%
 The Centroids for the Subtriangle $\triangle _{3}\,:$%
-\begin{equation*}
+\[
 g_{1}^{3}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,4\right\} }-\sigma
@@ -1557,11 +1484,11 @@ _{\left\{ 2,4\right\} }+\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
 2,4\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{12}^{3},D_{14}^{3},D_{24}^{3},
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 g_{2}^{3}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,4\right\} }-\sigma
@@ -1575,11 +1502,11 @@ _{\left\{ 2,4\right\} }-\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
 2,4\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{12}^{3},D_{41}^{3},D_{42}^{3},
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 g_{3}^{3}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,4\right\} }+\sigma
@@ -1593,11 +1520,11 @@ _{\left\{ 2,4\right\} }+\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
 2,4\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{21}^{3},D_{14}^{3},D_{42}^{3},
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 g_{4}^{3}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,4\right\} }+\sigma
@@ -1611,12 +1538,12 @@ _{\left\{ 2,4\right\} }-\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
 2,4\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{21}^{3},D_{41}^{3},D_{24}^{3};
-\end{equation*}%
+\]%
 The Centroids for the Subtriangle $\triangle _{4}\,:$%
-\begin{equation*}
+\[
 g_{1}^{4}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,3\right\} }-\sigma
@@ -1630,11 +1557,11 @@ _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
 2,3\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{12}^{4},D_{13}^{4},D_{23}^{4},
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 g_{2}^{4}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,3\right\} }-\sigma
@@ -1648,11 +1575,11 @@ _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
 2,3\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{12}^{4},D_{31}^{4},D_{32}^{4},
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 g_{3}^{4}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,3\right\} }+\sigma
@@ -1666,11 +1593,11 @@ _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
 2,3\right\} }%
 \end{array}%
 \right] ,
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{21}^{4},D_{13}^{4},D_{32}^{4},
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 g_{4}^{4}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,3\right\} }+\sigma
@@ -1684,13 +1611,15 @@ _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
 2,3\right\} }%
 \end{array}%
 \right] .
-\end{equation*}%
-\begin{equation*}
+\]%
+\[
 \text{incident with the Medians }D_{21}^{4},D_{31}^{4},D_{23}^{4}.
-\end{equation*}
+\]
 \end{theorem}
 
-\textit{Proof} This is worked out computationally. $\square $
+\begin{proof}
+This is worked out computationally.
+\end{proof}
 
 \bigskip 
 
@@ -1713,13 +1642,13 @@ conatins exactly one midpoint for every side $\overline{a_{i}a_{j}}$ of the
 Quadrangle.
 
 For example the set%
-\begin{equation*}
+\[
 S=\left\{ g_{1}^{1},g_{1}^{2},g_{1}^{3},g_{1}^{4}\right\} ,
-\end{equation*}%
+\]%
 is midpoint consistent since the union of assosciated midpoints is%
-\begin{equation*}
+\[
 S_{m}=\left\{ m_{12},m_{34},m_{13},m_{24},m_{14},m_{23}\right\} .
-\end{equation*}
+\]
 
 \begin{theorem}[Midpoint consistent sets of Subtriangle Centroids]
 In total there are eight distinct sets of Subtriangle Centroids $S=\left\{
@@ -1727,8 +1656,9 @@ g_{i_{1}}^{1},g_{i_{2}}^{2},g_{i_{3}}^{3},g_{i_{4}}^{4}\right\} $ which are
 midpoint consistent.
 \end{theorem}
 
-\textit{Proof} We prove this by trying to construct a midpoint consistent
-set of Subtriangle Centroids $S=\left\{
+\begin{proof}
+We prove this by trying to construct a midpoint consistent set of
+Subtriangle Centroids $S=\left\{
 g_{i_{1}}^{1},g_{i_{2}}^{2},g_{i_{3}}^{3},g_{i_{4}}^{4}\right\} $. First
 let's choose $i_{1}=1$, that is let $g_{1}^{1}$ be in the set. The Centroid $%
 g_{1}^{1}$ has assosciated midpoints $S_{1}^{1}\equiv \left\{
@@ -1738,25 +1668,25 @@ assosciated midpoints.
 
 So looking at the Centroids $g_{i}^{2}$ of the Subtriangle $\triangle _{2}$
 and their assosciated midpoints%
-\begin{equation*}
+\[
 \begin{array}{cc}
 g_{1}^{2}:S_{1}^{2}\equiv \left\{ m_{13},m_{14},m_{34}\right\} , & 
 g_{2}^{2}:S_{2}^{2}\equiv \left\{ m_{13},m_{41},m_{43}\right\} , \\ 
 g_{3}^{2}:S_{3}^{2}\equiv \left\{ m_{31},m_{14},m_{43}\right\} , & 
 g_{4}^{2}:S_{4}^{2}\equiv \left\{ m_{31},m_{41},m_{34}\right\} ,%
 \end{array}%
-\end{equation*}%
+\]%
 we see that the Centroids $g_{1}^{2}$ and $g_{4}^{2}$ are the only options
 for $S$. If we choose $i_{2}=1$, then the set 
-\begin{equation*}
+\[
 \left\{ m_{34},m_{13},m_{24,}m_{14},m_{23}\right\} \subseteq S_{m},
-\end{equation*}%
+\]%
 which forces $i_{3}=i_{4}=1$, as $S_{1}^{3}\equiv \left\{
 m_{12},m_{14},m_{24}\right\} $ and $S_{1}^{4}\equiv \left\{
 m_{12},m_{13},m_{23}\right\} $. Else if $i_{2}=4$, then the set 
-\begin{equation*}
+\[
 \left\{ m_{34},m_{31},m_{24},m_{41},m_{23}\right\} \subseteq S_{m},
-\end{equation*}%
+\]%
 which forces $i_{3}=i_{4}=4$, as $S_{4}^{3}\equiv \left\{
 m_{21},m_{31},m_{24}\right\} $ and $S_{4}^{4}\equiv \left\{
 m_{21},m_{31},m_{23}\right\} $. Therefore there are two distinct midpoint
@@ -1765,7 +1695,7 @@ g_{1}^{1}$. The above method can be used for any choice of $i_{1}\in \left[ 4%
 \right] $, and hence there are in total exactly eight distinct sets of
 Subtriangle Centroids which are midpoint consistent, and are given as
 follows;%
-\begin{equation*}
+\[
 \begin{array}{cc}
 S: & S_{m}: \\ 
 \left\{ g_{1}^{1},g_{1}^{2},g_{1}^{3},g_{1}^{4}\right\}  & \left\{
@@ -1785,8 +1715,8 @@ m_{12},m_{34},m_{31},m_{42},m_{41},m_{32}\right\}  \\
 \left\{ g_{4}^{1},g_{4}^{2},g_{2}^{3},g_{1}^{4}\right\}  & \left\{
 m_{21},m_{34},m_{13},m_{42},m_{14},m_{32}\right\} 
 \end{array}%
-\end{equation*}%
-$\square $
+\]
+\end{proof}
 
 \bigskip 
 
@@ -1870,7 +1800,8 @@ _{\left\{ 1,2\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
 \end{eqnarray*}
 \end{theorem}
 
-Proof The Bimedian 
+\begin{proof}
+The Bimedian 
 \begin{eqnarray*}
 B_{\left\{ 12,34\right\} } &\equiv &\left[ 1-\sigma _{\left\{ 1,2\right\}
 }A_{1}:1-\sigma _{\left\{ 1,2\right\} }A_{1}:1+\sigma _{\left\{ 1,2\right\}
@@ -1879,6 +1810,7 @@ _{\left\{ 3,4\right\} }A_{3}-1:1+\sigma _{\left\{ 3,4\right\} }A_{3}\right]
 \\
 &=&
 \end{eqnarray*}
+\end{proof}
 
 \begin{theorem}
 \bigskip 
@@ -1887,7 +1819,7 @@ _{\left\{ 3,4\right\} }A_{3}-1:1+\sigma _{\left\{ 3,4\right\} }A_{3}\right]
 
 \bigskip \pagebreak 
 
-\section{\protect\bigskip Introduction}
+\chapter{\protect\bigskip Introduction}
 
 Throughout this thesis definitions will be given in bold and italics will be
 reserved for emphasis.\newline
@@ -1918,7 +1850,7 @@ denote the associated projective vector $a=[v]$ as $a=[1\;\;2\;\;3]$ which
 by definition also equal to $[-1\;\;-2\;\;-3]$ or to $[2\;\;4\;\;6]$. We
 will also use bold labels to denote projective matrices: for for ordinary
 matrices 
-\begin{equation*}
+\[
 A=%
 \begin{pmatrix}
 1 & 1 & 2 \\ 
@@ -1932,7 +1864,7 @@ A=%
 0 & 0 & 2%
 \end{pmatrix}%
 ,
-\end{equation*}
+\]
 the associated projective matrices are 
 \begin{align*}
 \mathbf{A}=%
@@ -1967,12 +1899,12 @@ projective matrices is not well defined but multiplication is.\newline
 It is now important to introduce the main objects of projective geometry in
 a way that is consistent. A \textbf{(projective) point} is a \textit{non-zero%
 } projective row vector $a$ and will be written in either of two ways: 
-\begin{equation*}
+\[
 a\equiv[x\;y\;z]\equiv[x:y:z].
-\end{equation*}
+\]
 A \textbf{(projective) line} is a \textit{non-zero} projective column vector 
 $L$ written as 
-\begin{equation*}
+\[
 L\equiv%
 \begin{bmatrix}
 l \\ 
@@ -1980,7 +1912,7 @@ m \\
 n%
 \end{bmatrix}%
 \equiv\langle l:m:n\rangle.
-\end{equation*}
+\]
 For the point $a=[x:y:z]$ and line $L=\langle l:m:n\rangle$ we say they are 
 \textbf{incident} precisely when 
 \begin{equation}
@@ -1997,18 +1929,18 @@ incident with a point $a$, and dually three or more points are \textbf{%
 collinear} precisely when they are all incident with a line $L$.\newline
 The \textbf{join} $a_{1}a_{2}$ of distinct points $a_{1}\equiv[%
 x_{1}:y_{1}:z_{1}]$ and $a_{2}\equiv[x_{2}:y_{2}:z_{2}]$ is the line 
-\begin{equation*}
+\[
 a_{1}a_{2}\equiv[x_{1}:y_{1}:z_{1}]\times[x_{2}:y_{2}:z_{2}]\equiv\langle
 y_{1}z_{2}-z_{1}y_{2}:z_{1}x_{2}-x_{1}z_{2}:x_{1}y_{2}-y_{1}x_{2}\rangle.
-\end{equation*}
+\]
 The \textbf{meet} $L_{1}L_{2}$ of two distinct points $L_{1}\equiv\langle
 l_{1}:m_{1}:n_{1}\rangle$ and $l_{2}\equiv\langle l_{2}:m_{2}:n_{2}\rangle$
 is the point 
-\begin{equation*}
+\[
 L_{1}L_{2}\equiv\langle l_{1}:m_{1}:n_{1}\rangle\times\langle
 l_{2}:m_{2}:n_{2}\rangle\equiv[%
 m_{1}n_{2}-n_{1}m_{2}:n_{1}l_{2}-l_{1}n_{2}:l_{1}m_{2}-m_{1}l_{2}].
-\end{equation*}
+\]
 The cross here is the usual Euclidean cross product which is well defined.
 This also induces the result that \textit{the join $a_{1}a_{2}$ is a unique
 line which is incident with the points $a_{1}$ and $a_{2}$}. Dually \textit{%
@@ -2018,13 +1950,13 @@ L_{1}$ and $L_{2}$}.
 \pagebreak A \textbf{3-proportion} $x:y:z$ is an ordered triple of numbers $%
 x,y$ and $z$, \textit{not all zero}, with the convention that for any
 non-zero number $\lambda$ 
-\begin{equation*}
+\[
 x:y:z=\lambda x:\lambda y:\lambda z.
-\end{equation*}
+\]
 This is equivalent to saying that 
-\begin{equation*}
+\[
 x_{1}:y_{1}:z_{1}=x_{2}:y_{2}:z_{2}
-\end{equation*}
+\]
 precisely when the following conditions hold 
 \begin{equation}  \label{proportionequal}
 x_{1}y_{2}-x_{2}y_{1}=0\;\;y_{1}z_{2}-y_{2}z_{1}=0\;%
@@ -2040,9 +1972,9 @@ The definitions of points and lines is equivalent to that of projective
 geometry, where the two types of geometry differ becomes obvious in the
 notion of duality. The point $a\equiv[x,y,z]$ is \textbf{dual} to the line $%
 L\equiv(l:m:n)$ precisely when 
-\begin{equation*}
+\[
 x:y:z=l:m:n.
-\end{equation*}
+\]
 In this case we say that $a^{\perp}=L$ or $L^{\perp}=a$.\newline
 From the definition of points and lines we get that each point is dual to
 exactly one line, and conversely. This new idea of duality induces the same
@@ -2055,24 +1987,24 @@ The following theorems and definitions aim to do exactly that.\newline
 
 The point $a\equiv[x:y:z]$ \textbf{lies on} the line $L\equiv(l:m:n)$, or
 equivalently $L$ \textbf{passes through} $a$, precisely when 
-\begin{equation*}
+\[
 lx+my-nz=0.
-\end{equation*}%
+\]%
 \newline
 
 Points $a_{1}\equiv[x_{1}:y_{1}:z_{1}]$ and $a_{2}\equiv[x_{2}:y_{2}:z_{2}]$
 are \textbf{perpendicular} precisely when 
-\begin{equation*}
+\[
 x_{1}x_{2}+y_{1}y_{2}-z_{1}z_{2}=0.
-\end{equation*}
+\]
 This is equivalent to the condition that $a_{1}$ is incident with $%
 a_{2}^{\perp}$, or that $a_{2}$ is incident with $a_{1}^{\perp}$.\newline
 
 Similarly the line $L_{1}\equiv(l_{1}:m_{1}:n_{1})$ and $L_{2}%
 \equiv(l_{2}:m_{2}:n_{2})$ are \textbf{perpendicular} precisely when 
-\begin{equation*}
+\[
 l_{1}l_{2}+m_{1}m_{2}-n_{1}n_{2}=0.
-\end{equation*}
+\]
 This is equivalent to the condition that $L_{1}$ is incident with $%
 L_{2}^{\perp}$, or that $L_{2}$ is incident with $L_{1}^{\perp}$.\newline
 
@@ -2085,11 +2017,11 @@ zero, then let $[v]\equiv[x:y:z]$ denote the (hyperbolic) point, and $%
 If $a_{1}\equiv[x_{1}:y_{1}:z_{1}]$ and $a_{2}\equiv[x_{2}:y_{2}:z_{2}]$ are
 distinct points, then there is exactly one line $L$ which passes through
 them both, namely 
-\begin{equation*}
+\[
 L\equiv
 a_{1}a_{2}%
 \equiv(y_{1}z_{2}-y_{2}z_{1}:z_{1}x_{2}-z_{2}x_{1}:x_{2}y_{1}-x_{1}y_{2}).
-\end{equation*}
+\]
 \end{theorem}
 
 The line $L\equiv a_{1}a_{2}$ is the \textbf{join} of the points $a_{1}$ and 
@@ -2099,19 +2031,19 @@ $a_{2}$.\newline
 If $L_{1}\equiv(l_{1}:m_{1}:n_{1})$ and $L_{2}\equiv(l_{2}:m_{2}:n_{2})$ are
 distinct lines, then there is exactly one point $a$ which lies on both,
 namely 
-\begin{equation*}
+\[
 a\equiv L_{1}L_{2}\equiv[%
 m_{1}n_{2}-m_{2}n_{1}:n_{1}l_{2}-n_{2}l_{1}:l_{2}m_{1}-l_{1}m_{2}].
-\end{equation*}
+\]
 \end{theorem}
 
 The point $a\equiv L_{1}L_{2}$ is the \textbf{meet} of the lines $L_{1}$ and 
 $L_{2}$. These definitions give the following consequence, for any distinct
 points $a_{1}$ and $a_{2}$, and distinct lines $L_{1}$ and $L_{2}$, 
-\begin{equation*}
+\[
 (a_{1}a_{2})^{\perp}=a_{1}^{\perp}a_{2}\perp,\;\;\text{and}%
 \;\;(L_{1}L_{2})^{\perp}=L_{1}^{\perp}L_{2}^{\perp}.
-\end{equation*}
+\]
 
 Three or more points which lie on a common line are \textbf{collinear}.
 Three or more lines which pass through a common point are \textbf{concurrent}%
@@ -2120,30 +2052,30 @@ Three or more lines which pass through a common point are \textbf{concurrent}%
 \begin{theorem}[Collinear points]
 The points $a_{1}\equiv[x_{1}:y_{1}:z_{1}],\; a_{2}\equiv[x_{2}:y_{2}:z_{2}]$
 and $a_{3}\equiv[x_{3}:y_{3}:z_{3}]$ are collinear precisely when 
-\begin{equation*}
+\[
 x_{1}y_{2}z_{3}-x_{1}y_{3}z_{2}+x_{2}y_{3}z_{1}-x_{2}y_{1}z_{3}+x_{3}y_{1}z_{2}-x_{3}y_{2}z_{1}=0.
-\end{equation*}
+\]
 \end{theorem}
 
 \begin{theorem}[Concurrent lines]
 The lines $L_{1}\equiv(l_{1}:m_{1}:n_{1}),\; L_{2}\equiv(l_{2}:m_{2}:n_{2})$
 and $L_{3}\equiv(l_{3}:m_{3}:n_{3})$ are concurrent precisely when 
-\begin{equation*}
+\[
 l_{1}m_{2}n_{3}-l_{1}m_{3}n_{2}+l_{2}m_{3}n_{1}-l_{2}m_{1}n_{3}+l_{3}m_{1}n_{2}-l_{3}m_{2}n_{1}=0.
-\end{equation*}
+\]
 \end{theorem}
 
 Now that the fundamental objects and there interactions are defined will
 begin to classify these objects. Firstly we say that the point $a\equiv[x:y:z%
 ]$ is \textbf{null} precisely when it lies on its dual line, that is when 
-\begin{equation*}
+\[
 x^{2}+y^{2}-z^{2}=0,
-\end{equation*}
+\]
 and analogously that the line $L\equiv(l:m:n)$ is \textbf{null} precisely
 when it passes through its dual point, that is when 
-\begin{equation*}
+\[
 l^{2}+m^{2}-n^{2}=0.
-\end{equation*}
+\]
 The dual of a null point is a null line and conversely. I'll now use the
 following theorem to further this classification of objects.\newline
 
@@ -2170,10 +2102,10 @@ We now go onto define the geometric objects of hyperbolic geometry.\newline
 A \textbf{side} $\overline{a_{1}a_{2}}$ is a set $\{a_{1},a_{2}\}$ of two
 points. A \textbf{vertex} $\overline{L_{1}L_{2}}$ is a set $\{L_{1},L_{2}\}$
 of two lines. From the definition it is clear that 
-\begin{equation*}
+\[
 \overline{a_{1}a_{2}}=\overline{a_{2}a_{1}}\;\; \text{and}\;\;\overline{%
 L_{1}L_{2}}=\overline{L_{2}L_{1}}.
-\end{equation*}
+\]
 For a side $\overline{a_{1}a_{2}}$ we say that $a_{1}a_{2}$ is the \textbf{%
 line} of the side. Whilst for a vertex $\overline{L_{1}L_{2}}$ we say that $%
 L_{1}L_{2}$ is the \textbf{point} of the vertex.\newline
@@ -2192,9 +2124,9 @@ Similarly we are able to classify the vertex $\overline{L_{1}L_{2}}$ as a
 \begin{theorem}[Perpendicular point]
 For any side $\overline{a_{1}a_{2}}$ there is a unique point $p$ which is
 perpendicular to both $a_{1}$ and $a_{2}$, namely 
-\begin{equation*}
+\[
 p\equiv a_{1}^{\perp}a_{2}^{\perp}=(a_{1}a_{2})^{\perp}.
-\end{equation*}
+\]
 \end{theorem}
 
 The point $p$ is the \textbf{perpendicular point} of $\overline{a_{1}a_{2}}$%
@@ -2204,9 +2136,9 @@ when $a_{1}a_{2}$ is a null line.\newline
 \begin{theorem}[Perpendicular line]
 For any vertex $\overline{L_{1}L_{2}}$ there is a unique line $P$ which is
 perpendicular to both $L_{1}$ and $L_{2}$, namely 
-\begin{equation*}
+\[
 P\equiv L_{1}^{\perp}L_{2}^{\perp}=(L_{1}L_{2})^{\perp}.
-\end{equation*}
+\]
 \end{theorem}
 
 The line $P$ is the \textbf{perpendicular line} of $\overline{L_{1}L_{2}}$.
@@ -2312,17 +2244,6 @@ For the \textbf{Polar} tool I used the pre-installed \textit{Polar or
 Diameter Line} tool in GeoGebra to create the Polar Line to a Point, by
 selecting the given point and then the absolute conic, \textit{Polar($l,c$)}.%
 \newline
-\definecolor{qqqqff}{rgb}{0,0,1} %
-\definecolor{dcrutc}{rgb}{0.86275,0.07843,0.23529} 
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-1.69121,-1.11787) rectangle (2.6406,1.12308);
-\draw [color=dcrutc] (0,0) circle (1cm);
-\draw [domain=-1.69121:2.6406] plot(\x,{(--1--1.12191*\x)/-0.8384});
-\begin{scriptsize}
-\fill [color=qqqqff] (-1.12191,-0.8384) circle (1.5pt);
-\draw[color=qqqqff] (-1.40121,-0.80476) node {$A$};
-\end{scriptsize}
-\end{tikzpicture}
 
 \textbf{Pole Point}\newline
 The \textbf{Pole} tool was created by once again using the pre-installed 
@@ -2366,112 +2287,5 @@ Since the reflection in the point $a$ is equivalent to the reflection in the
 line $A=a^{\perp }$ the rest of the tools \textbf{Reflect\_PiL, Reflect\_LiP}
 and \textbf{Reflect\_LiL} were created using the \textit{Polar, Pole} and 
 \textit{Reflect\_PiP} tools.
-
-\section{Address later}
-
-\bigskip 
-\begin{align*}
-M_{12}& \equiv \left\langle \left( a+d+f\right) \sigma _{\left\{ 1,3\right\}
-}+\left( -a-d+f\right) \sigma _{\left\{ 2,3\right\} }:(d+b+g)\sigma
-_{\left\{ 1,3\right\} }+\left( -d-b+g\right) \sigma _{\left\{ 2,3\right\}
-}:(f+g+c)\sigma _{\left\{ 1,3\right\} }+\left( -f-g+c\right) \sigma
-_{\left\{ 2,3\right\} }\right\rangle ,\;\;\;\;\; \\
-M_{21}& \equiv \left\langle (a+d+f)\sigma _{\left\{ 1,4\right\} }+\left(
-a+d-f\right) \sigma _{\left\{ 2,4\right\} }:(d+b+g)\sigma _{\left\{
-1,4\right\} }+\left( d+b-g\right) \sigma _{\left\{ 2,4\right\}
-}:(f+g+c)\sigma _{\left\{ 1,4\right\} }+\left( f+g-c\right) \sigma _{\left\{
-2,4\right\} }\right\rangle , \\
-M_{34}& \equiv \left\langle (a-d+f)\sigma _{\left\{ 1,3\right\} }+\left(
--a+d+f\right) \sigma _{\left\{ 1,4\right\} }:(d-b+g)\sigma _{\left\{
-1,3\right\} }+\left( -d+b+g\right) \sigma _{\left\{ 1,4\right\}
-}:(f-g+c)\sigma _{\left\{ 1,3\right\} }+\left( -f+g+c\right) \sigma
-_{\left\{ 1,4\right\} }\right\rangle , \\
-M_{43}& \equiv \left\langle (a-d+f)\sigma _{\left\{ 2,3\right\} }+\left(
-a-d-f\right) \sigma _{\left\{ 2,4\right\} }:(d-b+g)\sigma _{\left\{
-2,3\right\} }+\left( d-b-g\right) \sigma _{\left\{ 2,4\right\}
-}:(f-g+c)\sigma _{\left\{ 2,3\right\} }+\left( f-g-c\right) \sigma _{\left\{
-2,4\right\} }\right\rangle , \\
-M_{13}& \equiv \left\langle a+d+f+\left( a-d+f\right) \sigma _{\left\{
-1,3\right\} }A_{1}:d+b+g+\left( d-b+g\right) \sigma _{\left\{ 1,3\right\}
-}A_{1}:f+g+c+\left( f-g+c\right) \sigma _{\left\{ 1,3\right\}
-}A_{1}\right\rangle , \\
-M_{31}& \equiv \left\langle a+d+f+\left( -a+d-f\right) \sigma _{\left\{
-1,3\right\} }A_{1}:d+b+g+\left( -d+b-g\right) \sigma _{\left\{ 1,3\right\}
-}A_{1}:f+g+c+\left( -f+g-c\right) \sigma _{\left\{ 1,3\right\}
-}A_{1}\right\rangle ,
-\end{align*}
-
-\begin{align*}
-M_{24}& \equiv \left\langle -a-d+f+\left( -a+d+f\right) \sigma _{\left\{
-2,4\right\} }A_{2}:-d-b+g+\left( -d+b+g\right) \sigma _{\left\{ 2,4\right\}
-}A_{2}:-f-g+c+\left( -f+g+c\right) \sigma _{\left\{ 2,4\right\}
-}A_{2}\right\rangle , \\
-M_{42}& \equiv \left\langle -a-d+f+\left( a-d-f\right) \sigma _{\left\{
-2,4\right\} }A_{2}:-d-b+g+\left( d-b-g\right) \sigma _{\left\{ 2,4\right\}
-}A_{2}:-f-g+c+\left( f-g-c\right) \sigma _{\left\{ 2,4\right\}
-}A_{2}\right\rangle , \\
-M_{14}& \equiv \left\langle a+d+f+\left( -a+d+f\right) \sigma _{\left\{
-1,4\right\} }A_{1}:d+b+g+\left( -d+b+g\right) \sigma _{\left\{ 1,4\right\}
-}A_{1}:f+g+c+\left( -f+g+c\right) \sigma _{\left\{ 1,4\right\}
-}A_{1}\right\rangle , \\
-M_{41}& \equiv \left\langle a+d+f+\left( a-d-f\right) \sigma _{\left\{
-1,4\right\} }A_{1}:d+b+g+\left( d-b-g\right) \sigma _{\left\{ 1,4\right\}
-}A_{1}:f+g+c+\left( f-g-c\right) \sigma _{\left\{ 1,4\right\}
-}A_{1}\right\rangle , \\
-M_{23}& \equiv \left\langle -a-d+f+\left( a-d+f\right) \sigma _{\left\{
-2,3\right\} }A_{2}:-d-b+g+\left( d-b+g\right) \sigma _{\left\{ 2,3\right\}
-}A_{2}:-f-g+c+\left( f-g+c\right) \sigma _{\left\{ 2,3\right\}
-}A_{2}\right\rangle , \\
-M_{32}& \equiv \left\langle -a-d+f+\left( -a+d-f\right) \sigma _{\left\{
-2,3\right\} }A_{2}:-d-b+g+\left( -d+b-g\right) \sigma _{\left\{ 2,3\right\}
-}A_{2}:-f-g+c+\left( -f+g-c\right) \sigma _{\left\{ 2,3\right\}
-}A_{2}\right\rangle ,
-\end{align*}
-
-these are wrong at the moment, not sure if it is crucial for me to put them
-in anyway
-
-spreads 
-\begin{align*}
-S(a_{1}a_{2},a_{1}a_{3})& =\frac{aD}{(ab-d^{2})(ac-e^{2})}, \\
-S(a_{1}a_{2},a_{1}a_{4})& =\frac{aD}{(ab-d^{2})(a(b+c+2f)-(d+e)^{2})}, \\
-S(a_{1}a_{3},a_{1}a_{4})& =\frac{aD}{(ac-e^{2})(a(b+c+2f)-(d+e)^{2})}, \\
-S(a_{1}a_{2},a_{2}a_{3})& =\frac{bD}{(ab-d^{2})(bc-f^{2})}, \\
-S(a_{1}a_{2},a_{2}a_{4})& =\frac{bD}{(ab-d^{2})(b(a+c+2e)-(d+f)^{2})}, \\
-S(a_{2}a_{3},a_{2}a_{3})& =\frac{bD}{(bc-f^{2})(b(a+c+2e)-(d+f)^{2})}, \\
-S(a_{1}a_{3},a_{2}a_{3})& =\frac{cD}{(ac-e^{2})(bc-f^{2})}, \\
-S(a_{1}a_{3},a_{3}a_{4})& =\frac{cD}{(ac-e^{2})(c(a+b+2d)-(e+f)^{2})}, \\
-S(a_{2}a_{3},a_{3}a_{4})& =\frac{cD}{(bc-f^{2})(c(a+b+2d)-(e+f)^{2})}, \\
-S(a_{1}a_{4},a_{2}a_{4})& =\frac{(a+b+c+2(e+d+f))D}{%
-(a(b+c+2f)-(d+e)^{2})(b(a+c+2e)-(d+f)^{2})}, \\
-S(a_{1}a_{4},a_{3}a_{4})& =\frac{(a+b+c+2(e+d+f))D}{%
-(c(a+b+2d)-(e+f)^{2})(b(a+c+2e)-(d+f)^{2})}, \\
-S(a_{2}a_{4},a_{3}a_{4})& =\frac{(a+b+c+2(e+d+f))D}{%
-(a(b+c+2f)-(d+e)^{2})(c(a+b+2d)-(e+f)^{2})}.
-\end{align*}
-
-\begin{align*}
-1-S(a_{1}a_{2},a_{1}a_{3})& =\frac{(af-de)^{2}}{(ab-d^{2})(ac-e^{2})}, \\
-1-S(a_{1}a_{2},a_{1}a_{4})& =\frac{(af-de)^{2}}{%
-(ab-d^{2})(a(b+c+2f)-(d+e)^{2})}, \\
-1-S(a_{1}a_{3},a_{1}a_{4})& =\frac{(af-de)^{2}}{%
-(ac-e^{2})(a(b+c+2f)-(d+e)^{2})}, \\
-1-S(a_{1}a_{2},a_{2}a_{3})& =\frac{(be-df)^{2}}{(ab-d^{2})(bc-f^{2})}, \\
-1-S(a_{1}a_{2},a_{2}a_{4})& =\frac{(be-df)^{2}}{%
-(ab-d^{2})(b(a+c+2e)-(d+f)^{2})}, \\
-1-S(a_{2}a_{3},a_{2}a_{3})& =\frac{(be-df)^{2}}{%
-(bc-f^{2})(b(a+c+2e)-(d+f)^{2})}, \\
-1-S(a_{1}a_{3},a_{2}a_{3})& =\frac{(cd-ef)^{2}}{(ac-e^{2})(bc-f^{2})}, \\
-1-S(a_{1}a_{3},a_{3}a_{4})& =\frac{(cd-ef)^{2}}{%
-(ac-e^{2})(c(a+b+2d)-(e+f)^{2})}, \\
-1-S(a_{2}a_{3},a_{3}a_{4})& =\frac{(cd-ef)^{2}}{%
-(bc-f^{2})(c(a+b+2d)-(e+f)^{2})}, \\
-1-S(a_{1}a_{4},a_{2}a_{4})& =\frac{(ab-d^{2}+af+be-cd-de-df+ef)^{2}}{%
-(a(b+c+2f)-(d+e)^{2})(b(a+c+2e)-(d+f)^{2})}, \\
-1-S(a_{1}a_{4},a_{3}a_{4})& =\frac{(ac-e^{2}+af-be+cd-de+df-ef)^{2}}{%
-(c(a+b+2d)-(e+f)^{2})(b(a+c+2e)-(d+f)^{2})}, \\
-1-S(a_{2}a_{4},a_{3}a_{4})& =\frac{(bc-f^{2}-af+be+cd+de-df-ef)^{2}}{%
-(a(b+c+2f)-(d+e)^{2})(c(a+b+2d)-(e+f)^{2})}.
-\end{align*}
 
 \end{document}

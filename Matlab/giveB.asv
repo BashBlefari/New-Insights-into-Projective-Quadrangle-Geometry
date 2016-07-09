@@ -1,0 +1,11 @@
+function giveB(A)
+%used to simplify the bimedian lines
+syms a b c d e f
+A1=(a + b + c + 2*(d + f + g))^(1/2);
+A2=(a + b + c + 2*(d - f - g))^(1/2);
+A3=(a + b + c - 2*(d + f - g))^(1/2);
+A4=(a + b + c - 2*(d - f + g))^(1/2);
+s14=1/(A1*A4);
+s23=1/(A2*A3);
+A=expand(A*s13*s23);
+pretty(simplex(A))
