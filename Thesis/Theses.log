@@ -1,7 +1,7 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex_ml 2008.8.22)  9 JUL 2016 14:17
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex_ml 2008.8.22)  11 JUL 2016 21:18
  %&-line parsing enabled.
-**&pdflatex_ml C:/Users/Norman/AppData/Local/Temp/swp0003.tex
-(c:/Users/Norman/AppData/Local/Temp/swp0003.tex
+**&pdflatex_ml C:/Users/Norman/AppData/Local/Temp/swp0004.tex
+(c:/Users/Norman/AppData/Local/Temp/swp0004.tex
 LaTeX2e <2003/12/01>
 Babel <v3.8a> and hyphenation patterns for american, english, french, german, n
 german, loaded.
@@ -146,8 +146,8 @@ LaTeX Info: Redefining \sc on input line 659.
 \temptoksa=\toks20
 \temptoksb=\toks21
 \temptoksc=\toks22
-) (./swp0003.aux)
-\openout1 = `swp0003.aux'.
+) (./swp0004.aux)
+\openout1 = `swp0004.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
@@ -171,7 +171,7 @@ LaTeX Warning: \author is not used with this class on input line 56.
 [1
 
 
-{c:/swp55/TCITeX/fonts/map/pdftex/pdftex.map}] (./swp0003.toc
+{c:/swp55/TCITeX/fonts/map/pdftex/pdftex.map}] (./swp0004.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
 
 (c:/swp55/TCITeX/tex/latex/amsfonts/umsa.fd
@@ -183,20 +183,20 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 ))
 \tf@toc=\write3
-\openout3 = `swp0003.toc'.
+\openout3 = `swp0004.toc'.
 
  [1
 
-] (./swp0003.lof)
+] (./swp0004.lof)
 \tf@lof=\write4
-\openout4 = `swp0003.lof'.
+\openout4 = `swp0004.lof'.
 
  [2
 
 ]
-(./swp0003.lot)
+(./swp0004.lot)
 \tf@lot=\write5
-\openout5 = `swp0003.lot'.
+\openout5 = `swp0004.lot'.
 
  [3
 
@@ -210,17 +210,17 @@ Overfull \hbox (5.46866pt too wide) in paragraph at lines 101--101
 [4
 
 ]
-Overfull \hbox (14.60791pt too wide) in alignment at lines 133--138
+Overfull \hbox (14.60791pt too wide) in alignment at lines 134--139
  [][][] []
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 199--204
+Underfull \hbox (badness 10000) in paragraph at lines 200--205
 
  []
 
 
-Overfull \hbox (102.07883pt too wide) in paragraph at lines 231--238
+Overfull \hbox (102.07883pt too wide) in paragraph at lines 232--239
 \OML/cmm/m/it/10.95 q\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 a[]; a[]\OT1/cmr/m
 /n/10.95 )$ \T1/cmr/m/n/10.95 is a square. This con-di-tion is equiv-a-lent to 
 hav-ing num-bers $[][]\OML/cmm/m/it/10.95 ; [][]; [][]; [][]; [][]; [][] \OMS/c
@@ -228,162 +228,157 @@ msy/m/n/10.95 2
  []
 
 [6]
-Overfull \hbox (88.35686pt too wide) detected at line 337
+Overfull \hbox (88.35686pt too wide) detected at line 338
 \OML/cmm/m/it/10.95 m \OMS/cmsy/m/n/10.95 ^^Q [] \OT1/cmr/m/n/10.95 = [] \OML/c
 mm/m/it/10.95 ;
  []
 
 
-Overfull \hbox (10.4417pt too wide) in paragraph at lines 342--344
+Overfull \hbox (10.4417pt too wide) in paragraph at lines 343--345
 []\T1/cmr/m/it/10.95 The side mid-points of the quad-ran-gle $[]$
  []
 
 [7] [8]
-Overfull \hbox (0.86658pt too wide) in paragraph at lines 477--484
+Overfull \hbox (4.36363pt too wide) in paragraph at lines 485--492
 []\T1/cmr/m/it/10.95 Midpoints $\OML/cmm/m/it/10.95 m[]$ \T1/cmr/m/it/10.95 for
  $\OML/cmm/m/it/10.95 i \OMS/cmsy/m/n/10.95 6\OT1/cmr/m/n/10.95 = \OML/cmm/m/it
 /10.95 j \OMS/cmsy/m/n/10.95 2 []$
  []
 
 [9]
-Overfull \hbox (88.40108pt too wide) in alignment at lines 606--617
+Overfull \hbox (88.40108pt too wide) in alignment at lines 614--625
  [][][] []
  []
 
 
-Overfull \hbox (2.09816pt too wide) in paragraph at lines 625--627
+Overfull \hbox (2.09816pt too wide) in paragraph at lines 633--635
 []\T1/cmr/m/it/10.95 The Cir-cum-lines for
  []
 
 [10] [11] [12] [13]
-Overfull \hbox (9.97266pt too wide) in paragraph at lines 1082--1084
+Overfull \hbox (9.97266pt too wide) in paragraph at lines 1095--1097
 []\T1/cmr/m/it/10.95 The Me-di-ans of the Quad-
  []
 
 [14]
-Overfull \hbox (23.67552pt too wide) detected at line 1225
+Overfull \hbox (23.67552pt too wide) detected at line 1235
 \OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
- []
-
-
-Overfull \hbox (23.67552pt too wide) detected at line 1244
-\OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
- []
-
-
-Overfull \hbox (23.67552pt too wide) detected at line 1263
-\OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
- []
-
-
-Overfull \hbox (23.67552pt too wide) detected at line 1282
-\OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 :
  []
 
 [15]
-Overfull \hbox (1.88832pt too wide) in paragraph at lines 1330--1332
+Overfull \hbox (23.67552pt too wide) detected at line 1254
+\OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
+ []
+
+
+Overfull \hbox (23.67552pt too wide) detected at line 1273
+\OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
+ []
+
+
+Overfull \hbox (23.67552pt too wide) detected at line 1292
+\OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 :
+ []
+
+
+Overfull \hbox (1.88832pt too wide) in paragraph at lines 1340--1342
 []\T1/cmr/m/it/10.95 The Sub-tri-an-gle Cen-
  []
 
 
-Overfull \hbox (23.67552pt too wide) detected at line 1348
+Overfull \hbox (23.67552pt too wide) detected at line 1358
 \OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \hbox (23.67552pt too wide) detected at line 1366
-\OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
- []
-
-
-Overfull \hbox (23.67552pt too wide) detected at line 1384
-\OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
- []
-
-
-Overfull \hbox (23.67552pt too wide) detected at line 1402
-\OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
- []
-
-
-Overfull \hbox (23.67552pt too wide) detected at line 1421
+Overfull \hbox (23.67552pt too wide) detected at line 1376
 \OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
  []
 
 [16]
-Overfull \hbox (23.67552pt too wide) detected at line 1439
+Overfull \hbox (23.67552pt too wide) detected at line 1394
 \OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \hbox (23.67552pt too wide) detected at line 1457
+Overfull \hbox (23.67552pt too wide) detected at line 1412
 \OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \hbox (23.67552pt too wide) detected at line 1475
+Overfull \hbox (23.67552pt too wide) detected at line 1431
 \OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \hbox (23.67552pt too wide) detected at line 1494
+Overfull \hbox (23.67552pt too wide) detected at line 1449
 \OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \hbox (23.67552pt too wide) detected at line 1512
+Overfull \hbox (23.67552pt too wide) detected at line 1467
 \OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \hbox (23.67552pt too wide) detected at line 1530
+Overfull \hbox (23.67552pt too wide) detected at line 1485
 \OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \hbox (23.67552pt too wide) detected at line 1548
+Overfull \hbox (23.67552pt too wide) detected at line 1504
 \OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \hbox (23.67552pt too wide) detected at line 1567
+Overfull \hbox (23.67552pt too wide) detected at line 1522
 \OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \hbox (23.67552pt too wide) detected at line 1585
+Overfull \hbox (23.67552pt too wide) detected at line 1540
 \OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \hbox (23.67552pt too wide) detected at line 1603
+Overfull \hbox (23.67552pt too wide) detected at line 1558
 \OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
- []
-
-
-Overfull \hbox (23.67552pt too wide) detected at line 1621
-\OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 :
  []
 
 [17]
-Overfull \hbox (11.531pt too wide) in paragraph at lines 1661--1664
-[]\T1/cmr/m/it/10.95 In to-tal there
+Overfull \hbox (23.67552pt too wide) detected at line 1577
+\OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
+ []
+
+
+Overfull \hbox (23.67552pt too wide) detected at line 1595
+\OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
+ []
+
+
+Overfull \hbox (23.67552pt too wide) detected at line 1613
+\OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 ;
+ []
+
+
+Overfull \hbox (23.67552pt too wide) detected at line 1631
+\OML/cmm/m/it/10.95 g[] \OMS/cmsy/m/n/10.95 ^^Q [] \OML/cmm/m/it/10.95 :
  []
 
 [18]
-Overfull \hbox (76.62633pt too wide) in alignment at lines 1812--1819
- [][][] []
+Overfull \hbox (11.531pt too wide) in paragraph at lines 1692--1695
+[]\T1/cmr/m/it/10.95 In to-tal there
  []
 
 [19] [20]
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1830--1832
+Underfull \hbox (badness 10000) in paragraph at lines 1885--1887
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1833--1838
+Underfull \hbox (badness 10000) in paragraph at lines 1888--1893
 
  []
 
@@ -397,135 +392,130 @@ Package Fancyhdr Warning: \headheight is too small (20.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 1972--1976
+Underfull \hbox (badness 10000) in paragraph at lines 2027--2031
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1983--1989
+Underfull \hbox (badness 10000) in paragraph at lines 2038--2044
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1990--1993
+Underfull \hbox (badness 10000) in paragraph at lines 2045--2048
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1998--2000
+Underfull \hbox (badness 10000) in paragraph at lines 2053--2055
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2005--2008
+Underfull \hbox (badness 10000) in paragraph at lines 2060--2063
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2013--2016
+Underfull \hbox (badness 10000) in paragraph at lines 2068--2071
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 2017--2021
+Underfull \hbox (badness 10000) in paragraph at lines 2072--2076
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2033--2035
+Underfull \hbox (badness 10000) in paragraph at lines 2088--2090
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2054--2057
+Underfull \hbox (badness 10000) in paragraph at lines 2109--2112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2084--2087
+Underfull \hbox (badness 10000) in paragraph at lines 2139--2142
 
  []
 
 [24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 2106--2107
+Underfull \hbox (badness 10000) in paragraph at lines 2161--2162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2114--2118
+Underfull \hbox (badness 10000) in paragraph at lines 2169--2173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2119--2129
+Underfull \hbox (badness 10000) in paragraph at lines 2174--2184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2138--2141
+Underfull \hbox (badness 10000) in paragraph at lines 2193--2196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2150--2153
+Underfull \hbox (badness 10000) in paragraph at lines 2205--2208
 
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 2156--2159
+Underfull \hbox (badness 10000) in paragraph at lines 2211--2214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2160--2165
+Underfull \hbox (badness 10000) in paragraph at lines 2215--2220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2166--2171
+Underfull \hbox (badness 10000) in paragraph at lines 2221--2226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2172--2177
+Underfull \hbox (badness 10000) in paragraph at lines 2227--2232
 
  []
 
 
-Overfull \hbox (47.95776pt too wide) in paragraph at lines 2178--2194
+Overfull \hbox (47.95776pt too wide) in paragraph at lines 2233--2249
 \T1/cmr/m/n/10.95 Similarly there are 6 dis-tinct ver-tices of a quadri-lat-era
 l, namely $[]\OML/cmm/m/it/10.95 ; [];$ $[]; []; []$\T1/cmr/m/n/10.95 and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2178--2194
+Underfull \hbox (badness 10000) in paragraph at lines 2233--2249
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 2205
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 2260
 .
 (c:/swp55/TCITeX/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2205.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2260.
 
  [27]
-Underfull \hbox (badness 10000) in paragraph at lines 2229--2233
+Underfull \hbox (badness 10000) in paragraph at lines 2284--2288
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2250--2255
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2256--2268
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 2398--2399
 
  []
 
-[28] [29] (./swp0003.aux) ) 
+[29] [30] (./swp0004.aux) ) 
 Here is how much of TeX's memory you used:
  1691 strings out of 95101
  18051 string characters out of 1183309
@@ -555,9 +545,9 @@ swp55/TCITeX/fonts/type1/dcr10.enc}<c:/swp55/TCITeX/fonts/truetype/dcr10.ttf>{c
 f>{c:/swp55/TCITeX/fonts/type1/cmbxsl10.enc}<c:/swp55/TCITeX/fonts/truetype/cmb
 xsl10.ttf>{c:/swp55/TCITeX/fonts/type1/dccsc10.enc}<c:/swp55/TCITeX/fonts/truet
 ype/dccsc10.ttf>
-Output written on swp0003.pdf (30 pages, 197695 bytes).
+Output written on swp0004.pdf (31 pages, 204158 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
+ 178 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

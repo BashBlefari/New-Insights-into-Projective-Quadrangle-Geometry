@@ -11,7 +11,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="2">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Friday, July 08, 2016 00:30:17}
-%TCIDATA{LastRevised=Saturday, July 09, 2016 14:17:18}
+%TCIDATA{LastRevised=Monday, July 11, 2016 21:18:34}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="Title" CONTENT="Universal Projective Quadrangle Geometry">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Theses\SW\University of New South Wales">}
@@ -66,7 +66,7 @@ We are able to use a transformation to send any four arbitrary non-collinear
 points of a quadrangle to the four points; 
 \begin{equation*}
 a_{1}\equiv \lbrack 1:1:1],\;\;a_{2}\equiv \lbrack -1:-1:1],\;\;a_{3}\equiv
-\lbrack 1:-1:1],\;\;a_{4}\equiv \lbrack -1:1:1]. 
+\lbrack 1:-1:1],\;\;a_{4}\equiv \lbrack -1:1:1].
 \end{equation*}%
 This transformation results in a change of Bilinear form to 
 \begin{equation*}
@@ -76,7 +76,7 @@ af & d & f \\
 d & b & g \\ 
 f & g & c%
 \end{bmatrix}%
-,\;\;\text{for some}\;\;a,b,c,d,e,f\in \text{Nat}, 
+,\;\;\text{for some}\;\;a,b,c,d,e,f\in \text{Nat},
 \end{equation*}%
 with inverse 
 \begin{equation*}
@@ -86,7 +86,7 @@ g^{2}-bc & dc-fg & fb-dg \\
 dc-fg & f^{2}-ac & ga-df \\ 
 fb-dg & ga-df & d^{2}-ab%
 \end{bmatrix}%
-. 
+.
 \end{equation*}%
 We will refer to the quadrangle $\overline{a_{1}a_{2}a_{3}a_{4}}$ as the
 standard quadrangle. The standard quadrangle has six sides $\overline{%
@@ -94,11 +94,12 @@ a_{i}a_{j}}$ for $i\neq j\in \lbrack 6]$, which determine the six lines
 \begin{align*}
 L_{\{1,2\}}& \equiv a_{1}a_{2}\equiv \langle 1:-1:0\rangle , & L_{\{1,3\}}&
 \equiv a_{1}a_{3}\equiv \langle 1:0:-1\rangle , & L_{\{1,4\}}& \equiv
-a_{1}a_{4}\equiv \langle 0:1:-1\rangle \\
+a_{1}a_{4}\equiv \langle 0:1:-1\rangle  \\
 L_{\{3,4\}}& \equiv a_{3}a_{4}\equiv \langle 1:1:0\rangle , & L_{\{2,4\}}&
 \equiv a_{2}a_{4}\equiv \langle 1:0:1\rangle , & L_{\{2,3\}}& \equiv
 a_{2}a_{3}\equiv \langle 0:1:1\rangle .
-\end{align*}%
+\end{align*}
+
 These six lines of the respective sides let us find the diagonal triangle $%
 \overline{d_{1}d_{2}d_{3}}$ of the standard quadrangle, 
 \begin{eqnarray*}
@@ -108,7 +109,7 @@ d_{\gamma } &\equiv &L_{\{1,4\}}L_{\{2,3\}}\equiv \lbrack 1:0:0].
 \end{eqnarray*}%
 The labeling will become more obvious below. Define 
 \begin{equation*}
-D\equiv abc+2fdg-ag^{2}-bf^{2}-cd^{2}. 
+D\equiv abc+2fdg-ag^{2}-bf^{2}-cd^{2}.
 \end{equation*}%
 Then indeed we have that 
 \begin{align*}
@@ -340,7 +341,9 @@ relations}.
 
 \begin{theorem}[Quadrangle Midpoints]
 The side midpoints of the quadrangle $\overline{a_{1}a_{2}a_{3}a_{4}}$ have
-the form%
+the form:
+
+Midpoints of the side $\overline{a_{1}a_{2}}$;%
 \begin{eqnarray*}
 m_{12} &\equiv &\left[ 1-\sigma _{\left\{ 1,2\right\} }A_{1}:1-\sigma
 _{\left\{ 1,2\right\} }A_{1}:1+\sigma _{\left\{ 1,2\right\} }A_{1}\right]  \\
@@ -349,7 +352,7 @@ _{\left\{ 1,2\right\} }A_{1}:1+\sigma _{\left\{ 1,2\right\} }A_{1}\right]  \\
 _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\} }\right]  \\
 &=&\left[ \sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\}
 }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }:\sigma
-_{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right]  \\
+_{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }\right] , \\
 m_{21} &\equiv &\left[ 1+\sigma _{\left\{ 1,2\right\} }A_{1}:1+\sigma
 _{\left\{ 1,2\right\} }A_{1}:1-\sigma _{\left\{ 1,2\right\} }A_{1}\right]  \\
 &=&\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 2,3\right\}
@@ -357,8 +360,9 @@ _{\left\{ 1,2\right\} }A_{1}:1-\sigma _{\left\{ 1,2\right\} }A_{1}\right]  \\
 _{\left\{ 1,3\right\} }-\sigma _{\left\{ 2,3\right\} }\right]  \\
 &=&\left[ \sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\}
 }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 2,4\right\} }:\sigma
-_{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] 
+_{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right] ,
 \end{eqnarray*}%
+Midpoints of the side $\overline{a_{3}a_{4}}$;%
 \begin{eqnarray*}
 m_{34} &\equiv &\left[ 1-\sigma _{\left\{ 3,4\right\} }A_{3}:\sigma
 _{\left\{ 3,4\right\} }A_{3}-1:1+\sigma _{\left\{ 3,4\right\} }A_{3}\right] 
@@ -368,7 +372,7 @@ _{\left\{ 3,4\right\} }A_{3}-1:1+\sigma _{\left\{ 3,4\right\} }A_{3}\right]
 _{\left\{ 1,3\right\} }+\sigma _{\left\{ 1,4\right\} }\right]  \\
 &=&\left[ \sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 2,4\right\}
 }:\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{ 2,3\right\} }:\sigma
-_{\left\{ 2,3\right\} }+\sigma _{\left\{ 2,4\right\} }\right]  \\
+_{\left\{ 2,3\right\} }+\sigma _{\left\{ 2,4\right\} }\right] , \\
 m_{43} &\equiv &\left[ 1+\sigma _{\left\{ 3,4\right\} }A_{3}:-1-\sigma
 _{\left\{ 3,4\right\} }A_{3}:1-\sigma _{\left\{ 3,4\right\} }A_{3}\right]  \\
 &=&\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 1,4\right\}
@@ -376,8 +380,9 @@ _{\left\{ 3,4\right\} }A_{3}:1-\sigma _{\left\{ 3,4\right\} }A_{3}\right]  \\
 _{\left\{ 1,3\right\} }-\sigma _{\left\{ 1,4\right\} }\right]  \\
 &=&\left[ \sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 2,4\right\}
 }:-\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 2,4\right\} }:\sigma
-_{\left\{ 2,3\right\} }-\sigma _{\left\{ 2,4\right\} }\right] 
+_{\left\{ 2,3\right\} }-\sigma _{\left\{ 2,4\right\} }\right] ,
 \end{eqnarray*}%
+Midpoints of the side $\overline{a_{1}a_{3}}$;%
 \begin{eqnarray*}
 m_{13} &\equiv &\left[ 1+\sigma _{\left\{ 1,3\right\} }A_{1}:1-\sigma
 _{\left\{ 1,3\right\} }A_{1}:1+\sigma _{\left\{ 1,3\right\} }A_{1}\right]  \\
@@ -396,6 +401,7 @@ _{\left\{ 1,2\right\} }-\sigma _{\left\{ 2,3\right\} }\right]  \\
 }:\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{ 3,4\right\} }:\sigma
 _{\left\{ 1,4\right\} }-\sigma _{\left\{ 3,4\right\} }\right] 
 \end{eqnarray*}%
+Midpoints of the side $\overline{a_{2}a_{4}}$;%
 \begin{eqnarray*}
 m_{24} &\equiv &\left[ -1-\sigma _{\left\{ 2,4\right\} }A_{2}:\sigma
 _{\left\{ 2,4\right\} }A_{2}-1:1+\sigma _{\left\{ 2,4\right\} }A_{2}\right] 
@@ -415,6 +421,7 @@ _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,2\right\} }\right]  \\
 }:\sigma _{\left\{ 3,4\right\} }+\sigma _{\left\{ 2,3\right\} }:\sigma
 _{\left\{ 3,4\right\} }-\sigma _{\left\{ 2,3\right\} }\right] 
 \end{eqnarray*}%
+Midpoints of the side $\overline{a_{1}a_{4}}$;%
 \begin{eqnarray*}
 m_{14} &\equiv &\left[ 1-\sigma _{\left\{ 1,4\right\} }A_{1}:1+\sigma
 _{\left\{ 1,4\right\} }A_{1}:1+\sigma _{\left\{ 1,4\right\} }A_{1}\right]  \\
@@ -432,7 +439,8 @@ _{\left\{ 1,4\right\} }-\sigma _{\left\{ 2,4\right\} }\right]  \\
 &=&\left[ \sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{ 3,4\right\}
 }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma
 _{\left\{ 1,3\right\} }-\sigma _{\left\{ 3,4\right\} }\right] 
-\end{eqnarray*}
+\end{eqnarray*}%
+Midpoints of the side $\overline{a_{2}a_{3}}$; 
 \begin{eqnarray*}
 m_{23} &\equiv &\left[ \sigma _{\left\{ 2,3\right\} }A_{2}-1:-1-\sigma
 _{\left\{ 2,3\right\} }A_{2}:1+\sigma _{\left\{ 2,3\right\} }A_{2}\right]  \\
@@ -473,13 +481,13 @@ and $\triangle _{1}\equiv \overline{a_{2}a_{3}a_{4}}$.
 
 \subsection{Circumlines and Circumcenters}
 
-\begin{theorem}[Circumlines and circumcenters]
+\begin{theorem}[Circumlines and Circumcenters]
 Midpoints $m_{ij}$ for $i\neq j\in \left\{ 1,2,3\right\} $ of the
 subtriangle $\triangle _{4}$ are collinear three at a time, lying on four
 distinct \textbf{Circumlines} $C_{1}^{4},C_{2}^{4},C_{2}^{4},$ and $%
 C_{3}^{4}.$ Midlines $M_{ij}$ for $i\neq j\in \left\{ 1,2,3\right\} $ of the
-subtriangle $\triangle _{4}$ are con5current three at a time, meeting at
-four distinct \textbf{Circumcenters} $c_{1}^{4},c_{2}^{4},c_{3}^{4}$ and $%
+subtriangle $\triangle _{4}$ are concurrent three at a time, meeting at four
+distinct \textbf{Circumcenters} $c_{1}^{4},c_{2}^{4},c_{3}^{4}$ and $%
 c_{4}^{4}$\textbf{.}
 \end{theorem}
 
@@ -725,6 +733,11 @@ _{\left\{ 2,4\right\} }:\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
 3,4\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{ 2,4\right\}
 }\right\rangle ,\text{ through }m_{34},m_{32},m_{24}.
 \end{eqnarray*}
+
+\begin{proof}
+The computations are analogous to those in the Circumline and Circumcenter
+Theorems.
+\end{proof}
 \end{theorem}
 
 Though the labeling may seem arbitrary infact it is a little more subtle
@@ -1069,7 +1082,7 @@ provided at the end.
 
 \subsection{\protect\bigskip}
 
-\subsubsection{Centroids}
+\subsection{Centroids}
 
 \textbf{Median lines} (or just \textbf{medians}) $D$ of a Triangle $%
 \triangle $ are the joins of corresponding Midpoints $m$ and Points $a$.
@@ -1101,8 +1114,7 @@ _{\left\{ 2,3\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
 _{\left\{ 2,4\right\} }:\sigma _{\left\{ 2,3\right\} }:\sigma _{\left\{
 2,3\right\} }+\sigma _{\left\{ 2,4\right\} }\right\rangle .%
 \end{array}%
-\end{equation*}
-
+\end{equation*}%
 The Medians for the subtriangle $\triangle _{2}\,:$%
 \begin{equation*}
 \begin{array}{cc}
@@ -1122,8 +1134,7 @@ _{\left\{ 1,4\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
 _{\left\{ 1,3\right\} }:\sigma _{\left\{ 1,4\right\} }:-\sigma _{\left\{
 1,4\right\} }-\sigma _{\left\{ 1,3\right\} }\right\rangle .%
 \end{array}%
-\end{equation*}
-
+\end{equation*}%
 The Medians for the subtriangle $\triangle _{3}\,:$%
 \begin{equation*}
 \begin{array}{cc}
@@ -1143,8 +1154,7 @@ _{\left\{ 2,3\right\} }-\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{
 _{\left\{ 2,3\right\} }:\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{
 2,3\right\} }:-\sigma _{\left\{ 3,4\right\} }\right\rangle .%
 \end{array}%
-\end{equation*}
-
+\end{equation*}%
 The Medians for the subtriangle $\triangle _{4}\,:$%
 \begin{equation*}
 \begin{array}{cc}
@@ -1344,28 +1354,28 @@ _{\left\{ 2,3\right\} }\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{
 _{\left\{ 3,4\right\} }+\sigma _{\left\{ 2,4\right\} }\sigma _{\left\{
 3,4\right\} }%
 \end{array}%
-\right] , 
+\right] ,
 \end{equation*}%
 \begin{equation*}
-\text{incident with the Medians }D_{23}^{1},D_{24}^{1},D_{34}^{1}, 
+\text{incident with the Medians }D_{23}^{1},D_{24}^{1},D_{34}^{1},
 \end{equation*}%
 \begin{equation*}
 g_{2}^{1}\equiv \left[ 
 \begin{array}{c}
-\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{ 2,4\right\} }-\sigma
+\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{ 2,4\right\} }+\sigma
 _{\left\{ 2,3\right\} }\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{
 2,4\right\} }\sigma _{\left\{ 3,4\right\} }: \\ 
-\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{ 2,4\right\} }+\sigma
+\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{ 2,4\right\} }-\sigma
 _{\left\{ 2,3\right\} }\sigma _{\left\{ 3,4\right\} }+\sigma _{\left\{
-2,4\right\} }\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,4\right\}
+2,4\right\} }\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\}
 }\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{ 2,3\right\} }\sigma
-_{\left\{ 3,4\right\} }-\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{
-2,4\right\} }%
+_{\left\{ 2,4\right\} }+\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{
+3,4\right\} }%
 \end{array}%
-\right] , 
+\right] ,
 \end{equation*}%
 \begin{equation*}
-\text{incident with the Medians }D_{23}^{1},D_{42}^{1},D_{43}^{1}, 
+\text{incident with the Medians }D_{32}^{1},D_{42}^{1},D_{34}^{1};
 \end{equation*}%
 \begin{equation*}
 g_{3}^{1}\equiv \left[ 
@@ -1380,28 +1390,28 @@ _{\left\{ 2,3\right\} }\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{
 _{\left\{ 2,4\right\} }-\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{
 3,4\right\} }%
 \end{array}%
-\right] , 
+\right] ,
 \end{equation*}%
 \begin{equation*}
-\text{incident with the Medians }D_{32}^{1},D_{24}^{1},D_{43}^{1}, 
+\text{incident with the Medians }D_{32}^{1},D_{24}^{1},D_{43}^{1},
 \end{equation*}%
 \begin{equation*}
 g_{4}^{1}\equiv \left[ 
 \begin{array}{c}
-\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{ 2,4\right\} }+\sigma
+\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{ 2,4\right\} }-\sigma
 _{\left\{ 2,3\right\} }\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{
 2,4\right\} }\sigma _{\left\{ 3,4\right\} }: \\ 
-\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{ 2,4\right\} }-\sigma
+\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{ 2,4\right\} }+\sigma
 _{\left\{ 2,3\right\} }\sigma _{\left\{ 3,4\right\} }+\sigma _{\left\{
-2,4\right\} }\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,3\right\}
+2,4\right\} }\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 2,4\right\}
 }\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{ 2,3\right\} }\sigma
-_{\left\{ 2,4\right\} }+\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{
-3,4\right\} }%
+_{\left\{ 3,4\right\} }-\sigma _{\left\{ 2,3\right\} }\sigma _{\left\{
+2,4\right\} }%
 \end{array}%
-\right] , 
+\right] ,
 \end{equation*}%
 \begin{equation*}
-\text{incident with the Medians }D_{32}^{1},D_{42}^{1},D_{34}^{1}; 
+\text{incident with the Medians }D_{23}^{1},D_{42}^{1},D_{43}^{1},
 \end{equation*}%
 The Centroids for the Subtriangle $\triangle _{2}\,:$%
 \begin{equation*}
@@ -1417,13 +1427,31 @@ _{\left\{ 1,3\right\} }\sigma _{\left\{ 3,4\right\} }+\sigma _{\left\{
 _{\left\{ 3,4\right\} }+\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
 3,4\right\} }%
 \end{array}%
-\right] , 
+\right] ,
 \end{equation*}%
 \begin{equation*}
-\text{incident with the Medians }D_{13}^{2},D_{14}^{2},D_{34}^{2}, 
+\text{incident with the Medians }D_{13}^{2},D_{14}^{2},D_{34}^{2},
 \end{equation*}%
 \begin{equation*}
 g_{2}^{2}\equiv \left[ 
+\begin{array}{c}
+\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{ 1,4\right\} }-\sigma
+_{\left\{ 1,3\right\} }\sigma _{\left\{ 3,4\right\} }+\sigma _{\left\{
+1,4\right\} }\sigma _{\left\{ 3,4\right\} }: \\ 
+\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{ 1,4\right\} }+\sigma
+_{\left\{ 1,3\right\} }\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{
+1,4\right\} }\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,3\right\}
+}\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,3\right\} }\sigma
+_{\left\{ 3,4\right\} }-\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
+3,4\right\} }%
+\end{array}%
+\right] ,
+\end{equation*}%
+\begin{equation*}
+\text{incident with the Medians }D_{31}^{2},D_{41}^{2},D_{34}^{2};
+\end{equation*}%
+\begin{equation*}
+g_{3}^{2}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,3\right\} }\sigma _{\left\{ 1,4\right\} }+\sigma
 _{\left\{ 1,3\right\} }\sigma _{\left\{ 3,4\right\} }+\sigma _{\left\{
@@ -1435,13 +1463,13 @@ _{\left\{ 1,3\right\} }\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{
 _{\left\{ 3,4\right\} }-\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
 3,4\right\} }%
 \end{array}%
-\right] , 
+\right] ,
 \end{equation*}%
 \begin{equation*}
-\text{incident with the Medians }D_{13}^{2},D_{41}^{2},D_{43}^{2}, 
+\text{incident with the Medians }D_{13}^{2},D_{41}^{2},D_{43}^{2},
 \end{equation*}%
 \begin{equation*}
-g_{3}^{2}\equiv \left[ 
+g_{4}^{2}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,3\right\} }\sigma _{\left\{ 1,4\right\} }-\sigma
 _{\left\{ 1,3\right\} }\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{
@@ -1453,28 +1481,10 @@ _{\left\{ 1,3\right\} }\sigma _{\left\{ 3,4\right\} }+\sigma _{\left\{
 _{\left\{ 3,4\right\} }+\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
 3,4\right\} }%
 \end{array}%
-\right] , 
+\right] ,
 \end{equation*}%
 \begin{equation*}
-\text{incident with the Medians }D_{31}^{2},D_{14}^{2},D_{43}^{2}, 
-\end{equation*}%
-\begin{equation*}
-g_{4}^{2}\equiv \left[ 
-\begin{array}{c}
-\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{ 1,4\right\} }-\sigma
-_{\left\{ 1,3\right\} }\sigma _{\left\{ 3,4\right\} }+\sigma _{\left\{
-1,4\right\} }\sigma _{\left\{ 3,4\right\} }: \\ 
-\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{ 1,4\right\} }+\sigma
-_{\left\{ 1,3\right\} }\sigma _{\left\{ 3,4\right\} }-\sigma _{\left\{
-1,4\right\} }\sigma _{\left\{ 3,4\right\} }:\sigma _{\left\{ 1,3\right\}
-}\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,3\right\} }\sigma
-_{\left\{ 3,4\right\} }-\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
-3,4\right\} }%
-\end{array}%
-\right] , 
-\end{equation*}%
-\begin{equation*}
-\text{incident with the Medians }D_{31}^{2},D_{41}^{2},D_{34}^{2}; 
+\text{incident with the Medians }D_{31}^{2},D_{14}^{2},D_{43}^{2},
 \end{equation*}%
 The Centroids for the Subtriangle $\triangle _{3}\,:$%
 \begin{equation*}
@@ -1490,10 +1500,10 @@ _{\left\{ 1,2\right\} }\sigma _{\left\{ 2,4\right\} }+\sigma _{\left\{
 _{\left\{ 2,4\right\} }+\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
 2,4\right\} }%
 \end{array}%
-\right] , 
+\right] ,
 \end{equation*}%
 \begin{equation*}
-\text{incident with the Medians }D_{12}^{3},D_{14}^{3},D_{24}^{3}, 
+\text{incident with the Medians }D_{12}^{3},D_{14}^{3},D_{24}^{3},
 \end{equation*}%
 \begin{equation*}
 g_{2}^{3}\equiv \left[ 
@@ -1508,31 +1518,13 @@ _{\left\{ 1,2\right\} }\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{
 _{\left\{ 2,4\right\} }-\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
 2,4\right\} }%
 \end{array}%
-\right] , 
+\right] ,
 \end{equation*}%
 \begin{equation*}
-\text{incident with the Medians }D_{12}^{3},D_{41}^{3},D_{42}^{3}, 
+\text{incident with the Medians }D_{12}^{3},D_{41}^{3},D_{42}^{3},
 \end{equation*}%
 \begin{equation*}
 g_{3}^{3}\equiv \left[ 
-\begin{array}{c}
-\sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,4\right\} }+\sigma
-_{\left\{ 1,2\right\} }\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{
-1,4\right\} }\sigma _{\left\{ 2,4\right\} }: \\ 
-\sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,4\right\} }+\sigma
-_{\left\{ 1,2\right\} }\sigma _{\left\{ 2,4\right\} }+\sigma _{\left\{
-1,4\right\} }\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{ 1,2\right\}
-}\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,2\right\} }\sigma
-_{\left\{ 2,4\right\} }+\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
-2,4\right\} }%
-\end{array}%
-\right] , 
-\end{equation*}%
-\begin{equation*}
-\text{incident with the Medians }D_{21}^{3},D_{14}^{3},D_{42}^{3}, 
-\end{equation*}%
-\begin{equation*}
-g_{4}^{3}\equiv \left[ 
 \begin{array}{c}
 \sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,4\right\} }+\sigma
 _{\left\{ 1,2\right\} }\sigma _{\left\{ 2,4\right\} }+\sigma _{\left\{
@@ -1544,10 +1536,28 @@ _{\left\{ 1,2\right\} }\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{
 _{\left\{ 2,4\right\} }-\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
 2,4\right\} }%
 \end{array}%
-\right] , 
+\right] ,
 \end{equation*}%
 \begin{equation*}
-\text{incident with the Medians }D_{21}^{3},D_{41}^{3},D_{24}^{3}; 
+\text{incident with the Medians }D_{21}^{3},D_{41}^{3},D_{24}^{3};
+\end{equation*}%
+\begin{equation*}
+g_{4}^{3}\equiv \left[ 
+\begin{array}{c}
+\sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,4\right\} }+\sigma
+_{\left\{ 1,2\right\} }\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{
+1,4\right\} }\sigma _{\left\{ 2,4\right\} }: \\ 
+\sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,4\right\} }+\sigma
+_{\left\{ 1,2\right\} }\sigma _{\left\{ 2,4\right\} }+\sigma _{\left\{
+1,4\right\} }\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{ 1,2\right\}
+}\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,2\right\} }\sigma
+_{\left\{ 2,4\right\} }+\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
+2,4\right\} }%
+\end{array}%
+\right] ,
+\end{equation*}%
+\begin{equation*}
+\text{incident with the Medians }D_{21}^{3},D_{14}^{3},D_{42}^{3},
 \end{equation*}%
 The Centroids for the Subtriangle $\triangle _{4}\,:$%
 \begin{equation*}
@@ -1563,10 +1573,10 @@ _{\left\{ 1,2\right\} }\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
 _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
 2,3\right\} }%
 \end{array}%
-\right] , 
+\right] ,
 \end{equation*}%
 \begin{equation*}
-\text{incident with the Medians }D_{12}^{4},D_{13}^{4},D_{23}^{4}, 
+\text{incident with the Medians }D_{12}^{4},D_{13}^{4},D_{23}^{4},
 \end{equation*}%
 \begin{equation*}
 g_{2}^{4}\equiv \left[ 
@@ -1581,10 +1591,10 @@ _{\left\{ 1,2\right\} }\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
 _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
 2,3\right\} }%
 \end{array}%
-\right] , 
+\right] ,
 \end{equation*}%
 \begin{equation*}
-\text{incident with the Medians }D_{12}^{4},D_{31}^{4},D_{32}^{4}, 
+\text{incident with the Medians }D_{12}^{4},D_{31}^{4},D_{32}^{4},
 \end{equation*}%
 \begin{equation*}
 g_{3}^{4}\equiv \left[ 
@@ -1599,10 +1609,10 @@ _{\left\{ 1,2\right\} }\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
 _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
 2,3\right\} }%
 \end{array}%
-\right] , 
+\right] ,
 \end{equation*}%
 \begin{equation*}
-\text{incident with the Medians }D_{21}^{4},D_{13}^{4},D_{32}^{4}, 
+\text{incident with the Medians }D_{21}^{4},D_{13}^{4},D_{32}^{4},
 \end{equation*}%
 \begin{equation*}
 g_{4}^{4}\equiv \left[ 
@@ -1617,10 +1627,10 @@ _{\left\{ 1,2\right\} }\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{
 _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
 2,3\right\} }%
 \end{array}%
-\right] . 
+\right] .
 \end{equation*}%
 \begin{equation*}
-\text{incident with the Medians }D_{21}^{4},D_{31}^{4},D_{23}^{4}. 
+\text{incident with the Medians }D_{21}^{4},D_{31}^{4},D_{23}^{4}.
 \end{equation*}
 \end{theorem}
 
@@ -1628,7 +1638,15 @@ _{\left\{ 2,3\right\} }-\sigma _{\left\{ 1,3\right\} }\sigma _{\left\{
 This is worked out computationally.
 \end{proof}
 
-\bigskip
+\bigskip 
+
+Note that the labeling used mirrors the labeling for the Circumlines. That
+is for Circumline $C_{j}^{i}$ that goes through the midpoints $%
+m_{i_{1}j_{1}},m_{i_{2}j_{2}}$, and $m_{i_{3}j_{3}}$, then the Centroid $%
+g_{j}^{i}$ is the meet of the Median lines $%
+D_{j_{1}i_{1}}^{i},D_{j_{2}i_{2}}^{i}$, and $D_{j_{3}i_{3}}^{i}.$
+
+\bigskip 
 
 The \textbf{set of associated midpoints} (or \textbf{assosciated midpoints}) 
 $S_{g}$ for a Centroid point $g$ of a Triangle $\triangle $, is the set of
@@ -1650,12 +1668,25 @@ Quadrangle.
 
 For example the set%
 \begin{equation*}
-S=\left\{ g_{1}^{1},g_{1}^{2},g_{1}^{3},g_{1}^{4}\right\} , 
+S=\left\{ g_{1}^{1},g_{1}^{2},g_{1}^{3},g_{1}^{4}\right\} ,
 \end{equation*}%
 is midpoint consistent since the union of assosciated midpoints is%
 \begin{equation*}
-S_{m}=\left\{ m_{12},m_{34},m_{13},m_{24},m_{14},m_{23}\right\} . 
+S_{m}=\left\{ m_{12},m_{34},m_{13},m_{24},m_{14},m_{23}\right\} .
 \end{equation*}
+
+Whereas the set%
+\begin{equation*}
+S=\left\{ g_{1}^{1},g_{1}^{2},g_{2}^{3},g_{2}^{4}\right\} 
+\end{equation*}%
+is not midpoint consitent since the union of assosciated midpoints%
+\begin{equation*}
+S_{m}=\left\{
+m_{12},m_{34},m_{13},m_{31},m_{42},m_{14},m_{41},m_{32}\right\} 
+\end{equation*}
+
+contains both midpoints for the sides $\overline{a_{1}a_{3}}$ and $\overline{%
+a_{1}a_{4}}$.
 
 \begin{theorem}[Midpoint consistent sets of Subtriangle Centroids]
 In total there are eight distinct sets of Subtriangle Centroids $S=\left\{
@@ -1678,52 +1709,55 @@ and their assosciated midpoints%
 \begin{equation*}
 \begin{array}{cc}
 g_{1}^{2}:S_{1}^{2}\equiv \left\{ m_{13},m_{14},m_{34}\right\} , & 
-g_{2}^{2}:S_{2}^{2}\equiv \left\{ m_{13},m_{41},m_{43}\right\} , \\ 
+g_{2}^{2}:S_{2}^{2}\equiv \left\{ m_{31},m_{41},m_{34}\right\} , \\ 
 g_{3}^{2}:S_{3}^{2}\equiv \left\{ m_{31},m_{14},m_{43}\right\} , & 
-g_{4}^{2}:S_{4}^{2}\equiv \left\{ m_{31},m_{41},m_{34}\right\} ,%
+g_{4}^{2}:S_{4}^{2}\equiv \left\{ m_{13},m_{41},m_{43}\right\} ,%
 \end{array}%
 \end{equation*}%
 we see that the Centroids $g_{1}^{2}$ and $g_{4}^{2}$ are the only options
 for $S$. If we choose $i_{2}=1$, then the set 
 \begin{equation*}
-\left\{ m_{34},m_{13},m_{24,}m_{14},m_{23}\right\} \subseteq S_{m}, 
+\left\{ m_{34},m_{13},m_{24,}m_{14},m_{23}\right\} \subseteq S_{m},
 \end{equation*}%
 which forces $i_{3}=i_{4}=1$, as $S_{1}^{3}\equiv \left\{
 m_{12},m_{14},m_{24}\right\} $ and $S_{1}^{4}\equiv \left\{
-m_{12},m_{13},m_{23}\right\} $. Else if $i_{2}=4$, then the set 
+m_{12},m_{13},m_{23}\right\} $. Else if $i_{2}=2$, then the set 
 \begin{equation*}
-\left\{ m_{34},m_{31},m_{24},m_{41},m_{23}\right\} \subseteq S_{m}, 
+\left\{ m_{34},m_{31},m_{24},m_{41},m_{23}\right\} \subseteq S_{m},
 \end{equation*}%
-which forces $i_{3}=i_{4}=4$, as $S_{4}^{3}\equiv \left\{
+which forces $i_{3}=3$, and $i_{4}=4$, as $S_{3}^{3}\equiv \left\{
 m_{21},m_{31},m_{24}\right\} $ and $S_{4}^{4}\equiv \left\{
 m_{21},m_{31},m_{23}\right\} $. Therefore there are two distinct midpoint
 consistent sets of Subtriangle Centroids which contain the Centroid $%
 g_{1}^{1}$. The above method can be used for any choice of $i_{1}\in \left[ 4%
 \right] $, and hence there are in total exactly eight distinct sets of
-Subtriangle Centroids which are midpoint consistent, and are given as
-follows;%
+Subtriangle Centroids which are midpoint consistent.
+\end{proof}
+
+\begin{corollary}
+The complete list of midpoint consistent set is given below;%
 \begin{equation*}
 \begin{array}{cc}
 S: & S_{m}: \\ 
-\left\{ g_{1}^{1},g_{1}^{2},g_{1}^{3},g_{1}^{4}\right\} & \left\{
-m_{12},m_{34},m_{13},m_{24},m_{14},m_{23}\right\} \\ 
-\left\{ g_{1}^{1},g_{4}^{2},g_{4}^{3},g_{4}^{4}\right\} & \left\{
-m_{21,}m_{34},m_{31},m_{24},m_{41},m_{23}\right\} \\ 
-\left\{ g_{2}^{1},g_{2}^{2},g_{2}^{3},g_{1}^{4}\right\} & \left\{
-m_{12},m_{43},m_{13},m_{42},m_{41},m_{23}\right\} \\ 
-\left\{ g_{2}^{1},g_{3}^{2},g_{2}^{3},g_{4}^{4}\right\} & \left\{
-m_{21},m_{43},m_{31},m_{42},m_{14},m_{23}\right\} \\ 
-\left\{ g_{3}^{1},g_{2}^{2},g_{4}^{3},g_{3}^{4}\right\} & \left\{
-m_{21},m_{43},m_{13},m_{24},m_{41},m_{32}\right\} \\ 
-\left\{ g_{3}^{1},g_{3}^{2},g_{1}^{3},g_{2}^{4}\right\} & \left\{
-m_{12},m_{43},m_{31},m_{24},m_{14},m_{32}\right\} \\ 
-\left\{ g_{4}^{1},g_{1}^{2},g_{3}^{3},g_{3}^{4}\right\} & \left\{
-m_{12},m_{34},m_{31},m_{42},m_{41},m_{32}\right\} \\ 
-\left\{ g_{4}^{1},g_{4}^{2},g_{2}^{3},g_{1}^{4}\right\} & \left\{
-m_{21},m_{34},m_{13},m_{42},m_{14},m_{32}\right\}%
+\left\{ g_{1}^{1},g_{1}^{2},g_{1}^{3},g_{1}^{4}\right\}  & \left\{
+m_{12},m_{34},m_{13},m_{24},m_{14},m_{23}\right\}  \\ 
+\left\{ g_{2}^{1},g_{2}^{2},g_{2}^{3},g_{2}^{4}\right\}  & \left\{
+m_{12},m_{34},m_{31},m_{42},m_{41},m_{32}\right\}  \\ 
+\left\{ g_{3}^{1},g_{3}^{2},g_{3}^{3},g_{3}^{4}\right\}  & \left\{
+m_{21},m_{43},m_{13},m_{24},m_{41},m_{32}\right\}  \\ 
+\left\{ g_{4}^{1},g_{4}^{2},g_{4}^{3},g_{4}^{4}\right\}  & \left\{
+m_{21},m_{43},m_{31},m_{42},m_{14},m_{23}\right\}  \\ 
+\left\{ g_{1}^{1},g_{2}^{2},g_{3}^{3},g_{4}^{4}\right\}  & \left\{
+m_{21},m_{34},m_{31},m_{24},m_{41},m_{23}\right\}  \\ 
+\left\{ g_{2}^{1},g_{1}^{2},g_{4}^{3},g_{3}^{4}\right\}  & \left\{
+m_{21},m_{34},m_{13},m_{42},m_{14},m_{32}\right\}  \\ 
+\left\{ g_{4}^{1},g_{3}^{2},g_{2}^{3},g_{1}^{4}\right\}  & \left\{
+m_{12},m_{43},m_{13},m_{42},m_{41},m_{23}\right\}  \\ 
+\left\{ g_{3}^{1},g_{4}^{2},g_{1}^{3},g_{2}^{4}\right\}  & \left\{
+m_{21},m_{43},m_{31},m_{24},m_{14},m_{32}\right\} 
 \end{array}%
 \end{equation*}
-\end{proof}
+\end{corollary}
 
 \bigskip
 
@@ -1742,7 +1776,7 @@ B_{\left\{ 12,34\right\} } &\equiv &\left\langle \sigma _{\left\{
 1,3\right\} }-\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{ 2,3\right\}
 }-\sigma _{\left\{ 1,4\right\} }:\sigma _{\left\{ 2,3\right\} }+\sigma
 _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
-2,4\right\} }\right\rangle , \\
+2,4\right\} }\right\rangle ,\star  \\
 B_{\left\{ 12,43\right\} } &\equiv &\left\langle \sigma _{\left\{
 1,3\right\} }+\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{ 2,3\right\}
 }+\sigma _{\left\{ 1,4\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma
@@ -1757,15 +1791,15 @@ B_{\left\{ 21,43\right\} } &\equiv &\left\langle \sigma _{\left\{
 2,4\right\} }-\sigma _{\left\{ 1,3\right\} }:\sigma _{\left\{ 2,3\right\}
 }-\sigma _{\left\{ 1,4\right\} }:\sigma _{\left\{ 2,3\right\} }+\sigma
 _{\left\{ 1,4\right\} }+\sigma _{\left\{ 1,3\right\} }+\sigma _{\left\{
-2,4\right\} }\right\rangle ,
+2,4\right\} }\right\rangle ,\star 
 \end{eqnarray*}%
 The Bimedian lines corresponding the $\beta $ opposite sides:%
 \begin{eqnarray*}
 B_{\left\{ 13,24\right\} } &\equiv &\left\langle \sigma _{\left\{
 3,4\right\} }-\sigma _{\left\{ 1,2\right\} }:\sigma _{\left\{ 1,4\right\}
 }+\sigma _{\left\{ 3,4\right\} }+\sigma _{\left\{ 2,3\right\} }+\sigma
-_{\left\{ 1,2\right\} }:\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{
-2,3\right\} }\right\rangle , \\
+_{\left\{ 1,2\right\} }:\sigma _{\left\{ 2,3\right\} }-\sigma _{\left\{
+1,4\right\} }\right\rangle ,\star  \\
 B_{\left\{ 13,42\right\} } &\equiv &\left\langle \sigma _{\left\{
 3,4\right\} }+\sigma _{\left\{ 1,2\right\} }:\sigma _{\left\{ 1,4\right\}
 }-\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 3,4\right\} }-\sigma
@@ -1788,7 +1822,7 @@ B_{\left\{ 14,23\right\} } &\equiv &\left\langle \sigma _{\left\{
 1,2\right\} }+\sigma _{\left\{ 3,4\right\} }+\sigma _{\left\{ 1,3\right\}
 }+\sigma _{\left\{ 2,4\right\} }:\sigma _{\left\{ 3,4\right\} }-\sigma
 _{\left\{ 1,2\right\} }:\sigma _{\left\{ 2,4\right\} }-\sigma _{\left\{
-1,3\right\} }\right\rangle , \\
+1,3\right\} }\right\rangle ,\star  \\
 B_{\left\{ 14,32\right\} } &\equiv &\left\langle \sigma _{\left\{
 1,2\right\} }-\sigma _{\left\{ 3,4\right\} }+\sigma _{\left\{ 2,4\right\}
 }-\sigma _{\left\{ 1,3\right\} }:-\sigma _{\left\{ 3,4\right\} }-\sigma
@@ -1808,19 +1842,40 @@ _{\left\{ 1,2\right\} }:\sigma _{\left\{ 1,3\right\} }-\sigma _{\left\{
 \end{theorem}
 
 \begin{proof}
-The Bimedian 
-\begin{eqnarray*}
-B_{\left\{ 12,34\right\} } &\equiv &\left[ 1-\sigma _{\left\{ 1,2\right\}
-}A_{1}:1-\sigma _{\left\{ 1,2\right\} }A_{1}:1+\sigma _{\left\{ 1,2\right\}
-}A_{1}\right] \times \left[ 1-\sigma _{\left\{ 3,4\right\} }A_{3}:\sigma
-_{\left\{ 3,4\right\} }A_{3}-1:1+\sigma _{\left\{ 3,4\right\} }A_{3}\right]
-\\
-&=&
-\end{eqnarray*}
+Through using the cross product and then careful use of the sigma identities
+the corresponding Bimedian lines are worked out to be as above.
 \end{proof}
 
-\begin{theorem}
-\bigskip
+\begin{theorem}[Centroids of the Quadrangle]
+The Bimedian lines $B_{\left\{ ij,k\ell \right\} }$ of the Quadrangle are
+concurrent three at a time at the \textbf{Quadrangle Centroids }q.
+
+\begin{proof}
+Each Quadrangle Centroids is given by a midpoint consistent set of
+Subtriangle Centroids. That is for the midpoint consistent set 
+\begin{equation*}
+\left\{ g_{1}^{1},g_{1}^{2},g_{1}^{3},g_{1}^{4}\right\} 
+\end{equation*}%
+with union of associated midpoints%
+\begin{equation*}
+S_{m}=\left\{ m_{12},m_{34},m_{13},m_{24},m_{14},m_{23}\right\} .
+\end{equation*}%
+Since $S_{m}$ has exactly one midpoint for each side of the quadrangle, we
+have three corresponding Bimedian lines 
+\begin{equation*}
+B_{\left\{ 12,34\right\} },B_{\left\{ 13,24\right\} }\text{, and }B_{\left\{
+14,23\right\} }\text{.}
+\end{equation*}%
+These Bimedians intersect at the point%
+\begin{equation*}
+\left[ \sigma _{\left\{ 1,2\right\} }\sigma _{\left\{ 1,3\right\} }-\sigma
+_{\left\{ 1,2\right\} }\sigma _{\left\{ 1,4\right\} }+\sigma _{\left\{
+1,3\right\} }\sigma _{\left\{ 1,4\right\} }-\sigma _{\left\{ 1,2\right\}
+}\sigma _{\left\{ 2,3\right\} }+\sigma _{\left\{ 1,3\right\} }\sigma
+_{\left\{ 2,3\right\} }-4\sigma _{\left\{ 1,4\right\} }\sigma _{\left\{
+2,3\right\} }\right] 
+\end{equation*}
+\end{proof}
 \end{theorem}
 
 \bigskip \pagebreak
@@ -2231,69 +2286,167 @@ Hyperbolic geometry. Firstly I will present a list of all the tool that I
 have created within GeoGebra (using it's tool creating system), and then I
 will present how I created them.\newline
 
-\begin{itemize}
-\item Polar Line (Polar)
+\bigskip 
 
-\item Pole Point (Pole)
+\begin{itemize}
+\item Dual Line (Polar)
+
+\item Dual Point (Pole)
+
+\item Meet of Lines
+
+\item Altitude Line/Point
+
+\item Base Point/Line
+
+\item Parallel Line/Point
 
 \item Reflections (Reflect\_PiP, Reflect\_PiL, Reflect\_LiP, Reflect\_LiL)
 
-\item Midpoints
+\item Midpoints/lines
 
-\item Sydpoint
+\item Bilines/points
 
-\item Smydpoint
+\item Sydpoint/lines
+
+\item Silines/points
+
+\item Smydpoint/lines
+
+\item Sbilines/points
+
+\item Side Conjugate Points/Lines
+
+\item Vertex Conjugate Lines/Points
+
+\item Quadrance, Spread, Quadrea
+
+\item Orthocenter/line
+
+\item Circumcenter/lines
+
+\item Centroid Points/Lines
 
 \item Diagonal Triangle (DiagTri)
 \end{itemize}
 
-\textbf{Polar Line}\newline
-For the \textbf{Polar} tool I used the pre-installed \textit{Polar or
-Diameter Line} tool in GeoGebra to create the Polar Line to a Point, by
-selecting the given point and then the absolute conic, \textit{Polar($l,c$)}.%
-\newline
+\bigskip 
 
-\textbf{Pole Point}\newline
-The \textbf{Pole} tool was created by once again using the pre-installed 
-\textit{Polar or Diameter Line} tool on GeoGebra, and is used for producing
-a Pole point to a line. Given a line $L$ and the absolute conic $c$, using 
-\textit{Polar or Diameter Line} on $L$ and $c$ produces a new line $L_{1}$
-which is perpendicular (in the UHG sense) to $L$ and a diameter of $c$. The 
-\textit{Intesection of two Objects} tool on $L$ and $L_{1}$ gives the point $%
-l_{1}=(LL_{1})$. Now using \textit{Polar} on $l_{1}$ gives the line $L_{2}$
-perpendicular to $L_{1}$ and parallel to $L$. The point $l=(L_{1}L_{2})=L^{%
-\perp}$ is the pole of $L$.\newline
-\textit{Pole} is used by selecting the given line $L$ and then the absolute
-conic $c$, \textit{Pole($L,c$)}.\newline
+For this section the Null conic will be given the fixed label $c$. Whereas
+the non-null point in question will be given by $a$, with non-null dual $A$,
+whilst Null points will be denoted by letters of the \textit{Greek alphabet}.
+
+\bigskip 
+
+The \textit{duality} of points and lines in Universal Hyperbolic Geometry is
+visually equivalent to \textit{Apollonius Polarity} when the null conic is a
+circle or more generally the usual \textit{pole-polar reciprical relationship%
+} for a conic section. Hence to construct the Polar and Pole tools I used
+the inbuilt Polar tool in GeoGebra, but despite this I will describe their
+construction.
+
+\bigskip 
+
+\textbf{Duals }
+
+For a point $a$ draw two distinct interior lines through $a$ and call the
+intersection points $\alpha ,\beta $, and $\gamma ,\delta $ respectfully.
+This is always possible to do. Hence we have constucted a quadrilateral
+whose vertices lie on the null conic and has diagonal point $a=\left( \alpha
+\beta \right) \left( \gamma \delta \right) $. Let $d=\left( \alpha \gamma
+\right) \left( \beta \delta \right) $ and $e=\left( \alpha \delta \right)
+\left( \beta \gamma \right) $ be the other diagonal points. Then using the
+remarkable fact from projective geometry; \textit{the line }$de$ \textit{%
+does not depend on the two lines choosen through }$a$,\textit{\ (hence }$%
+\alpha ,\beta ,\gamma $, \textit{and }$\delta $,\textit{) but only on }$a$%
+\textit{\ itself.} So we say that $de=A\equiv a^{\perp }$ is the \textbf{%
+dual line} of the point $a$, and conversely that $a=A^{\perp }$ is the 
+\textbf{dual point} of the line $A$. 
+
+The GeoGebra tool is called by the sequence \textit{Polar}$\left( a,c\right)
+=A$ and conversely \textit{Pole}$\left( A,c\right) =a$.
+
+$.$
+
+\textbf{Altitudes}
+
+For a non dual couple $\overline{aL}$ with $l=L^{\perp }\neq a$. The
+Altitude line is $N=al$ since it is the unique line perpendicualr to $L$
+through $a$, where the Alitidue point is $n=AL=N^{\perp }$.
+
+The GeoGebra tool is called by the sequence \textit{AlititudeLine}$\left(
+L,a,c\right) =N$ and \textit{AltitudePoint}$\left( L,a,c\right) =n$.
+
+\textbf{Bases}
+
+For the non dual couple $\overline{aL}$ with $l=L^{\perp }\neq a$. The Base
+point is the meet $b=NL$, and the Base Line is the join $B=nl=b^{\perp }$.
+
+The GeoGebra tool is called by the sequence \textit{BasePoint}$\left(
+L,a,c\right) =b$ and  \textit{BaseLine}$\left( L,a,c\right) =B$.
+
+\textbf{Parallels}
+
+For the non dual couple $\overline{aL}$, the parallel line $P$ to $L$
+through $a$ is the line through $a$ perpendicular to the perpendicular line
+to $L$ through $a$, that is $P=na$. Dually the parallel point is $%
+p=NA=P^{\perp }$.
+
+The GeoGebra tool is called by the sequence \textit{ParallelLine}$\left(
+L,a,c\right) =P$ and \textit{ParallelPoint}$\left( L,a,c\right) =p$.
 
 \textbf{Reflections}\newline
-The \textbf{Reflect\_PiP} is a tool to used to find the reflection of a
-point in a point. Given a reflecting point $a$, reflecter point $b$ and
-absolute $c$. First create the line $(ab)$ through the \textit{Line Between
-two Points} tool. Then use \textit{Polar or Diameter Line} with $(ab)$ and $%
-c $ to create $D_{1}$. If $D_{1}$ intersects $c$ (then it will intersect $c$
-twice), we are able to construct a cycle quadrangle from one of the
-intersection points and the points $a$ and $b$. We do this by choosing one
-of the intersection points, call it $i_{1}$ and then join it to both $a$ and 
-$b$, giving the lines $I_{2}$ and $I_{1}$ respectfully. The lines $I_{2}$
-and $I_{1}$ will then intersect $c$ once more, say at $i_{2}$ and $i_{4}$
-respectfully. If we let $I_{3}=i_{2}b$ then we get another null point $%
-i_{3}\in \{I_{3}c\}$. These four points give us the cyclic quadrangle $%
-\overline{i_{1}i_{2}i_{3}i_{4}}$ whose diagonal points either lie on $%
-B=b^{\perp }$ or are $b$ itself. Finally the reflection of $a$ in $b$ is $%
-a_{1}^{\prime }=I_{4}(ab)=(i_{3}i_{4})(ab)$.\newline
-If $D_{1}$ does not intersect $c$ (possible if $c$ is a hyperbola) then we
-use \textit{Polar or Diameter Line} with $D_{1}$ and $c$ to create another
-diameter $D_{2}$ which is perpendicular to $D_{1}$. We can then use the same
-constuction as above to create $a_{2}^{\prime }$.\newline
-If both $D_{1}$ and $D_{2}$ intersect $c$ then clearly $a_{1}^{\prime
-}=a_{2}^{\prime }$. Thus to cover all cases and ensure that the tool
-produces one point we use the inbuilt \textit{If, Then Logic} tool as
-follows, if $a_{1}^{\prime }$ is defined then $a^{\prime }=a_{1}^{\prime }$
-otherwise $a^{\prime }=a_{2}$.\newline
-Since the reflection in the point $a$ is equivalent to the reflection in the
-line $A=a^{\perp }$ the rest of the tools \textbf{Reflect\_PiL, Reflect\_LiP}
-and \textbf{Reflect\_LiL} were created using the \textit{Polar, Pole} and 
-\textit{Reflect\_PiP} tools.
+
+For the reflection of a point $a$ in the point $b$ draw the line $ab$ and
+also an interior line through $b$ distinct from $ab$, such that the
+intersection points $\alpha ,\beta $ are not perpendicular to $a$. Draw the
+line $a\alpha $, then this is an interior line and intersections $c$ at $%
+\alpha $ and $\gamma $. Draw the interior line $b\gamma $ to get the null
+point $\delta $, then $a^{\prime }=\left( \delta \beta \right) \left(
+ab\right) $ is the \textbf{reflection point of }$a$\textbf{\ in the point }$b
+$. Furthermore for a given point $a$ and $b$ the reflection of the dual $%
+a^{\perp }=A$ is equivalent to the dual of the reflection of $a\,$, that is
+if $a^{\perp }=A$ then $A^{\prime }=\left( a^{\prime }\right) ^{\perp }$,
+and conversely. This equivalence of the reflectee point with it's dual is
+also true for the reflecter point with it's dual. Hence we are able to
+construct all reflection between points and lines through the above method
+and taking duals.
+
+The GeoGebra tool is called by the sequence \textit{Reflection\_PiP}$\left(
+a,b,c\right) =a^{\prime }$, \textit{Reflection\_PiL}$\left( a,B,c\right)
+=a^{\prime }$, \textit{Reflection\_LiP}$\left( A,b,c\right) =A^{\prime }$,
+and \textit{Reflection\_LiL}$\left( A,B,c\right) =A^{\prime }$, where PiP
+stands for \textit{Point in Point.}
+
+\bigskip 
+
+\textbf{Midpoints and lines}
+
+For the side $\overline{ab}$, if both the pointd $a$ and $b$ are exterior
+points then their duals $A$ and $B$ respectively, are interior lines. These
+lines produce a quadrilateral whose points lie on the null conic with a
+diagonal point equal to $AB$. Therefore the other diagonal points of the
+quadrilateral lie on the line $ab$ and are infact the Midpoints $m$ and $%
+m^{\prime }$. Else if $a$ and $b$ are both interior points then the lines $%
+\left( AB\right) a$ and $\left( AB\right) b$ are interior lines who produce
+a quadrilateral with the same properties as before. The Midlines $M$ for the
+side $\overline{ab}$ are the duals to midpoints, $M=\left( AB\right)
+m^{\prime }$ and $M^{\prime }=\left( AB\right) m$.
+
+The GeoGebra tool is called by the sequence \textit{Midpoint}$\left(
+a,b,c\right) =\left\{ m,m^{\prime }\right\} $ and \textit{Midlines}$\left(
+a,b,c\right) =\left\{ M^{\prime },M\right\} $.
+
+\textbf{Bilines and points}
+
+For the vertex $\overline{AB}$, the situation for finding the Bilines and
+Bipoint is precisely dual finding the Midpoints and Midlines of a side
+described above.
+
+The GeoGebra tool is called by the sequence \textit{Biline}$\left(
+A,B,c\right) =\left\{ B,B^{\prime }\right\} $ and \textit{Bipoint}$\left(
+A,B,c\right) =\left\{ b^{\prime },b\right\} $.
+
+\textbf{Sydpoints and lines}
 
 \end{document}
