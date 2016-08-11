@@ -8,7 +8,7 @@ k=0;
 for i=1:n1
     for j=1:n2
         if abs(I1(i))==abs(I2(j))
-            if notin(I1(i),I)
+            if tool_notin(I1(i),I)
                 k=k+1;
                 I(k)=I(k)*0+I1(i);
             end
