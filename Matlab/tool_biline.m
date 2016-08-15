@@ -1,4 +1,4 @@
-function [m1,m2,M1,M2]=tool_midpoint(a1,a2,A)
+function [m1,m2,M1,M2]=tool_biline(A1,A2,A)
 x=sym('x','positive');
 l1=tool_dot(x*a1,x*a1,A);
 l2=tool_dot(a2,a2,A);

@@ -13,9 +13,9 @@ a1=[1 1 1];a2=[-1 -1 1];a3=[1 -1 1];a4=[-1 1 1];
 % d1=meets(L12,L34);d2=meets(L13,L24);d3=meets(L14,L23);
 
 % midpoints
-[m12,m21,M12,M21]=midpoint(a1,a2,A);[m34,m43,M34,M43]=midpoint(a3,a4,A);
-[m13,m31,M13,M31]=midpoint(a1,a3,A);[m24,m42,M24,M42]=midpoint(a2,a4,A);
-[m14,m41,M14,M41]=midpoint(a1,a4,A);[m23,m32,M23,M32]=midpoint(a2,a3,A);
+[m12,m21,M12,M21]=tool_midpoint(a1,a2,A);[m34,m43,M34,M43]=tool_midpoint(a3,a4,A);
+% [m13,m31,M13,M31]=midpoint(a1,a3,A);[m24,m42,M24,M42]=midpoint(a2,a4,A);
+% [m14,m41,M14,M41]=midpoint(a1,a4,A);[m23,m32,M23,M32]=midpoint(a2,a3,A);
 % 
 % % Circumlines
 % C41=joint(m32,m31,m21);C42=joint(m23,m13,m21);C43=joint(m23,m31,m12);C44=joint(m32,m13,m12);

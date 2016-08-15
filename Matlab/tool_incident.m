@@ -1,5 +1,10 @@
 function x=tool_incident(a,L)
-X=a*L;
+l=size(a);
+if l(1)==1
+    X=a*L;
+else
+    X=L*a;
+end
 for i=1:3
     X=tool_factorx(X);
     I=tool_checkzero(X);
