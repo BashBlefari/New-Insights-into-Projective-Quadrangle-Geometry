@@ -6,3 +6,4 @@ elseif b1(1,2)==1
     B=-det(A)*inv(A);
     A1=(a1.'*B);
 end
+end

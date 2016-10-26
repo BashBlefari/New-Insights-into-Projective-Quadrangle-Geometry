@@ -1,5 +1,6 @@
 % The standard quadrangle setup
 syms a b c d f g
+syms x12 x34 x13 x24 x14 x23
 
 % bilinear form
 A=[a d f;d b g;f g c];

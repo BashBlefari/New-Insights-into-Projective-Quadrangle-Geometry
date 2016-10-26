@@ -1,6 +1,10 @@
 function I=tool_common(x1,x2)
 I1=x1;
 I2=x2;
+if x2==0
+    I=x1;
+    return
+end
 syms y;
 n1=length(I1);n2=length(I2);
 n=max(n1,n2);I=ones(1,n)*y;

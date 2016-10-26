@@ -1,5 +1,5 @@
 function a=tool_checkzero(I)
-I=factor(I);I=simplify(I);
+I=factor(I);I=tool_factorx(simplify(expand(I)));
 x=length(I);
 syms x12 x34 x13 x24 x14 x23;
 a=0;

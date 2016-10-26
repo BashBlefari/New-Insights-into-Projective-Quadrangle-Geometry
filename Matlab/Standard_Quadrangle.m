@@ -1,19 +1,19 @@
 % points of quadrangle
-a1=[1 1 1];a2=[-1 -1 1];a3=[1 -1 1];a4=[-1 1 1];
+% a1=[1 1 1];a2=[1 1 -1];a3=[1 -1 1];a4=[-1 1 1];
 
 % %quadrances
 % q12=tool_quadrance(a1,a2,A);q13=tool_quadrance(a1,a3,A);q14=tool_quadrance(a1,a4,A);
 % q23=tool_quadrance(a3,a2,A);q24=tool_quadrance(a2,a4,A);q34=tool_quadrance(a4,a3,A);
 
-% %lines of quadrangle
-% L12=tool_joins(a1,a2);L23=tool_joins(a2,a3);L13=tool_joins(a1,a3);
-% L14=tool_joins(a1,a4);L24=tool_joins(a2,a4);L34=tool_joins(a3,a4);
+% lines of quadrangle
+ L12=tool_joins(a1,a2);L23=tool_joins(a2,a3);L13=tool_joins(a1,a3);
+ L14=tool_joins(a1,a4);L24=tool_joins(a2,a4);L34=tool_joins(a3,a4);
 
-% % diagonal triangle
-% d1=meets(L12,L34);d2=meets(L13,L24);d3=meets(L14,L23);
+% diagonal triangle
+ d1=meets(L12,L34);d2=meets(L13,L24);d3=meets(L14,L23);
 
 % midpoints
-[m12,m21,M12,M21]=tool_midpoint(a1,a2,A);[m34,m43,M34,M43]=tool_midpoint(a3,a4,A);
+% [m12,m21,M12,M21]=tool_midpoint(a1,a2,A);[m34,m43,M34,M43]=tool_midpoint(a3,a4,A);
 % [m13,m31,M13,M31]=midpoint(a1,a3,A);[m24,m42,M24,M42]=midpoint(a2,a4,A);
 % [m14,m41,M14,M41]=midpoint(a1,a4,A);[m23,m32,M23,M32]=midpoint(a2,a3,A);
 % 

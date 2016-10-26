@@ -1,11 +1,13 @@
 function x=tool_simplex(a)
 % expand the entries of a into there factors
-a1=factor(a(1));a2=factor(a(2));a3=factor(a(3));
+a1=factor((a(1)));
+a2=factor((a(2)));
+a3=factor((a(3)));
 %checks for an empty point
 if length(a1)==1 && length(a2)==1 && length(a3)==1
     if a1==0&&a2==0&&a3==0
         x=a;
-        display('empty')
+        display('empty input')
         return
     end
 end
@@ -28,6 +30,7 @@ for i=1:length(I)
           x=simplify(x/I(i));
        end
 end
+x=simplify(x);
 end
 
                 
