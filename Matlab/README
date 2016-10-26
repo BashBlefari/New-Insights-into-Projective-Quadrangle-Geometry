@@ -1,1 +1,21 @@
-Matlab is used to compute all the algebraic identities that come up within universal projective geometry
+Matlab is used to compute all the algebraic 
+identities that come up within universal projective geometry.
+I used it to do complex computations using the sym package.
+The m.files here are all that's needed for the computations for
+finding the quadrangle centroids. I also show the structures of the diagonal
+triangles.
+
+You must first load the Quad_Variables_Run_First.m file as it contains the 
+set up of the standard quadrangle.
+From then you may run the Quad_midpoints.m file but I do run this or provide
+the sigma substitute in the Subtri_Medians.m file. After finding the
+medains of the subtriangles, the subtriangle centroids can be computed and furthermore
+the Quadrangle centroids through the Quad_Cents_Through_Subtr_Cents.m file.
+To compute the perspectivities of the diagonal triangles the bimedian lines of the
+quadrangle need to be computed first. To find the final representations of the 
+the perspectivity equations I recommend computing these values whichout the 
+change to sigma value representation. This will give you the final results.
+
+Further exploration into UHG is shown in the exploration folder.
+
+All the tools used here were constructed by me and can be seen in the tools folder.
