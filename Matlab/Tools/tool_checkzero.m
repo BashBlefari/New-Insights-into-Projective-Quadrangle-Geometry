@@ -1,7 +1,7 @@
 % The Checkzero tool use the sigma relations to work out if a number is
 % equal to zero.
 function a=tool_checkzero(I)
-I=factor(I);I=tool_factorx(simplify(expand(I)));
+I=factor(I);I=tool_factorx1234(simplify(expand(I)));
 x=length(I);
 syms x12 x34 x13 x24 x14 x23;
 a=0;
