@@ -7,7 +7,7 @@ else
     X=L*a;
 end
 for i=1:3
-    X=tool_factorx(X);
+    X=tool_factorx1234(X);
     I=tool_checkzero(X);
     if I
         x=1;

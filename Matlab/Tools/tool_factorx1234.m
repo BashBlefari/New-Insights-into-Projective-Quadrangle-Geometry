@@ -5,6 +5,6 @@ B=A;
 B=subs(B,x12*x34,x13*x24);
 B=subs(B,x13*x24,x14*x23);
 B=subs(B,x14*x23,x12*x34);
-X=tool_simplex(B);
+X=simplify(B);
 end
 
